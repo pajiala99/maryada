@@ -1,0 +1,65 @@
+{
+  "call_id": "C28",
+  "scenario": "threat_after_anger",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello ਕੁਲਦੀਪ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Udaan Capital ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "ref": "Hello ਕੁਲਦੀਪ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Udaan Capital ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1280,
+      "end_ms": 7440
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "ref": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "slot": "B_ACK",
+      "start_ms": 8136,
+      "end_ms": 10936
+    },
+    {
+      "speaker": "agent",
+      "text": "ਕੁਲਦੀਪ ਜੀ, ਤੁਹਾਡੇ two-wheeler loan ਦੀਆਂ ਦੋ EMI pending ਨੇ। Late fee ਮਿਲਾ ਕੇ total ਬਕਾਇਆ ₹10,000 ਹੈ।",
+      "ref": "ਕੁਲਦੀਪ ਜੀ, ਤੁਹਾਡੇ two-wheeler loan ਦੀਆਂ ਦੋ EMI pending ਨੇ। Late fee ਮਿਲਾ ਕੇ total ਬਕਾਇਆ ₹10,000 ਹੈ।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11576,
+      "end_ms": 18776
+    },
+    {
+      "speaker": "borrower",
+      "text": "<shouting> ਰੋਜ਼-ਰੋਜ਼ phone ਕਰ ਕੇ ਤੰਗ ਕੀਤਾ ਹੋਇਆ ਹੈ ਤੁਸੀਂ ਲੋਕਾਂ ਨੇ! ਦਿਮਾਗ ਖ਼ਰਾਬ ਕਰ ਦਿੱਤਾ, ਚੋਰ company ਹੈ ਤੁਹਾਡੀ!",
+      "ref": "ਰੋਜ਼-ਰੋਜ਼ phone ਕਰ ਕੇ ਤੰਗ ਕੀਤਾ ਹੋਇਆ ਹੈ ਤੁਸੀਂ ਲੋਕਾਂ ਨੇ! ਦਿਮਾਗ ਖ਼ਰਾਬ ਕਰ ਦਿੱਤਾ, ਚੋਰ company ਹੈ ਤੁਹਾਡੀ!",
+      "slot": "B_ANGRY",
+      "start_ms": 18838,
+      "end_ms": 25078
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> ਬੇਸ਼ਰਮ ਬੰਦੇ ਹੋ ਤੁਸੀਂ! ਹੁਣ ਪੁਲਿਸ ਭੇਜ ਕੇ ਅੰਦਰ ਕਰਵਾ ਦਿਆਂਗਾ ਤੈਨੂੰ।",
+      "ref": "ਬੇਸ਼ਰਮ ਬੰਦੇ ਹੋ ਤੁਸੀਂ! ਹੁਣ ਪੁਲਿਸ ਭੇਜ ਕੇ ਅੰਦਰ ਕਰਵਾ ਦਿਆਂਗਾ ਤੈਨੂੰ।",
+      "slot": "A_THREAT",
+      "start_ms": 25143,
+      "end_ms": 29943
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> please ਇਸ ਤਰ੍ਹਾਂ ਨਾ ਕਰੋ ਜੀ, ਮੈਂ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹਾਂ।",
+      "ref": "please ਇਸ ਤਰ੍ਹਾਂ ਨਾ ਕਰੋ ਜੀ, ਮੈਂ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹਾਂ।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 30378,
+      "end_ms": 35098
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Shubham"
+  }
+}

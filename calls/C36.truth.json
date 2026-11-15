@@ -1,0 +1,77 @@
+{
+  "call_id": "C36",
+  "scenario": "shaming_then_threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello कविता जी, मैं Udaan Capital से अंकित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "ref": "Hello कविता जी, मैं Udaan Capital से अंकित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 964,
+      "end_ms": 7124
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ, कविता ही हूँ। कहिए।",
+      "ref": "हाँ, कविता ही हूँ। कहिए।",
+      "slot": "B_ACK",
+      "start_ms": 7592,
+      "end_ms": 10072
+    },
+    {
+      "speaker": "agent",
+      "text": "कविता जी, आपके personal loan की तीन EMI pending हैं। Late fee मिलाकर total बकाया ₹37,700 है।",
+      "ref": "कविता जी, आपके personal loan की तीन EMI pending हैं। Late fee मिलाकर total बकाया ₹37,700 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 10772,
+      "end_ms": 19172
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> अभी बहुत tight चल रहा है, दुकान का काम मंदा है। अगले महीने तक रुक जाइए।",
+      "ref": "अभी बहुत tight चल रहा है, दुकान का काम मंदा है। अगले महीने तक रुक जाइए।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 19641,
+      "end_ms": 26041
+    },
+    {
+      "speaker": "agent",
+      "text": "हम आपकी photo defaulter लिखकर आपके WhatsApp groups और Facebook पर डाल देंगे, फिर देखना।",
+      "ref": "हम आपकी photo defaulter लिखकर आपके WhatsApp groups और Facebook पर डाल देंगे, फिर देखना।",
+      "slot": "A_THIRD_PARTY",
+      "start_ms": 26642,
+      "end_ms": 32242
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> बेशर्म हो तुम लोग! Loan लेते time तो बड़ी मीठी बातें की थीं। अब पुलिस भेजकर अंदर करवा दूँगा।",
+      "ref": "बेशर्म हो तुम लोग! Loan लेते time तो बड़ी मीठी बातें की थीं। अब पुलिस भेजकर अंदर करवा दूँगा।",
+      "slot": "A_THREAT",
+      "start_ms": 32348,
+      "end_ms": 39068
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> please ऐसा मत कीजिए, मैं कोशिश कर रही हूँ।",
+      "ref": "please ऐसा मत कीजिए, मैं कोशिश कर रही हूँ।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 39600,
+      "end_ms": 43920
+    }
+  ],
+  "violations": [
+    {
+      "type": "THIRD_PARTY",
+      "turn_index": 4
+    },
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 5
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Tarika"
+  }
+}

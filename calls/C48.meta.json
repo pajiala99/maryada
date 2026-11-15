@@ -1,0 +1,19 @@
+{
+  "call_id": "C48",
+  "call_time": "2026-11-13T20:15:00+05:30",
+  "borrower_id": "B1048",
+  "borrower_name": "లావణ్య",
+  "agent_name": "కిరణ్",
+  "lender": "Suvidha Finance",
+  "language": "te-IN",
+  "loan": {
+    "account": "LN78505468",
+    "product": "two-wheeler loan",
+    "emi": 5600,
+    "overdue_emis": 2,
+    "late_fee": 800,
+    "total_due": 12000,
+    "days_past_due": 56
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,60 @@
+{
+  "call_id": "C68",
+  "scenario": "dispute_handled",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "નમસ્તે ભાવેશ, હું Suvidha Finance તરફથી જીગ્નેશ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "ref": "નમસ્તે ભાવેશ, હું Suvidha Finance તરફથી જીગ્નેશ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1107,
+      "end_ms": 7987
+    },
+    {
+      "speaker": "borrower",
+      "text": "હા, હું જ બોલું છું. બોલો.",
+      "ref": "હા, હું જ બોલું છું. બોલો.",
+      "slot": "B_ACK",
+      "start_ms": 8666,
+      "end_ms": 10746
+    },
+    {
+      "speaker": "agent",
+      "text": "ભાવેશ, તમારા personal loan ના એક EMI pending છે. Late fee સાથે કુલ બાકી ₹4,000 છે.",
+      "ref": "ભાવેશ, તમારા personal loan ના એક EMI pending છે. Late fee સાથે કુલ બાકી ₹4,000 છે.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11342,
+      "end_ms": 18542
+    },
+    {
+      "speaker": "borrower",
+      "text": "પણ મેં તો ગયા અઠવાડિયે જ એક EMI ભરી દીધી છે. તમારું record update નથી થયું?",
+      "ref": "પણ મેં તો ગયા અઠવાડિયે જ એક EMI ભરી દીધી છે. તમારું record update નથી થયું?",
+      "slot": "B_DISPUTE",
+      "start_ms": 19117,
+      "end_ms": 24397
+    },
+    {
+      "speaker": "agent",
+      "text": "સારું, હું હમણાં જ statement મોકલું છું. Check કરી લો, પછી વાત કરીએ.",
+      "ref": "સારું, હું હમણાં જ statement મોકલું છું. Check કરી લો, પછી વાત કરીએ.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 25135,
+      "end_ms": 29695
+    },
+    {
+      "speaker": "borrower",
+      "text": "સારું, આભાર.",
+      "ref": "સારું, આભાર.",
+      "slot": "B_CLOSE",
+      "start_ms": 30301,
+      "end_ms": 31821
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Yashraj"
+  }
+}

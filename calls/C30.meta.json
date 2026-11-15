@@ -1,0 +1,19 @@
+{
+  "call_id": "C30",
+  "call_time": "2026-11-10T21:10:00+05:30",
+  "borrower_id": "B1030",
+  "borrower_name": "पूजा",
+  "agent_name": "अंकित",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN71087484",
+    "product": "personal loan",
+    "emi": 2450,
+    "overdue_emis": 1,
+    "late_fee": 500,
+    "total_due": 2950,
+    "days_past_due": 25
+  },
+  "preferred_window": null
+}

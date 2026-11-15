@@ -1,0 +1,69 @@
+{
+  "call_id": "C42",
+  "scenario": "third_party_late_call",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "வணக்கம் முருகன் அவர்களே, நான் Navjeevan Housing Finance லிருந்து விக்னேஷ் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "ref": "வணக்கம் முருகன் அவர்களே, நான் Navjeevan Housing Finance லிருந்து விக்னேஷ் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1243,
+      "end_ms": 10363
+    },
+    {
+      "speaker": "borrower",
+      "text": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "ref": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "slot": "B_ACK",
+      "start_ms": 10850,
+      "end_ms": 13490
+    },
+    {
+      "speaker": "agent",
+      "text": "முருகன் அவர்களே, உங்கள் business loan இல் ஒரு EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹6,250.",
+      "ref": "முருகன் அவர்களே, உங்கள் business loan இல் ஒரு EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹6,250.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 14173,
+      "end_ms": 23613
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> போன மாதம் என் வேலை போய்விட்டது. கொஞ்சம் time வேண்டும்.",
+      "ref": "போன மாதம் என் வேலை போய்விட்டது. கொஞ்சம் time வேண்டும்.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 24221,
+      "end_ms": 29181
+    },
+    {
+      "speaker": "agent",
+      "text": "சரி, அப்போ உங்கள் office இல் உங்கள் manager கிட்ட நீங்கள் loan கட்டவில்லை என்று சொல்கிறேன்.",
+      "ref": "சரி, அப்போ உங்கள் office இல் உங்கள் manager கிட்ட நீங்கள் loan கட்டவில்லை என்று சொல்கிறேன்.",
+      "slot": "A_THIRD_PARTY",
+      "start_ms": 29505,
+      "end_ms": 35265
+    },
+    {
+      "speaker": "borrower",
+      "text": "நீங்கள் என்னிடம் இப்படி பேசக்கூடாது. நான் complaint கொடுப்பேன்.",
+      "ref": "நீங்கள் என்னிடம் இப்படி பேசக்கூடாது. நான் complaint கொடுப்பேன்.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 36004,
+      "end_ms": 39044
+    }
+  ],
+  "violations": [
+    {
+      "type": "THIRD_PARTY",
+      "turn_index": 4
+    },
+    {
+      "type": "OUTSIDE_HOURS",
+      "turn_index": 0
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Devansh"
+  }
+}

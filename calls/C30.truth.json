@@ -1,0 +1,77 @@
+{
+  "call_id": "C30",
+  "scenario": "everything_wrong",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते पूजा जी, Udaan Capital से अंकित बात कर रहा हूँ। आपके personal loan की payment के बारे में call किया है।",
+      "ref": "नमस्ते पूजा जी, Udaan Capital से अंकित बात कर रहा हूँ। आपके personal loan की payment के बारे में call किया है।",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 990,
+      "end_ms": 7710
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रही हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रही हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 8192,
+      "end_ms": 11232
+    },
+    {
+      "speaker": "agent",
+      "text": "आपके account में ₹4,400 का outstanding है Madam, penalty और charges मिलाकर।",
+      "ref": "आपके account में ₹4,400 का outstanding है Madam, penalty और charges मिलाकर।",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11555,
+      "end_ms": 17475
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> अभी बहुत tight चल रहा है, दुकान का काम मंदा है। अगले महीने तक रुक जाइए।",
+      "ref": "अभी बहुत tight चल रहा है, दुकान का काम मंदा है। अगले महीने तक रुक जाइए।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 18034,
+      "end_ms": 24114
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> तुम जैसे चोरों को हम अच्छे से जानते हैं। पैसा निकालो वरना हाथ-पैर सलामत नहीं रहेंगे।",
+      "ref": "तुम जैसे चोरों को हम अच्छे से जानते हैं। पैसा निकालो वरना हाथ-पैर सलामत नहीं रहेंगे।",
+      "slot": "A_THREAT",
+      "start_ms": 24244,
+      "end_ms": 29844
+    },
+    {
+      "speaker": "borrower",
+      "text": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगी।",
+      "ref": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगी।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 30532,
+      "end_ms": 33812
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    },
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    },
+    {
+      "type": "OUTSIDE_HOURS",
+      "turn_index": 0
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Shivani"
+  }
+}

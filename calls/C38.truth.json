@@ -1,0 +1,60 @@
+{
+  "call_id": "C38",
+  "scenario": "dispute_handled",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "வணக்கம் கார்த்திக் அவர்களே, நான் Udaan Capital லிருந்து அருண் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "ref": "வணக்கம் கார்த்திக் அவர்களே, நான் Udaan Capital லிருந்து அருண் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1108,
+      "end_ms": 9028
+    },
+    {
+      "speaker": "borrower",
+      "text": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "ref": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "slot": "B_ACK",
+      "start_ms": 9425,
+      "end_ms": 11985
+    },
+    {
+      "speaker": "agent",
+      "text": "கார்த்திக் அவர்களே, உங்கள் business loan இல் மூன்று EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹25,400.",
+      "ref": "கார்த்திக் அவர்களே, உங்கள் business loan இல் மூன்று EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹25,400.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12604,
+      "end_ms": 21804
+    },
+    {
+      "speaker": "borrower",
+      "text": "ஆனால் நான் போன வாரமே ஒரு EMI கட்டிவிட்டேன். உங்கள் record update ஆகவில்லையா?",
+      "ref": "ஆனால் நான் போன வாரமே ஒரு EMI கட்டிவிட்டேன். உங்கள் record update ஆகவில்லையா?",
+      "slot": "B_DISPUTE",
+      "start_ms": 22382,
+      "end_ms": 27902
+    },
+    {
+      "speaker": "agent",
+      "text": "சரி, இப்போதே statement அனுப்புகிறேன். Check செய்துவிட்டு பேசலாம்.",
+      "ref": "சரி, இப்போதே statement அனுப்புகிறேன். Check செய்துவிட்டு பேசலாம்.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 28620,
+      "end_ms": 31900
+    },
+    {
+      "speaker": "borrower",
+      "text": "சரி, நன்றி.",
+      "ref": "சரி, நன்றி.",
+      "slot": "B_CLOSE",
+      "start_ms": 32199,
+      "end_ms": 33319
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Prakash"
+  }
+}

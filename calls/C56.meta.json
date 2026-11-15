@@ -1,0 +1,19 @@
+{
+  "call_id": "C56",
+  "call_time": "2026-11-11T10:40:00+05:30",
+  "borrower_id": "B1056",
+  "borrower_name": "মৌমিতা",
+  "agent_name": "সৌরভ",
+  "lender": "Navjeevan Housing Finance",
+  "language": "bn-IN",
+  "loan": {
+    "account": "LN52185317",
+    "product": "business loan",
+    "emi": 3200,
+    "overdue_emis": 1,
+    "late_fee": 800,
+    "total_due": 4000,
+    "days_past_due": 21
+  },
+  "preferred_window": null
+}

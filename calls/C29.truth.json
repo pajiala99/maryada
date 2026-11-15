@@ -1,0 +1,65 @@
+{
+  "call_id": "C29",
+  "scenario": "pressed_in_hospital",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਹਰਜੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Suvidha Finance ਤੋਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "ref": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਹਰਜੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Suvidha Finance ਤੋਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 903,
+      "end_ms": 9783
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "ref": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "slot": "B_ACK",
+      "start_ms": 10301,
+      "end_ms": 12141
+    },
+    {
+      "speaker": "agent",
+      "text": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹5,550 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਦੋ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "ref": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹5,550 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਦੋ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12665,
+      "end_ms": 20905
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> ਮੈਂ ਹੁਣ hospital ਵਿੱਚ ਹਾਂ ਜੀ, ਮੇਰੇ ਪੁੱਤਰ ਦਾ accident ਹੋ ਗਿਆ ਹੈ, ਉਹ ICU ਵਿੱਚ ਹੈ।",
+      "ref": "ਮੈਂ ਹੁਣ hospital ਵਿੱਚ ਹਾਂ ਜੀ, ਮੇਰੇ ਪੁੱਤਰ ਦਾ accident ਹੋ ਗਿਆ ਹੈ, ਉਹ ICU ਵਿੱਚ ਹੈ।",
+      "slot": "B_HOSPITAL",
+      "start_ms": 21310,
+      "end_ms": 28430
+    },
+    {
+      "speaker": "agent",
+      "text": "ਇਹ ਸਭ ਬਹਾਨੇ ਅਸੀਂ ਰੋਜ਼ ਸੁਣਦੇ ਹਾਂ। ਕੁਝ ਵੀ ਹੋਵੇ, EMI ਅੱਜ ਸ਼ਾਮ ਤੱਕ ਜਮ੍ਹਾਂ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।",
+      "ref": "ਇਹ ਸਭ ਬਹਾਨੇ ਅਸੀਂ ਰੋਜ਼ ਸੁਣਦੇ ਹਾਂ। ਕੁਝ ਵੀ ਹੋਵੇ, EMI ਅੱਜ ਸ਼ਾਮ ਤੱਕ ਜਮ੍ਹਾਂ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 28770,
+      "end_ms": 35810
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> please ਇਸ ਤਰ੍ਹਾਂ ਨਾ ਕਰੋ ਜੀ, ਮੈਂ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹਾਂ।",
+      "ref": "please ਇਸ ਤਰ੍ਹਾਂ ਨਾ ਕਰੋ ਜੀ, ਮੈਂ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹਾਂ।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 36100,
+      "end_ms": 40420
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Devansh"
+  }
+}

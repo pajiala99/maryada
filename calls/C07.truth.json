@@ -1,0 +1,68 @@
+{
+  "call_id": "C07",
+  "scenario": "borrower_offers_relative",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello नेहा जी, मैं Udaan Capital से अंकित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "ref": "Hello नेहा जी, मैं Udaan Capital से अंकित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1173,
+      "end_ms": 7813
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी हाँ, बोलिए क्या बात है?",
+      "ref": "जी हाँ, बोलिए क्या बात है?",
+      "slot": "B_ACK",
+      "start_ms": 8515,
+      "end_ms": 10835
+    },
+    {
+      "speaker": "agent",
+      "text": "नेहा जी, आपके business loan की दो EMI pending हैं। Late fee मिलाकर total बकाया ₹6,900 है।",
+      "ref": "नेहा जी, आपके business loan की दो EMI pending हैं। Late fee मिलाकर total बकाया ₹6,900 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11479,
+      "end_ms": 19479
+    },
+    {
+      "speaker": "borrower",
+      "text": "Payment तो मेरे husband करते हैं, आप उन्हीं को बता दीजिए।",
+      "ref": "Payment तो मेरे husband करते हैं, आप उन्हीं को बता दीजिए।",
+      "slot": "B_OFFERS_RELATIVE",
+      "start_ms": 19865,
+      "end_ms": 23065
+    },
+    {
+      "speaker": "agent",
+      "text": "धन्यवाद, लेकिन loan आपके नाम पर है तो हम सिर्फ़ आपसे ही बात करेंगे। आप उनसे बात करके मुझे payment की date बता दीजिए।",
+      "ref": "धन्यवाद, लेकिन loan आपके नाम पर है तो हम सिर्फ़ आपसे ही बात करेंगे। आप उनसे बात करके मुझे payment की date बता दीजिए।",
+      "slot": "A_DECLINE_RELATIVE",
+      "start_ms": 23486,
+      "end_ms": 31166
+    },
+    {
+      "speaker": "borrower",
+      "text": "हम्म, ठीक है। Thank you।",
+      "ref": "हम्म, ठीक है। Thank you।",
+      "slot": "B_CLOSE",
+      "start_ms": 31857,
+      "end_ms": 33777
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "ref": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "slot": "A_CLOSE",
+      "start_ms": 34059,
+      "end_ms": 37579
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Riyaa"
+  }
+}

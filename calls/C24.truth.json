@@ -1,0 +1,57 @@
+{
+  "call_id": "C24",
+  "scenario": "early_call",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello ਜਸਵਿੰਦਰ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Suvidha Finance ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "ref": "Hello ਜਸਵਿੰਦਰ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Suvidha Finance ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1035,
+      "end_ms": 7915
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "ref": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "slot": "B_ACK",
+      "start_ms": 8385,
+      "end_ms": 9905
+    },
+    {
+      "speaker": "agent",
+      "text": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹5,100 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਇੱਕ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "ref": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹5,100 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਇੱਕ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 10455,
+      "end_ms": 18375
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂ ਜੀ ਮੈਨੂੰ ਪਤਾ ਹੈ। ਤਨਖਾਹ ਆਉਂਦੇ ਹੀ ਦੋ-ਤਿੰਨ ਦਿਨਾਂ ਵਿੱਚ ਭਰ ਦੇਵਾਂਗਾ।",
+      "ref": "ਹਾਂ ਜੀ ਮੈਨੂੰ ਪਤਾ ਹੈ। ਤਨਖਾਹ ਆਉਂਦੇ ਹੀ ਦੋ-ਤਿੰਨ ਦਿਨਾਂ ਵਿੱਚ ਭਰ ਦੇਵਾਂਗਾ।",
+      "slot": "B_WILL_PAY",
+      "start_ms": 18893,
+      "end_ms": 23373
+    },
+    {
+      "speaker": "agent",
+      "text": "ਠੀਕ ਹੈ ਜੀ, time ਦੇਣ ਲਈ ਧੰਨਵਾਦ। ਸਤ ਸ੍ਰੀ ਅਕਾਲ।",
+      "ref": "ਠੀਕ ਹੈ ਜੀ, time ਦੇਣ ਲਈ ਧੰਨਵਾਦ। ਸਤ ਸ੍ਰੀ ਅਕਾਲ।",
+      "slot": "A_CLOSE",
+      "start_ms": 23918,
+      "end_ms": 27358
+    }
+  ],
+  "violations": [
+    {
+      "type": "OUTSIDE_HOURS",
+      "turn_index": 0
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Yashraj"
+  }
+}

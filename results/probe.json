@@ -1,0 +1,181 @@
+{
+  "summary": {
+    "keywords": {
+      "exact": 2,
+      "of": 16,
+      "tp": 0,
+      "fp": 6,
+      "fn": 9
+    },
+    "llm": {
+      "exact": 15,
+      "of": 16,
+      "tp": 9,
+      "fp": 1,
+      "fn": 0
+    },
+    "llm_model": "openai/gpt-oss-120b"
+  },
+  "items": [
+    {
+      "id": "threat_vague",
+      "utterance": "कल सुबह तक इंतज़ाम कर लो, नहीं तो ऐसा हाल करेंगे कि ज़िंदगी भर याद रखोगे।",
+      "expected": [
+        "THREAT_OR_ABUSE"
+      ],
+      "keywords": [],
+      "llm": [
+        "THREAT_OR_ABUSE"
+      ]
+    },
+    {
+      "id": "threat_vehicle",
+      "utterance": "तेरी गाड़ी आज रात ही गायब हो जाएगी, समझा? और तू कुछ नहीं कर पाएगा।",
+      "expected": [
+        "THREAT_OR_ABUSE"
+      ],
+      "keywords": [],
+      "llm": [
+        "THREAT_OR_ABUSE"
+      ]
+    },
+    {
+      "id": "threat_punjabi",
+      "utterance": "ਜੇ ਸੋਮਵਾਰ ਤੱਕ ਰਕਮ ਨਾ ਆਈ ਤਾਂ ਤੇਰੀ ਖ਼ੈਰ ਨਹੀਂ, ਇਹ ਗੱਲ ਯਾਦ ਰੱਖੀਂ।",
+      "expected": [
+        "THREAT_OR_ABUSE"
+      ],
+      "keywords": [],
+      "llm": [
+        "THREAT_OR_ABUSE"
+      ]
+    },
+    {
+      "id": "inlaws",
+      "utterance": "आपकी सास और ससुर को भी आज खबर कर देते हैं कि बहू ने किस्त नहीं चुकाई।",
+      "expected": [
+        "THIRD_PARTY"
+      ],
+      "keywords": [],
+      "llm": [
+        "THIRD_PARTY"
+      ]
+    },
+    {
+      "id": "hr_mail",
+      "utterance": "आपके HR department को mail डाल रहा हूँ, वही आपकी salary से कटवाएँगे।",
+      "expected": [
+        "THIRD_PARTY"
+      ],
+      "keywords": [],
+      "llm": [
+        "THIRD_PARTY"
+      ]
+    },
+    {
+      "id": "spouse_school",
+      "utterance": "ਤੇਰੀ ਘਰਵਾਲੀ ਦੇ ਸਕੂਲ ਜਾ ਕੇ ਸਾਰੇ staff ਸਾਹਮਣੇ ਦੱਸਾਂਗੇ ਕਿ ਤੂੰ ਕਰਜ਼ਾ ਨਹੀਂ ਮੋੜਦਾ।",
+      "expected": [
+        "THIRD_PARTY"
+      ],
+      "keywords": [],
+      "llm": [
+        "THIRD_PARTY",
+        "THREAT_OR_ABUSE"
+      ]
+    },
+    {
+      "id": "cremation",
+      "utterance": "ठीक है, पर किस्त का क्या? दो घंटे में transfer कर दीजिए, मैं line पर हूँ।",
+      "expected": [
+        "IGNORED_SENSITIVE_SITUATION"
+      ],
+      "keywords": [],
+      "llm": [
+        "IGNORED_SENSITIVE_SITUATION"
+      ]
+    },
+    {
+      "id": "flood",
+      "utterance": "वो सब ठीक है, लेकिन EMI तो भरनी पड़ेगी, रात तक कर दीजिए।",
+      "expected": [
+        "IGNORED_SENSITIVE_SITUATION"
+      ],
+      "keywords": [],
+      "llm": [
+        "IGNORED_SENSITIVE_SITUATION"
+      ]
+    },
+    {
+      "id": "dues_in_words",
+      "utterance": "आपका कुल बकाया साढ़े सत्रह हज़ार रुपये है, यही भरना होगा।",
+      "expected": [
+        "WRONG_DUES"
+      ],
+      "keywords": [],
+      "llm": [
+        "WRONG_DUES"
+      ]
+    },
+    {
+      "id": "police_form",
+      "utterance": "मैं police verification वाले form की बात नहीं कर रहा, बस आपकी EMI की date confirm करनी थी।",
+      "expected": [],
+      "keywords": [
+        "THREAT_OR_ABUSE"
+      ],
+      "llm": []
+    },
+    {
+      "id": "brother_pays",
+      "utterance": "ठीक है, तो आप अपने भाई से पूछकर मुझे date बता दीजिएगा।",
+      "expected": [],
+      "keywords": [
+        "THIRD_PARTY"
+      ],
+      "llm": []
+    },
+    {
+      "id": "receipt_whatsapp",
+      "utterance": "Receipt मैं आपके WhatsApp पर भेज देता हूँ, आप office से लौटकर देख लीजिएगा।",
+      "expected": [],
+      "keywords": [
+        "THIRD_PARTY"
+      ],
+      "llm": []
+    },
+    {
+      "id": "father_unwell",
+      "utterance": "आपके पिताजी जल्दी ठीक हों। Payment की चिंता अभी मत कीजिए, आज ही नहीं, जब सुविधा हो तब बात करेंगे।",
+      "expected": [],
+      "keywords": [
+        "IGNORED_SENSITIVE_SITUATION",
+        "THIRD_PARTY"
+      ],
+      "llm": []
+    },
+    {
+      "id": "no_police_punjabi",
+      "utterance": "ਪੁਲਿਸ ਵਾਲੀ ਕੋਈ ਗੱਲ ਨਹੀਂ ਜੀ, ਘਬਰਾਓ ਨਾ। ਮੈਂ ਸਿਰਫ਼ ਤਰੀਕ ਪੁੱਛਣ ਲਈ call ਕੀਤੀ ਹੈ।",
+      "expected": [],
+      "keywords": [
+        "THREAT_OR_ABUSE"
+      ],
+      "llm": []
+    },
+    {
+      "id": "dues_right_in_words",
+      "utterance": "आपकी EMI चार हज़ार सात सौ पचास रुपये की है, दो EMI बाकी हैं, late fee मिलाकर कुल दस हज़ार रुपये बनते हैं।",
+      "expected": [],
+      "keywords": [],
+      "llm": []
+    },
+    {
+      "id": "lawful_notice",
+      "utterance": "अगर इस महीने भी payment नहीं आई तो account NPA में चला जाएगा और company legal notice भेजेगी, यह मैं आपको पहले से बता रहा हूँ।",
+      "expected": [],
+      "keywords": [],
+      "llm": []
+    }
+  ]
+}

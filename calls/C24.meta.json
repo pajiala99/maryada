@@ -1,0 +1,19 @@
+{
+  "call_id": "C24",
+  "call_time": "2026-11-14T06:40:00+05:30",
+  "borrower_id": "B1024",
+  "borrower_name": "ਜਸਵਿੰਦਰ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Suvidha Finance",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN33078739",
+    "product": "home loan",
+    "emi": 4750,
+    "overdue_emis": 1,
+    "late_fee": 350,
+    "total_due": 5100,
+    "days_past_due": 25
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,69 @@
+{
+  "call_id": "C75",
+  "scenario": "no_disclosure_inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "നമസ്കാരം ബിജു, ഞാൻ Suvidha Finance ൽ നിന്ന് വിനീത് ആണ് സംസാരിക്കുന്നത്. നിങ്ങളുടെ loan account നെക്കുറിച്ച് സംസാരിക്കാനുണ്ട്.",
+      "ref": "നമസ്കാരം ബിജു, ഞാൻ Suvidha Finance ൽ നിന്ന് വിനീത് ആണ് സംസാരിക്കുന്നത്. നിങ്ങളുടെ loan account നെക്കുറിച്ച് സംസാരിക്കാനുണ്ട്.",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 980,
+      "end_ms": 8260
+    },
+    {
+      "speaker": "borrower",
+      "text": "അതെ, ഞാൻ തന്നെയാണ്. പറയൂ.",
+      "ref": "അതെ, ഞാൻ തന്നെയാണ്. പറയൂ.",
+      "slot": "B_ACK",
+      "start_ms": 8612,
+      "end_ms": 10692
+    },
+    {
+      "speaker": "agent",
+      "text": "ബിജു, നിങ്ങളുടെ personal loan ൽ ആകെ കുടിശ്ശിക ₹24,900 ആണ്. ഈ മുഴുവൻ തുകയും ഇന്ന് തന്നെ അടയ്ക്കണം.",
+      "ref": "ബിജു, നിങ്ങളുടെ personal loan ൽ ആകെ കുടിശ്ശിക ₹24,900 ആണ്. ഈ മുഴുവൻ തുകയും ഇന്ന് തന്നെ അടയ്ക്കണം.",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11284,
+      "end_ms": 19524
+    },
+    {
+      "speaker": "borrower",
+      "text": "പക്ഷേ ഞാൻ കഴിഞ്ഞ ആഴ്ച തന്നെ ഒരു EMI അടച്ചതാണല്ലോ. നിങ്ങളുടെ record update ആയില്ലേ?",
+      "ref": "പക്ഷേ ഞാൻ കഴിഞ്ഞ ആഴ്ച തന്നെ ഒരു EMI അടച്ചതാണല്ലോ. നിങ്ങളുടെ record update ആയില്ലേ?",
+      "slot": "B_DISPUTE",
+      "start_ms": 20125,
+      "end_ms": 25325
+    },
+    {
+      "speaker": "agent",
+      "text": "ശരി, ഞാൻ ഇപ്പോൾ തന്നെ statement അയയ്ക്കാം. Check ചെയ്തിട്ട് സംസാരിക്കാം.",
+      "ref": "ശരി, ഞാൻ ഇപ്പോൾ തന്നെ statement അയയ്ക്കാം. Check ചെയ്തിട്ട് സംസാരിക്കാം.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 26044,
+      "end_ms": 29964
+    },
+    {
+      "speaker": "borrower",
+      "text": "ശരി, നന്ദി.",
+      "ref": "ശരി, നന്ദി.",
+      "slot": "B_CLOSE",
+      "start_ms": 30597,
+      "end_ms": 31877
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Devansh"
+  }
+}

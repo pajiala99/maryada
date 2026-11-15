@@ -1,0 +1,19 @@
+{
+  "call_id": "C60",
+  "call_time": "2026-11-10T20:15:00+05:30",
+  "borrower_id": "B1060",
+  "borrower_name": "রুমা",
+  "agent_name": "দীপঙ্কর",
+  "lender": "Suvidha Finance",
+  "language": "bn-IN",
+  "loan": {
+    "account": "LN22380946",
+    "product": "home loan",
+    "emi": 2450,
+    "overdue_emis": 2,
+    "late_fee": 650,
+    "total_due": 5550,
+    "days_past_due": 57
+  },
+  "preferred_window": null
+}

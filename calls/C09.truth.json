@@ -1,0 +1,68 @@
+{
+  "call_id": "C09",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello ਹਰਜੀਤ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Udaan Capital ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "ref": "Hello ਹਰਜੀਤ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Udaan Capital ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1289,
+      "end_ms": 7769
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "ref": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "slot": "B_ACK",
+      "start_ms": 8183,
+      "end_ms": 10983
+    },
+    {
+      "speaker": "agent",
+      "text": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹20,150 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਦੋ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "ref": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹20,150 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਦੋ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11547,
+      "end_ms": 20187
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> ਹੁਣ ਹੱਥ ਬਹੁਤ ਤੰਗ ਹੈ ਜੀ, ਫ਼ਸਲ ਦੇ ਪੈਸੇ ਨਹੀਂ ਆਏ ਅਜੇ। ਅਗਲੇ ਮਹੀਨੇ ਤੱਕ ਰੁਕ ਜਾਓ।",
+      "ref": "ਹੁਣ ਹੱਥ ਬਹੁਤ ਤੰਗ ਹੈ ਜੀ, ਫ਼ਸਲ ਦੇ ਪੈਸੇ ਨਹੀਂ ਆਏ ਅਜੇ। ਅਗਲੇ ਮਹੀਨੇ ਤੱਕ ਰੁਕ ਜਾਓ।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 20832,
+      "end_ms": 27232
+    },
+    {
+      "speaker": "agent",
+      "text": "ਠੀਕ ਹੈ ਜੀ। ਮੈਂ ਤੁਹਾਨੂੰ payment link SMS ਕਰ ਦਿੰਦਾ ਹਾਂ, ਤੁਸੀਂ ਆਪਣੀ ਸਹੂਲਤ ਨਾਲ ₹20,150 ਜਮ੍ਹਾਂ ਕਰਵਾ ਦਿਓ।",
+      "ref": "ਠੀਕ ਹੈ ਜੀ। ਮੈਂ ਤੁਹਾਨੂੰ payment link SMS ਕਰ ਦਿੰਦਾ ਹਾਂ, ਤੁਸੀਂ ਆਪਣੀ ਸਹੂਲਤ ਨਾਲ ₹20,150 ਜਮ੍ਹਾਂ ਕਰਵਾ ਦਿਓ।",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 27849,
+      "end_ms": 36249
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਠੀਕ ਹੈ ਜੀ, ਧੰਨਵਾਦ।",
+      "ref": "ਠੀਕ ਹੈ ਜੀ, ਧੰਨਵਾਦ।",
+      "slot": "B_CLOSE",
+      "start_ms": 36959,
+      "end_ms": 38639
+    },
+    {
+      "speaker": "agent",
+      "text": "ਠੀਕ ਹੈ ਜੀ, time ਦੇਣ ਲਈ ਧੰਨਵਾਦ। ਸਤ ਸ੍ਰੀ ਅਕਾਲ।",
+      "ref": "ਠੀਕ ਹੈ ਜੀ, time ਦੇਣ ਲਈ ਧੰਨਵਾਦ। ਸਤ ਸ੍ਰੀ ਅਕਾਲ।",
+      "slot": "A_CLOSE",
+      "start_ms": 39323,
+      "end_ms": 42923
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Shubham"
+  }
+}

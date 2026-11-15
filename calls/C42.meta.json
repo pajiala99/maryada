@@ -1,0 +1,19 @@
+{
+  "call_id": "C42",
+  "call_time": "2026-11-12T20:15:00+05:30",
+  "borrower_id": "B1042",
+  "borrower_name": "முருகன்",
+  "agent_name": "விக்னேஷ்",
+  "lender": "Navjeevan Housing Finance",
+  "language": "ta-IN",
+  "loan": {
+    "account": "LN53479813",
+    "product": "business loan",
+    "emi": 5600,
+    "overdue_emis": 1,
+    "late_fee": 650,
+    "total_due": 6250,
+    "days_past_due": 25
+  },
+  "preferred_window": null
+}

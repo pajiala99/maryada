@@ -1,0 +1,65 @@
+{
+  "call_id": "C77",
+  "scenario": "pressed_in_bereavement",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "നമസ്കാരം അനൂപ്, ഞാൻ Udaan Capital ൽ നിന്ന് രാഹുൽ ആണ് സംസാരിക്കുന്നത്. ഈ call record ചെയ്യുന്നുണ്ടെന്ന് അറിയിക്കുന്നു.",
+      "ref": "നമസ്കാരം അനൂപ്, ഞാൻ Udaan Capital ൽ നിന്ന് രാഹുൽ ആണ് സംസാരിക്കുന്നത്. ഈ call record ചെയ്യുന്നുണ്ടെന്ന് അറിയിക്കുന്നു.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1249,
+      "end_ms": 8129
+    },
+    {
+      "speaker": "borrower",
+      "text": "അതെ, ഞാൻ തന്നെയാണ്. പറയൂ.",
+      "ref": "അതെ, ഞാൻ തന്നെയാണ്. പറയൂ.",
+      "slot": "B_ACK",
+      "start_ms": 8668,
+      "end_ms": 11228
+    },
+    {
+      "speaker": "agent",
+      "text": "അനൂപ്, നിങ്ങളുടെ two-wheeler loan ൽ രണ്ട് EMI pending ആണ്. Late fee ചേർത്ത് ആകെ കുടിശ്ശിക ₹11,850 ആണ്.",
+      "ref": "അനൂപ്, നിങ്ങളുടെ two-wheeler loan ൽ രണ്ട് EMI pending ആണ്. Late fee ചേർത്ത് ആകെ കുടിശ്ശിക ₹11,850 ആണ്.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11623,
+      "end_ms": 21703
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sniffles> മിനിഞ്ഞാന്ന് എന്റെ അച്ഛൻ മരിച്ചു. ഇപ്പോൾ വീട്ടിൽ ചടങ്ങുകൾ നടക്കുകയാണ്.",
+      "ref": "മിനിഞ്ഞാന്ന് എന്റെ അച്ഛൻ മരിച്ചു. ഇപ്പോൾ വീട്ടിൽ ചടങ്ങുകൾ നടക്കുകയാണ്.",
+      "slot": "B_BEREAVEMENT",
+      "start_ms": 22140,
+      "end_ms": 27260
+    },
+    {
+      "speaker": "agent",
+      "text": "അത് നിങ്ങളുടെ personal കാര്യമാണ്, company ക്ക് അതുമായി ബന്ധമില്ല. Payment ഇന്ന് തന്നെ വേണം.",
+      "ref": "അത് നിങ്ങളുടെ personal കാര്യമാണ്, company ക്ക് അതുമായി ബന്ധമില്ല. Payment ഇന്ന് തന്നെ വേണം.",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 27689,
+      "end_ms": 32969
+    },
+    {
+      "speaker": "borrower",
+      "text": "നിങ്ങൾക്ക് എന്നോട് ഇങ്ങനെ സംസാരിക്കാൻ പറ്റില്ല. ഞാൻ complaint കൊടുക്കും.",
+      "ref": "നിങ്ങൾക്ക് എന്നോട് ഇങ്ങനെ സംസാരിക്കാൻ പറ്റില്ല. ഞാൻ complaint കൊടുക്കും.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 33433,
+      "end_ms": 37353
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Yashraj"
+  }
+}

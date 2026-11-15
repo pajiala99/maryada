@@ -1,0 +1,65 @@
+{
+  "call_id": "C46",
+  "scenario": "threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "నమస్కారం శ్రీనివాస్ గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "ref": "నమస్కారం శ్రీనివాస్ గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1305,
+      "end_ms": 9305
+    },
+    {
+      "speaker": "borrower",
+      "text": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "ref": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "slot": "B_ACK",
+      "start_ms": 9621,
+      "end_ms": 12101
+    },
+    {
+      "speaker": "agent",
+      "text": "శ్రీనివాస్ గారు, మీ two-wheeler loan లో మూడు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹7,850.",
+      "ref": "శ్రీనివాస్ గారు, మీ two-wheeler loan లో మూడు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹7,850.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12509,
+      "end_ms": 21309
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> చూడండి, గత నెల నా ఉద్యోగం పోయింది. కొంచెం time కావాలి.",
+      "ref": "చూడండి, గత నెల నా ఉద్యోగం పోయింది. కొంచెం time కావాలి.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 21882,
+      "end_ms": 26762
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> ఎక్కువ తెలివి చూపించకు! రేపటిలోగా డబ్బు రాకపోతే మా మనుషులు ఇంటికి వచ్చి సామాను తీసుకెళ్తారు.",
+      "ref": "ఎక్కువ తెలివి చూపించకు! రేపటిలోగా డబ్బు రాకపోతే మా మనుషులు ఇంటికి వచ్చి సామాను తీసుకెళ్తారు.",
+      "slot": "A_THREAT",
+      "start_ms": 26906,
+      "end_ms": 33466
+    },
+    {
+      "speaker": "borrower",
+      "text": "మీరు నాతో ఇలా మాట్లాడకూడదు. నేను complaint ఇస్తాను.",
+      "ref": "మీరు నాతో ఇలా మాట్లాడకూడదు. నేను complaint ఇస్తాను.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 33786,
+      "end_ms": 37146
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Devansh"
+  }
+}

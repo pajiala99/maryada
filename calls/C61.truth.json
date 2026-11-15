@@ -1,0 +1,68 @@
+{
+  "call_id": "C61",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार प्रशांत, मी Suvidha Finance मधून अमोल बोलतोय. आपल्याला सांगू इच्छितो की हा call record केला जात आहे.",
+      "ref": "नमस्कार प्रशांत, मी Suvidha Finance मधून अमोल बोलतोय. आपल्याला सांगू इच्छितो की हा call record केला जात आहे.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1055,
+      "end_ms": 8735
+    },
+    {
+      "speaker": "borrower",
+      "text": "हो, मीच बोलतोय. सांगा.",
+      "ref": "हो, मीच बोलतोय. सांगा.",
+      "slot": "B_ACK",
+      "start_ms": 9378,
+      "end_ms": 11458
+    },
+    {
+      "speaker": "agent",
+      "text": "प्रशांत, तुमच्या personal loan चे दोन EMI pending आहेत. Late fee धरून एकूण थकबाकी ₹12,000 आहे.",
+      "ref": "प्रशांत, तुमच्या personal loan चे दोन EMI pending आहेत. Late fee धरून एकूण थकबाकी ₹12,000 आहे.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12054,
+      "end_ms": 19974
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> बघा, मागच्या महिन्यात माझी नोकरी गेली. थोडा time हवा आहे.",
+      "ref": "बघा, मागच्या महिन्यात माझी नोकरी गेली. थोडा time हवा आहे.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 20587,
+      "end_ms": 25467
+    },
+    {
+      "speaker": "agent",
+      "text": "काही हरकत नाही, मी समजू शकतो. आत्ता एक EMI म्हणजे ₹5,600 भरू शकाल का? बाकीसाठी आपण date ठरवू.",
+      "ref": "काही हरकत नाही, मी समजू शकतो. आत्ता एक EMI म्हणजे ₹5,600 भरू शकाल का? बाकीसाठी आपण date ठरवू.",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 25951,
+      "end_ms": 35151
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक आहे, धन्यवाद.",
+      "ref": "ठीक आहे, धन्यवाद.",
+      "slot": "B_CLOSE",
+      "start_ms": 35899,
+      "end_ms": 37099
+    },
+    {
+      "speaker": "agent",
+      "text": "धन्यवाद प्रशांत, तुमचा दिवस चांगला जावो.",
+      "ref": "धन्यवाद प्रशांत, तुमचा दिवस चांगला जावो.",
+      "slot": "A_CLOSE",
+      "start_ms": 37848,
+      "end_ms": 40968
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Devansh"
+  }
+}

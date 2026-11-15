@@ -1,0 +1,19 @@
+{
+  "call_id": "C74",
+  "call_time": "2026-11-14T10:40:00+05:30",
+  "borrower_id": "B1074",
+  "borrower_name": "ബിജു",
+  "agent_name": "രാഹുൽ",
+  "lender": "Suvidha Finance",
+  "language": "ml-IN",
+  "loan": {
+    "account": "LN79644151",
+    "product": "business loan",
+    "emi": 4750,
+    "overdue_emis": 3,
+    "late_fee": 800,
+    "total_due": 15050,
+    "days_past_due": 84
+  },
+  "preferred_window": null
+}

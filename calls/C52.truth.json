@@ -1,0 +1,65 @@
+{
+  "call_id": "C52",
+  "scenario": "threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ನಮಸ್ಕಾರ ರೇಖಾ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "ref": "ನಮಸ್ಕಾರ ರೇಖಾ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1169,
+      "end_ms": 8689
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "ref": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "slot": "B_ACK",
+      "start_ms": 9239,
+      "end_ms": 12279
+    },
+    {
+      "speaker": "agent",
+      "text": "ರೇಖಾ ಅವರೇ, ನಿಮ್ಮ two-wheeler loan ನಲ್ಲಿ ಎರಡು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹10,300.",
+      "ref": "ರೇಖಾ ಅವರೇ, ನಿಮ್ಮ two-wheeler loan ನಲ್ಲಿ ಎರಡು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹10,300.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12803,
+      "end_ms": 20883
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> ನೋಡಿ, ಹೋದ ತಿಂಗಳು ನನ್ನ ಕೆಲಸ ಹೋಯ್ತು. ಸ್ವಲ್ಪ time ಬೇಕು.",
+      "ref": "ನೋಡಿ, ಹೋದ ತಿಂಗಳು ನನ್ನ ಕೆಲಸ ಹೋಯ್ತು. ಸ್ವಲ್ಪ time ಬೇಕು.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 21166,
+      "end_ms": 27006
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> ಜಾಸ್ತಿ ಬುದ್ಧಿವಂತಿಕೆ ತೋರಿಸಬೇಡ! ನಾಳೆ ಒಳಗೆ ದುಡ್ಡು ಬರದಿದ್ರೆ ನಮ್ಮ ಹುಡುಗರು ಮನೆಗೆ ಬಂದು ಸಾಮಾನು ಎತ್ತಿಕೊಂಡು ಹೋಗ್ತಾರೆ.",
+      "ref": "ಜಾಸ್ತಿ ಬುದ್ಧಿವಂತಿಕೆ ತೋರಿಸಬೇಡ! ನಾಳೆ ಒಳಗೆ ದುಡ್ಡು ಬರದಿದ್ರೆ ನಮ್ಮ ಹುಡುಗರು ಮನೆಗೆ ಬಂದು ಸಾಮಾನು ಎತ್ತಿಕೊಂಡು ಹೋಗ್ತಾರೆ.",
+      "slot": "A_THREAT",
+      "start_ms": 27115,
+      "end_ms": 34555
+    },
+    {
+      "speaker": "borrower",
+      "text": "ನೀವು ನನ್ನ ಜೊತೆ ಹೀಗೆ ಮಾತಾಡಬಾರದು. ನಾನು complaint ಕೊಡ್ತೀನಿ.",
+      "ref": "ನೀವು ನನ್ನ ಜೊತೆ ಹೀಗೆ ಮಾತಾಡಬಾರದು. ನಾನು complaint ಕೊಡ್ತೀನಿ.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 35290,
+      "end_ms": 38970
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Kalpana"
+  }
+}

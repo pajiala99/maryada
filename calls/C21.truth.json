@@ -1,0 +1,73 @@
+{
+  "call_id": "C21",
+  "scenario": "no_disclosure",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਸਿਮਰਨ ਜੀ, ਮੈਂ Navjeevan Housing Finance ਤੋਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਡੇ loan account ਬਾਰੇ ਗੱਲ ਕਰਨੀ ਸੀ।",
+      "ref": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਸਿਮਰਨ ਜੀ, ਮੈਂ Navjeevan Housing Finance ਤੋਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਡੇ loan account ਬਾਰੇ ਗੱਲ ਕਰਨੀ ਸੀ।",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1247,
+      "end_ms": 9247
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਹੀ ਹਾਂ। ਦੱਸੋ।",
+      "ref": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਹੀ ਹਾਂ। ਦੱਸੋ।",
+      "slot": "B_ACK",
+      "start_ms": 9811,
+      "end_ms": 12771
+    },
+    {
+      "speaker": "agent",
+      "text": "ਸਿਮਰਨ ਜੀ, ਤੁਹਾਡੇ personal loan ਦੀਆਂ ਦੋ EMI pending ਨੇ। Late fee ਮਿਲਾ ਕੇ total ਬਕਾਇਆ ₹6,750 ਹੈ।",
+      "ref": "ਸਿਮਰਨ ਜੀ, ਤੁਹਾਡੇ personal loan ਦੀਆਂ ਦੋ EMI pending ਨੇ। Late fee ਮਿਲਾ ਕੇ total ਬਕਾਇਆ ₹6,750 ਹੈ।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 13385,
+      "end_ms": 22265
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> ਦੇਖੋ ਜੀ, ਮੇਰੀ job ਚਲੀ ਗਈ ਹੈ ਪਿਛਲੇ ਮਹੀਨੇ। ਥੋੜ੍ਹਾ time ਚਾਹੀਦਾ ਹੈ ਮੈਨੂੰ।",
+      "ref": "ਦੇਖੋ ਜੀ, ਮੇਰੀ job ਚਲੀ ਗਈ ਹੈ ਪਿਛਲੇ ਮਹੀਨੇ। ਥੋੜ੍ਹਾ time ਚਾਹੀਦਾ ਹੈ ਮੈਨੂੰ।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 22587,
+      "end_ms": 28907
+    },
+    {
+      "speaker": "agent",
+      "text": "ਕੋਈ ਗੱਲ ਨਹੀਂ ਜੀ, ਮੈਂ ਸਮਝਦਾ ਹਾਂ। ਕੀ ਤੁਸੀਂ ਹੁਣ ਇੱਕ EMI ਯਾਨੀ ₹3,200 ਭਰ ਸਕਦੇ ਹੋ? ਬਾਕੀ ਲਈ ਆਪਾਂ date ਪੱਕੀ ਕਰ ਲੈਂਦੇ ਹਾਂ।",
+      "ref": "ਕੋਈ ਗੱਲ ਨਹੀਂ ਜੀ, ਮੈਂ ਸਮਝਦਾ ਹਾਂ। ਕੀ ਤੁਸੀਂ ਹੁਣ ਇੱਕ EMI ਯਾਨੀ ₹3,200 ਭਰ ਸਕਦੇ ਹੋ? ਬਾਕੀ ਲਈ ਆਪਾਂ date ਪੱਕੀ ਕਰ ਲੈਂਦੇ ਹਾਂ।",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 29483,
+      "end_ms": 37243
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਚੰਗਾ ਜੀ, ਠੀਕ ਹੈ।",
+      "ref": "ਚੰਗਾ ਜੀ, ਠੀਕ ਹੈ।",
+      "slot": "B_CLOSE",
+      "start_ms": 37984,
+      "end_ms": 39584
+    },
+    {
+      "speaker": "agent",
+      "text": "ਠੀਕ ਹੈ ਜੀ, time ਦੇਣ ਲਈ ਧੰਨਵਾਦ। ਸਤ ਸ੍ਰੀ ਅਕਾਲ।",
+      "ref": "ਠੀਕ ਹੈ ਜੀ, time ਦੇਣ ਲਈ ਧੰਨਵਾਦ। ਸਤ ਸ੍ਰੀ ਅਕਾਲ।",
+      "slot": "A_CLOSE",
+      "start_ms": 40063,
+      "end_ms": 43503
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Kalpana"
+  }
+}

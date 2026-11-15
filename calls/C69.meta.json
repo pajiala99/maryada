@@ -1,0 +1,19 @@
+{
+  "call_id": "C69",
+  "call_time": "2026-11-14T15:10:00+05:30",
+  "borrower_id": "B1069",
+  "borrower_name": "પ્રિયંકા",
+  "agent_name": "ધવલ",
+  "lender": "Navjeevan Housing Finance",
+  "language": "gu-IN",
+  "loan": {
+    "account": "LN74615045",
+    "product": "business loan",
+    "emi": 9900,
+    "overdue_emis": 3,
+    "late_fee": 650,
+    "total_due": 30350,
+    "days_past_due": 85
+  },
+  "preferred_window": null
+}

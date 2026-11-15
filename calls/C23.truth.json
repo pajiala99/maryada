@@ -1,0 +1,73 @@
+{
+  "call_id": "C23",
+  "scenario": "pressed_at_wedding",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार Sir, Udaan Capital की तरफ़ से मनोज बोल रहा हूँ। क्या आप विकास जी हैं? यह पूरी conversation record की जा रही है।",
+      "ref": "नमस्कार Sir, Udaan Capital की तरफ़ से मनोज बोल रहा हूँ। क्या आप विकास जी हैं? यह पूरी conversation record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1206,
+      "end_ms": 7846
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 8427,
+      "end_ms": 10667
+    },
+    {
+      "speaker": "agent",
+      "text": "Sir, आपकी ₹9,900 की EMI इस महीने bounce हुई है और अभी total outstanding ₹10,700 है।",
+      "ref": "Sir, आपकी ₹9,900 की EMI इस महीने bounce हुई है और अभी total outstanding ₹10,700 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11007,
+      "end_ms": 19087
+    },
+    {
+      "speaker": "borrower",
+      "text": "अभी मेरी बहन की शादी का function चल रहा है, बारात आने वाली है।",
+      "ref": "अभी मेरी बहन की शादी का function चल रहा है, बारात आने वाली है।",
+      "slot": "B_WEDDING",
+      "start_ms": 19421,
+      "end_ms": 23261
+    },
+    {
+      "speaker": "agent",
+      "text": "देखिए वो आपका personal मामला है, उससे company को कोई मतलब नहीं। Payment आज ही चाहिए, अभी के अभी।",
+      "ref": "देखिए वो आपका personal मामला है, उससे company को कोई मतलब नहीं। Payment आज ही चाहिए, अभी के अभी।",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 23848,
+      "end_ms": 30728
+    },
+    {
+      "speaker": "borrower",
+      "text": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगा।",
+      "ref": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगा।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 31409,
+      "end_ms": 34689
+    },
+    {
+      "speaker": "agent",
+      "text": "कल तक payment हो जानी चाहिए, बस।",
+      "ref": "कल तक payment हो जानी चाहिए, बस।",
+      "slot": "A_HARD_CLOSE",
+      "start_ms": 35064,
+      "end_ms": 37384
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Prakash"
+  }
+}

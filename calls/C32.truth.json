@@ -1,0 +1,69 @@
+{
+  "call_id": "C32",
+  "scenario": "inflated_dues_and_shaming",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਹਰਜੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Navjeevan Housing Finance ਤੋਂ ਰਮਨ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "ref": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਹਰਜੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Navjeevan Housing Finance ਤੋਂ ਰਮਨ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 955,
+      "end_ms": 11115
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "ref": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "slot": "B_ACK",
+      "start_ms": 11664,
+      "end_ms": 14384
+    },
+    {
+      "speaker": "agent",
+      "text": "ਹਰਜੀਤ ਜੀ, ਤੁਹਾਡੇ home loan ਤੇ total ਬਕਾਇਆ ₹13,800 ਹੈ, ਤੇ ਇਹ ਪੂਰਾ amount ਅੱਜ ਹੀ ਜਮ੍ਹਾਂ ਕਰਵਾਉਣਾ ਪਵੇਗਾ।",
+      "ref": "ਹਰਜੀਤ ਜੀ, ਤੁਹਾਡੇ home loan ਤੇ total ਬਕਾਇਆ ₹13,800 ਹੈ, ਤੇ ਇਹ ਪੂਰਾ amount ਅੱਜ ਹੀ ਜਮ੍ਹਾਂ ਕਰਵਾਉਣਾ ਪਵੇਗਾ।",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 14841,
+      "end_ms": 22761
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਇੰਨਾ ਕਿਵੇਂ ਹੋ ਗਿਆ? ਮੇਰੇ ਹਿਸਾਬ ਨਾਲ ਤਾਂ ਇੰਨਾ amount ਨਹੀਂ ਬਣਦਾ। ਪਹਿਲਾਂ statement ਭੇਜੋ।",
+      "ref": "ਇੰਨਾ ਕਿਵੇਂ ਹੋ ਗਿਆ? ਮੇਰੇ ਹਿਸਾਬ ਨਾਲ ਤਾਂ ਇੰਨਾ amount ਨਹੀਂ ਬਣਦਾ। ਪਹਿਲਾਂ statement ਭੇਜੋ।",
+      "slot": "B_DISPUTE",
+      "start_ms": 23193,
+      "end_ms": 28473
+    },
+    {
+      "speaker": "agent",
+      "text": "ਠੀਕ ਹੈ, ਫਿਰ ਮੈਂ ਤੁਹਾਡੇ office ਵਿੱਚ ਤੁਹਾਡੇ manager ਨੂੰ call ਕਰ ਕੇ ਦੱਸਦਾ ਹਾਂ ਕਿ ਤੁਸੀਂ loan ਨਹੀਂ ਭਰ ਰਹੇ।",
+      "ref": "ਠੀਕ ਹੈ, ਫਿਰ ਮੈਂ ਤੁਹਾਡੇ office ਵਿੱਚ ਤੁਹਾਡੇ manager ਨੂੰ call ਕਰ ਕੇ ਦੱਸਦਾ ਹਾਂ ਕਿ ਤੁਸੀਂ loan ਨਹੀਂ ਭਰ ਰਹੇ।",
+      "slot": "A_THIRD_PARTY",
+      "start_ms": 29075,
+      "end_ms": 35075
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਤੁਸੀਂ ਮੇਰੇ ਨਾਲ ਇਸ ਤਰ੍ਹਾਂ ਗੱਲ ਨਹੀਂ ਕਰ ਸਕਦੇ। ਮੈਂ ਤੁਹਾਡੀ complaint ਕਰਾਂਗਾ।",
+      "ref": "ਤੁਸੀਂ ਮੇਰੇ ਨਾਲ ਇਸ ਤਰ੍ਹਾਂ ਗੱਲ ਨਹੀਂ ਕਰ ਸਕਦੇ। ਮੈਂ ਤੁਹਾਡੀ complaint ਕਰਾਂਗਾ।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 35812,
+      "end_ms": 39492
+    }
+  ],
+  "violations": [
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    },
+    {
+      "type": "THIRD_PARTY",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Devansh"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "call_id": "C40",
+  "call_time": "2026-11-10T16:30:00+05:30",
+  "borrower_id": "B1040",
+  "borrower_name": "முருகன்",
+  "agent_name": "விக்னேஷ்",
+  "lender": "Udaan Capital",
+  "language": "ta-IN",
+  "loan": {
+    "account": "LN55065739",
+    "product": "business loan",
+    "emi": 12400,
+    "overdue_emis": 1,
+    "late_fee": 500,
+    "total_due": 12900,
+    "days_past_due": 20
+  },
+  "preferred_window": null
+}

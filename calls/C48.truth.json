@@ -1,0 +1,69 @@
+{
+  "call_id": "C48",
+  "scenario": "third_party_late_call",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "నమస్కారం లావణ్య గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "ref": "నమస్కారం లావణ్య గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1062,
+      "end_ms": 8982
+    },
+    {
+      "speaker": "borrower",
+      "text": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "ref": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "slot": "B_ACK",
+      "start_ms": 9542,
+      "end_ms": 12902
+    },
+    {
+      "speaker": "agent",
+      "text": "లావణ్య గారు, మీ two-wheeler loan లో రెండు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹12,000.",
+      "ref": "లావణ్య గారు, మీ two-wheeler loan లో రెండు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹12,000.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 13423,
+      "end_ms": 21743
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> చూడండి, గత నెల నా ఉద్యోగం పోయింది. కొంచెం time కావాలి.",
+      "ref": "చూడండి, గత నెల నా ఉద్యోగం పోయింది. కొంచెం time కావాలి.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 22349,
+      "end_ms": 27949
+    },
+    {
+      "speaker": "agent",
+      "text": "సరే, అయితే మీ office లో మీ manager కి మీరు loan కట్టడం లేదని చెప్తాను.",
+      "ref": "సరే, అయితే మీ office లో మీ manager కి మీరు loan కట్టడం లేదని చెప్తాను.",
+      "slot": "A_THIRD_PARTY",
+      "start_ms": 28536,
+      "end_ms": 32776
+    },
+    {
+      "speaker": "borrower",
+      "text": "మీరు నాతో ఇలా మాట్లాడకూడదు. నేను complaint ఇస్తాను.",
+      "ref": "మీరు నాతో ఇలా మాట్లాడకూడదు. నేను complaint ఇస్తాను.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 33462,
+      "end_ms": 37062
+    }
+  ],
+  "violations": [
+    {
+      "type": "THIRD_PARTY",
+      "turn_index": 4
+    },
+    {
+      "type": "OUTSIDE_HOURS",
+      "turn_index": 0
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Chetana"
+  }
+}

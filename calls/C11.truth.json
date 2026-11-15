@@ -1,0 +1,55 @@
+{
+  "call_id": "C11",
+  "scenario": "preferred_time_captured",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਹਰਜੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Navjeevan Housing Finance ਤੋਂ ਰਮਨ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "ref": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਹਰਜੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Navjeevan Housing Finance ਤੋਂ ਰਮਨ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 940,
+      "end_ms": 10860
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "ref": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "slot": "B_ACK",
+      "start_ms": 11375,
+      "end_ms": 13295
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਦਿਨੇ ਮੈਂ ਖੇਤ ਵਿੱਚ busy ਹੁੰਦਾ ਹਾਂ। ਮੈਨੂੰ ਰਾਤ ਅੱਠ ਵਜੇ ਤੋਂ ਬਾਅਦ ਹੀ phone ਕਰਿਆ ਕਰੋ।",
+      "ref": "ਦਿਨੇ ਮੈਂ ਖੇਤ ਵਿੱਚ busy ਹੁੰਦਾ ਹਾਂ। ਮੈਨੂੰ ਰਾਤ ਅੱਠ ਵਜੇ ਤੋਂ ਬਾਅਦ ਹੀ phone ਕਰਿਆ ਕਰੋ।",
+      "slot": "B_PREF_TIME",
+      "start_ms": 13857,
+      "end_ms": 18497
+    },
+    {
+      "speaker": "agent",
+      "text": "ਠੀਕ ਹੈ ਜੀ, ਮੈਂ note ਕਰ ਲੈਂਦਾ ਹਾਂ। ਅੱਗੇ ਤੋਂ ਤੁਹਾਨੂੰ ਰਾਤ ਅੱਠ ਵਜੇ ਤੋਂ ਬਾਅਦ ਹੀ call ਕੀਤੀ ਜਾਵੇਗੀ। ਧੰਨਵਾਦ।",
+      "ref": "ਠੀਕ ਹੈ ਜੀ, ਮੈਂ note ਕਰ ਲੈਂਦਾ ਹਾਂ। ਅੱਗੇ ਤੋਂ ਤੁਹਾਨੂੰ ਰਾਤ ਅੱਠ ਵਜੇ ਤੋਂ ਬਾਅਦ ਹੀ call ਕੀਤੀ ਜਾਵੇਗੀ। ਧੰਨਵਾਦ।",
+      "slot": "A_ACK_PREF",
+      "start_ms": 18791,
+      "end_ms": 25511
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਠੀਕ ਹੈ ਜੀ, ਧੰਨਵਾਦ।",
+      "ref": "ਠੀਕ ਹੈ ਜੀ, ਧੰਨਵਾਦ।",
+      "slot": "B_CLOSE",
+      "start_ms": 25860,
+      "end_ms": 27540
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": [
+    "20:00",
+    "21:00"
+  ],
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Shubham"
+  }
+}

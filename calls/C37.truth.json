@@ -1,0 +1,68 @@
+{
+  "call_id": "C37",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "வணக்கம் முருகன் அவர்களே, நான் Suvidha Finance லிருந்து விக்னேஷ் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "ref": "வணக்கம் முருகன் அவர்களே, நான் Suvidha Finance லிருந்து விக்னேஷ் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1210,
+      "end_ms": 8810
+    },
+    {
+      "speaker": "borrower",
+      "text": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "ref": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "slot": "B_ACK",
+      "start_ms": 9401,
+      "end_ms": 12441
+    },
+    {
+      "speaker": "agent",
+      "text": "முருகன் அவர்களே, உங்கள் two-wheeler loan இல் மூன்று EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹10,400.",
+      "ref": "முருகன் அவர்களே, உங்கள் two-wheeler loan இல் மூன்று EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹10,400.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12754,
+      "end_ms": 21714
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> போன மாதம் என் வேலை போய்விட்டது. கொஞ்சம் time வேண்டும்.",
+      "ref": "போன மாதம் என் வேலை போய்விட்டது. கொஞ்சம் time வேண்டும்.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 22324,
+      "end_ms": 27204
+    },
+    {
+      "speaker": "agent",
+      "text": "பரவாயில்லை, புரிகிறது. இப்போது ஒரு EMI அதாவது ₹3,200 கட்ட முடியுமா? மீதிக்கு ஒரு date முடிவு செய்யலாம்.",
+      "ref": "பரவாயில்லை, புரிகிறது. இப்போது ஒரு EMI அதாவது ₹3,200 கட்ட முடியுமா? மீதிக்கு ஒரு date முடிவு செய்யலாம்.",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 27634,
+      "end_ms": 35634
+    },
+    {
+      "speaker": "borrower",
+      "text": "சரி, நன்றி.",
+      "ref": "சரி, நன்றி.",
+      "slot": "B_CLOSE",
+      "start_ms": 36125,
+      "end_ms": 37325
+    },
+    {
+      "speaker": "agent",
+      "text": "நன்றி முருகன் அவர்களே, நல்ல நாள் ஆகட்டும்.",
+      "ref": "நன்றி முருகன் அவர்களே, நல்ல நாள் ஆகட்டும்.",
+      "slot": "A_CLOSE",
+      "start_ms": 38066,
+      "end_ms": 40946
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Yashraj"
+  }
+}

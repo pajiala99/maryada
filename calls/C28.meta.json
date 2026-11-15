@@ -1,0 +1,19 @@
+{
+  "call_id": "C28",
+  "call_time": "2026-11-13T15:20:00+05:30",
+  "borrower_id": "B1028",
+  "borrower_name": "ਕੁਲਦੀਪ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Udaan Capital",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN61141573",
+    "product": "two-wheeler loan",
+    "emi": 4750,
+    "overdue_emis": 2,
+    "late_fee": 500,
+    "total_due": 10000,
+    "days_past_due": 54
+  },
+  "preferred_window": null
+}

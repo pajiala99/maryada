@@ -1,0 +1,19 @@
+{
+  "call_id": "C21",
+  "call_time": "2026-11-11T09:15:00+05:30",
+  "borrower_id": "B1021",
+  "borrower_name": "ਸਿਮਰਨ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Navjeevan Housing Finance",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN27589630",
+    "product": "personal loan",
+    "emi": 3200,
+    "overdue_emis": 2,
+    "late_fee": 350,
+    "total_due": 6750,
+    "days_past_due": 49
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,60 @@
+{
+  "call_id": "C50",
+  "scenario": "dispute_handled",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ನಮಸ್ಕಾರ ಸುರೇಶ್ ಅವರೇ, ನಾನು Suvidha Finance ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "ref": "ನಮಸ್ಕಾರ ಸುರೇಶ್ ಅವರೇ, ನಾನು Suvidha Finance ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1250,
+      "end_ms": 7970
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "ref": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "slot": "B_ACK",
+      "start_ms": 8641,
+      "end_ms": 11361
+    },
+    {
+      "speaker": "agent",
+      "text": "ಸುರೇಶ್ ಅವರೇ, ನಿಮ್ಮ business loan ನಲ್ಲಿ ಎರಡು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹10,000.",
+      "ref": "ಸುರೇಶ್ ಅವರೇ, ನಿಮ್ಮ business loan ನಲ್ಲಿ ಎರಡು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹10,000.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11899,
+      "end_ms": 19819
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಆದರೆ ನಾನು ಹೋದ ವಾರನೇ ಒಂದು EMI ಕಟ್ಟಿದ್ದೀನಿ. ನಿಮ್ಮ record update ಆಗಿಲ್ವಾ?",
+      "ref": "ಆದರೆ ನಾನು ಹೋದ ವಾರನೇ ಒಂದು EMI ಕಟ್ಟಿದ್ದೀನಿ. ನಿಮ್ಮ record update ಆಗಿಲ್ವಾ?",
+      "slot": "B_DISPUTE",
+      "start_ms": 20556,
+      "end_ms": 25836
+    },
+    {
+      "speaker": "agent",
+      "text": "ಸರಿ, ಈಗಲೇ statement ಕಳಿಸ್ತೀನಿ. Check ಮಾಡಿ ಮಾತಾಡೋಣ.",
+      "ref": "ಸರಿ, ಈಗಲೇ statement ಕಳಿಸ್ತೀನಿ. Check ಮಾಡಿ ಮಾತಾಡೋಣ.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 26228,
+      "end_ms": 29588
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಸರಿ, ಧನ್ಯವಾದ.",
+      "ref": "ಸರಿ, ಧನ್ಯವಾದ.",
+      "slot": "B_CLOSE",
+      "start_ms": 30172,
+      "end_ms": 32092
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Prakash"
+  }
+}

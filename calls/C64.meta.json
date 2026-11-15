@@ -1,0 +1,19 @@
+{
+  "call_id": "C64",
+  "call_time": "2026-11-14T16:30:00+05:30",
+  "borrower_id": "B1064",
+  "borrower_name": "अश्विनी",
+  "agent_name": "अमोल",
+  "lender": "Udaan Capital",
+  "language": "mr-IN",
+  "loan": {
+    "account": "LN85067350",
+    "product": "business loan",
+    "emi": 8300,
+    "overdue_emis": 2,
+    "late_fee": 800,
+    "total_due": 17400,
+    "days_past_due": 49
+  },
+  "preferred_window": null
+}

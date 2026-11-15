@@ -1,0 +1,65 @@
+{
+  "call_id": "C19",
+  "scenario": "pressed_in_bereavement",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं अंकित बोल रहा हूँ Suvidha Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "ref": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं अंकित बोल रहा हूँ Suvidha Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1077,
+      "end_ms": 11077
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ, सुनीता ही हूँ। कहिए।",
+      "ref": "हाँ, सुनीता ही हूँ। कहिए।",
+      "slot": "B_ACK",
+      "start_ms": 11792,
+      "end_ms": 14112
+    },
+    {
+      "speaker": "agent",
+      "text": "आपके account में ₹8,800 का overdue amount दिख रहा है, जिसमें एक EMI और late charges शामिल हैं।",
+      "ref": "आपके account में ₹8,800 का overdue amount दिख रहा है, जिसमें एक EMI और late charges शामिल हैं।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 14521,
+      "end_ms": 21961
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> देखिए, मेरी माँ गुज़र गई हैं पिछले हफ़्ते। अभी मैं कुछ सोचने की हालत में नहीं हूँ।",
+      "ref": "देखिए, मेरी माँ गुज़र गई हैं पिछले हफ़्ते। अभी मैं कुछ सोचने की हालत में नहीं हूँ।",
+      "slot": "B_BEREAVEMENT",
+      "start_ms": 22269,
+      "end_ms": 29469
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, लेकिन पहले payment कर दीजिए, फिर जो करना है कीजिए। मैं phone नहीं रखूँगा जब तक आप pay नहीं करते।",
+      "ref": "ठीक है, लेकिन पहले payment कर दीजिए, फिर जो करना है कीजिए। मैं phone नहीं रखूँगा जब तक आप pay नहीं करते।",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 29895,
+      "end_ms": 37015
+    },
+    {
+      "speaker": "borrower",
+      "text": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगी।",
+      "ref": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगी।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 37632,
+      "end_ms": 41392
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Tarika"
+  }
+}

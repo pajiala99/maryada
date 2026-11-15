@@ -1,0 +1,65 @@
+{
+  "call_id": "C70",
+  "scenario": "threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "નમસ્તે ભાવેશ, હું Navjeevan Housing Finance તરફથી જીગ્નેશ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "ref": "નમસ્તે ભાવેશ, હું Navjeevan Housing Finance તરફથી જીગ્નેશ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1058,
+      "end_ms": 8658
+    },
+    {
+      "speaker": "borrower",
+      "text": "હા, હું જ બોલું છું. બોલો.",
+      "ref": "હા, હું જ બોલું છું. બોલો.",
+      "slot": "B_ACK",
+      "start_ms": 9279,
+      "end_ms": 11519
+    },
+    {
+      "speaker": "agent",
+      "text": "ભાવેશ, તમારા home loan ના એક EMI pending છે. Late fee સાથે કુલ બાકી ₹5,550 છે.",
+      "ref": "ભાવેશ, તમારા home loan ના એક EMI pending છે. Late fee સાથે કુલ બાકી ₹5,550 છે.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11950,
+      "end_ms": 20510
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> જુઓ, ગયા મહિને મારી નોકરી જતી રહી. થોડો time જોઈએ છે.",
+      "ref": "જુઓ, ગયા મહિને મારી નોકરી જતી રહી. થોડો time જોઈએ છે.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 21244,
+      "end_ms": 26284
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> બહુ હોશિયારી ના બતાવો! કાલ સુધીમાં પૈસા નહીં આવે તો અમારા માણસો ઘરે આવીને સામાન ઉઠાવી જશે.",
+      "ref": "બહુ હોશિયારી ના બતાવો! કાલ સુધીમાં પૈસા નહીં આવે તો અમારા માણસો ઘરે આવીને સામાન ઉઠાવી જશે.",
+      "slot": "A_THREAT",
+      "start_ms": 26410,
+      "end_ms": 33050
+    },
+    {
+      "speaker": "borrower",
+      "text": "તમે મારી સાથે આવી રીતે વાત ના કરી શકો. હું complaint કરીશ.",
+      "ref": "તમે મારી સાથે આવી રીતે વાત ના કરી શકો. હું complaint કરીશ.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 33545,
+      "end_ms": 37225
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Harshad"
+  }
+}

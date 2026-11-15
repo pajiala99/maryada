@@ -1,0 +1,65 @@
+{
+  "call_id": "C64",
+  "scenario": "threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार अश्विनी, मी Udaan Capital मधून अमोल बोलतोय. आपल्याला सांगू इच्छितो की हा call record केला जात आहे.",
+      "ref": "नमस्कार अश्विनी, मी Udaan Capital मधून अमोल बोलतोय. आपल्याला सांगू इच्छितो की हा call record केला जात आहे.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1323,
+      "end_ms": 8763
+    },
+    {
+      "speaker": "borrower",
+      "text": "हो, मीच बोलतेय. सांगा.",
+      "ref": "हो, मीच बोलतेय. सांगा.",
+      "slot": "B_ACK",
+      "start_ms": 9289,
+      "end_ms": 11609
+    },
+    {
+      "speaker": "agent",
+      "text": "अश्विनी, तुमच्या business loan चे दोन EMI pending आहेत. Late fee धरून एकूण थकबाकी ₹17,400 आहे.",
+      "ref": "अश्विनी, तुमच्या business loan चे दोन EMI pending आहेत. Late fee धरून एकूण थकबाकी ₹17,400 आहे.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11920,
+      "end_ms": 20480
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> बघा, मागच्या महिन्यात माझी नोकरी गेली. थोडा time हवा आहे.",
+      "ref": "बघा, मागच्या महिन्यात माझी नोकरी गेली. थोडा time हवा आहे.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 20909,
+      "end_ms": 26669
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> जास्त शहाणपणा दाखवू नका! उद्यापर्यंत पैसे आले नाहीत तर आमची माणसं घरी येऊन सामान उचलून नेतील.",
+      "ref": "जास्त शहाणपणा दाखवू नका! उद्यापर्यंत पैसे आले नाहीत तर आमची माणसं घरी येऊन सामान उचलून नेतील.",
+      "slot": "A_THREAT",
+      "start_ms": 26807,
+      "end_ms": 33847
+    },
+    {
+      "speaker": "borrower",
+      "text": "तुम्ही माझ्याशी असं बोलू शकत नाही. मी complaint करेन.",
+      "ref": "तुम्ही माझ्याशी असं बोलू शकत नाही. मी complaint करेन.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 34166,
+      "end_ms": 37686
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Kalpana"
+  }
+}

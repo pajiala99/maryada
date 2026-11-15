@@ -1,0 +1,73 @@
+{
+  "call_id": "C18",
+  "scenario": "third_party",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार Madam, Navjeevan Housing Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप नेहा जी हैं? यह पूरी conversation record की जा रही है।",
+      "ref": "नमस्कार Madam, Navjeevan Housing Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप नेहा जी हैं? यह पूरी conversation record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1067,
+      "end_ms": 8507
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ, नेहा ही हूँ। कहिए।",
+      "ref": "हाँ, नेहा ही हूँ। कहिए।",
+      "slot": "B_ACK",
+      "start_ms": 9124,
+      "end_ms": 11124
+    },
+    {
+      "speaker": "agent",
+      "text": "नेहा जी, आपके personal loan की दो EMI pending हैं। Late fee मिलाकर total बकाया ₹10,000 है।",
+      "ref": "नेहा जी, आपके personal loan की दो EMI pending हैं। Late fee मिलाकर total बकाया ₹10,000 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11536,
+      "end_ms": 18336
+    },
+    {
+      "speaker": "borrower",
+      "text": "Sir, salary दो महीने से delay हो रही है। मैं भागने वाली नहीं हूँ, बस थोड़ी मोहलत दे दीजिए।",
+      "ref": "Sir, salary दो महीने से delay हो रही है। मैं भागने वाली नहीं हूँ, बस थोड़ी मोहलत दे दीजिए।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 18655,
+      "end_ms": 24735
+    },
+    {
+      "speaker": "agent",
+      "text": "हम आपकी photo defaulter लिखकर आपके WhatsApp groups और Facebook पर डाल देंगे, फिर देखना।",
+      "ref": "हम आपकी photo defaulter लिखकर आपके WhatsApp groups और Facebook पर डाल देंगे, फिर देखना।",
+      "slot": "A_THIRD_PARTY",
+      "start_ms": 25471,
+      "end_ms": 30751
+    },
+    {
+      "speaker": "borrower",
+      "text": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगी।",
+      "ref": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगी।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 31296,
+      "end_ms": 34576
+    },
+    {
+      "speaker": "agent",
+      "text": "कल तक payment हो जानी चाहिए, बस।",
+      "ref": "कल तक payment हो जानी चाहिए, बस।",
+      "slot": "A_HARD_CLOSE",
+      "start_ms": 35159,
+      "end_ms": 37239
+    }
+  ],
+  "violations": [
+    {
+      "type": "THIRD_PARTY",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Shivani"
+  }
+}

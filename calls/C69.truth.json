@@ -1,0 +1,69 @@
+{
+  "call_id": "C69",
+  "scenario": "no_disclosure_inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "નમસ્તે પ્રિયંકા, હું Navjeevan Housing Finance તરફથી ધવલ બોલું છું. તમારા loan account વિશે વાત કરવી હતી.",
+      "ref": "નમસ્તે પ્રિયંકા, હું Navjeevan Housing Finance તરફથી ધવલ બોલું છું. તમારા loan account વિશે વાત કરવી હતી.",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1152,
+      "end_ms": 8032
+    },
+    {
+      "speaker": "borrower",
+      "text": "હા, હું જ બોલું છું. બોલો.",
+      "ref": "હા, હું જ બોલું છું. બોલો.",
+      "slot": "B_ACK",
+      "start_ms": 8560,
+      "end_ms": 10960
+    },
+    {
+      "speaker": "agent",
+      "text": "પ્રિયંકા, તમારા business loan પર કુલ બાકી ₹44,700 છે. આ પૂરી રકમ આજે જ ભરવી પડશે.",
+      "ref": "પ્રિયંકા, તમારા business loan પર કુલ બાકી ₹44,700 છે. આ પૂરી રકમ આજે જ ભરવી પડશે.",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11646,
+      "end_ms": 19086
+    },
+    {
+      "speaker": "borrower",
+      "text": "પણ મેં તો ગયા અઠવાડિયે જ એક EMI ભરી દીધી છે. તમારું record update નથી થયું?",
+      "ref": "પણ મેં તો ગયા અઠવાડિયે જ એક EMI ભરી દીધી છે. તમારું record update નથી થયું?",
+      "slot": "B_DISPUTE",
+      "start_ms": 19712,
+      "end_ms": 25552
+    },
+    {
+      "speaker": "agent",
+      "text": "સારું, હું હમણાં જ statement મોકલું છું. Check કરી લો, પછી વાત કરીએ.",
+      "ref": "સારું, હું હમણાં જ statement મોકલું છું. Check કરી લો, પછી વાત કરીએ.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 26055,
+      "end_ms": 30615
+    },
+    {
+      "speaker": "borrower",
+      "text": "સારું, આભાર.",
+      "ref": "સારું, આભાર.",
+      "slot": "B_CLOSE",
+      "start_ms": 31279,
+      "end_ms": 33039
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Kalpana"
+  }
+}

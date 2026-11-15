@@ -1,0 +1,19 @@
+{
+  "call_id": "C07",
+  "call_time": "2026-11-12T17:45:00+05:30",
+  "borrower_id": "B1007",
+  "borrower_name": "नेहा",
+  "agent_name": "अंकित",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN76159196",
+    "product": "business loan",
+    "emi": 3200,
+    "overdue_emis": 2,
+    "late_fee": 500,
+    "total_due": 6900,
+    "days_past_due": 53
+  },
+  "preferred_window": null
+}

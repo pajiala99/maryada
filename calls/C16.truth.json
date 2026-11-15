@@ -1,0 +1,65 @@
+{
+  "call_id": "C16",
+  "scenario": "inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello सुनीता जी, मैं Navjeevan Housing Finance से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "ref": "Hello सुनीता जी, मैं Navjeevan Housing Finance से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1146,
+      "end_ms": 8266
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी हाँ, बोलिए क्या बात है?",
+      "ref": "जी हाँ, बोलिए क्या बात है?",
+      "slot": "B_ACK",
+      "start_ms": 8748,
+      "end_ms": 11068
+    },
+    {
+      "speaker": "agent",
+      "text": "सुनीता जी, आपके personal loan पर total बकाया ₹25,500 है, और यह पूरा amount आज ही जमा करना होगा।",
+      "ref": "सुनीता जी, आपके personal loan पर total बकाया ₹25,500 है, और यह पूरा amount आज ही जमा करना होगा।",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11392,
+      "end_ms": 18912
+    },
+    {
+      "speaker": "borrower",
+      "text": "लेकिन मैंने तो पिछले हफ़्ते ही एक EMI भर दी थी। आपका record update नहीं है क्या?",
+      "ref": "लेकिन मैंने तो पिछले हफ़्ते ही एक EMI भर दी थी। आपका record update नहीं है क्या?",
+      "slot": "B_DISPUTE",
+      "start_ms": 19356,
+      "end_ms": 23916
+    },
+    {
+      "speaker": "agent",
+      "text": "जी बिल्कुल, मैं अभी आपको statement WhatsApp पर भेज देता हूँ। आप check कर लीजिए, फिर बात करते हैं।",
+      "ref": "जी बिल्कुल, मैं अभी आपको statement WhatsApp पर भेज देता हूँ। आप check कर लीजिए, फिर बात करते हैं।",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 24488,
+      "end_ms": 30568
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक है, धन्यवाद।",
+      "ref": "ठीक है, धन्यवाद।",
+      "slot": "B_CLOSE",
+      "start_ms": 30858,
+      "end_ms": 32458
+    }
+  ],
+  "violations": [
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Riyaa"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "call_id": "C20",
+  "scenario": "late_call",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं रोहित बोल रहा हूँ Udaan Capital से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "ref": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं रोहित बोल रहा हूँ Udaan Capital से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1011,
+      "end_ms": 9971
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी हाँ, बोलिए क्या बात है?",
+      "ref": "जी हाँ, बोलिए क्या बात है?",
+      "slot": "B_ACK",
+      "start_ms": 10468,
+      "end_ms": 12308
+    },
+    {
+      "speaker": "agent",
+      "text": "सुनीता जी, आपके business loan की तीन EMI pending हैं। Late fee मिलाकर total बकाया ₹14,600 है।",
+      "ref": "सुनीता जी, आपके business loan की तीन EMI pending हैं। Late fee मिलाकर total बकाया ₹14,600 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12645,
+      "end_ms": 20245
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ मुझे पता है। Salary आते ही दो-तीन दिन में भर दूँगी।",
+      "ref": "हाँ मुझे पता है। Salary आते ही दो-तीन दिन में भर दूँगी।",
+      "slot": "B_WILL_PAY",
+      "start_ms": 20771,
+      "end_ms": 24451
+    },
+    {
+      "speaker": "agent",
+      "text": "धन्यवाद सुनीता जी, आपका दिन शुभ हो।",
+      "ref": "धन्यवाद सुनीता जी, आपका दिन शुभ हो।",
+      "slot": "A_CLOSE",
+      "start_ms": 24923,
+      "end_ms": 27403
+    }
+  ],
+  "violations": [
+    {
+      "type": "OUTSIDE_HOURS",
+      "turn_index": 0
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Lakshmi"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "call_id": "C04",
+  "call_time": "2026-11-14T12:40:00+05:30",
+  "borrower_id": "B1004",
+  "borrower_name": "अमित",
+  "agent_name": "मनोज",
+  "lender": "Navjeevan Housing Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN38645165",
+    "product": "home loan",
+    "emi": 3200,
+    "overdue_emis": 2,
+    "late_fee": 500,
+    "total_due": 6900,
+    "days_past_due": 59
+  },
+  "preferred_window": null
+}

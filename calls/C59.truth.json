@@ -1,0 +1,65 @@
+{
+  "call_id": "C59",
+  "scenario": "pressed_in_bereavement",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "নমস্কার রুমা, আমি Suvidha Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "ref": "নমস্কার রুমা, আমি Suvidha Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1156,
+      "end_ms": 7796
+    },
+    {
+      "speaker": "borrower",
+      "text": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "ref": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "slot": "B_ACK",
+      "start_ms": 8464,
+      "end_ms": 11104
+    },
+    {
+      "speaker": "agent",
+      "text": "রুমা, আপনার two-wheeler loan-এর একটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹7,350।",
+      "ref": "রুমা, আপনার two-wheeler loan-এর একটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹7,350।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11439,
+      "end_ms": 19839
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sniffles> পরশু আমার বাবা মারা গেছেন। এখন বাড়িতে শ্রাদ্ধের কাজ চলছে।",
+      "ref": "পরশু আমার বাবা মারা গেছেন। এখন বাড়িতে শ্রাদ্ধের কাজ চলছে।",
+      "slot": "B_BEREAVEMENT",
+      "start_ms": 20296,
+      "end_ms": 25816
+    },
+    {
+      "speaker": "agent",
+      "text": "ওটা আপনার personal ব্যাপার, company-র তাতে কিছু যায় আসে না। Payment আজকেই চাই।",
+      "ref": "ওটা আপনার personal ব্যাপার, company-র তাতে কিছু যায় আসে না। Payment আজকেই চাই।",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 26184,
+      "end_ms": 31624
+    },
+    {
+      "speaker": "borrower",
+      "text": "আপনি আমার সাথে এভাবে কথা বলতে পারেন না। আমি complaint করব।",
+      "ref": "আপনি আমার সাথে এভাবে কথা বলতে পারেন না। আমি complaint করব।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 31979,
+      "end_ms": 35979
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Vasudha"
+  }
+}

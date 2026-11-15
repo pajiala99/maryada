@@ -1,0 +1,65 @@
+{
+  "call_id": "C76",
+  "scenario": "threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "നമസ്കാരം ദിവ്യ, ഞാൻ Navjeevan Housing Finance ൽ നിന്ന് വിനീത് ആണ് സംസാരിക്കുന്നത്. ഈ call record ചെയ്യുന്നുണ്ടെന്ന് അറിയിക്കുന്നു.",
+      "ref": "നമസ്കാരം ദിവ്യ, ഞാൻ Navjeevan Housing Finance ൽ നിന്ന് വിനീത് ആണ് സംസാരിക്കുന്നത്. ഈ call record ചെയ്യുന്നുണ്ടെന്ന് അറിയിക്കുന്നു.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1258,
+      "end_ms": 8618
+    },
+    {
+      "speaker": "borrower",
+      "text": "അതെ, ഞാൻ തന്നെയാണ്. പറയൂ.",
+      "ref": "അതെ, ഞാൻ തന്നെയാണ്. പറയൂ.",
+      "slot": "B_ACK",
+      "start_ms": 9362,
+      "end_ms": 11842
+    },
+    {
+      "speaker": "agent",
+      "text": "ദിവ്യ, നിങ്ങളുടെ personal loan ൽ മൂന്ന് EMI pending ആണ്. Late fee ചേർത്ത് ആകെ കുടിശ്ശിക ₹17,450 ആണ്.",
+      "ref": "ദിവ്യ, നിങ്ങളുടെ personal loan ൽ മൂന്ന് EMI pending ആണ്. Late fee ചേർത്ത് ആകെ കുടിശ്ശിക ₹17,450 ആണ്.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12442,
+      "end_ms": 21802
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> കഴിഞ്ഞ മാസം എന്റെ ജോലി പോയി. കുറച്ച് time വേണം.",
+      "ref": "കഴിഞ്ഞ മാസം എന്റെ ജോലി പോയി. കുറച്ച് time വേണം.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 22421,
+      "end_ms": 26901
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> കൂടുതൽ ബുദ്ധി കാണിക്കണ്ട! നാളെക്കുള്ളിൽ പണം വന്നില്ലെങ്കിൽ ഞങ്ങളുടെ ആളുകൾ വീട്ടിൽ വന്ന് സാധനങ്ങൾ എടുത്തുകൊണ്ടുപോകും.",
+      "ref": "കൂടുതൽ ബുദ്ധി കാണിക്കണ്ട! നാളെക്കുള്ളിൽ പണം വന്നില്ലെങ്കിൽ ഞങ്ങളുടെ ആളുകൾ വീട്ടിൽ വന്ന് സാധനങ്ങൾ എടുത്തുകൊണ്ടുപോകും.",
+      "slot": "A_THREAT",
+      "start_ms": 26968,
+      "end_ms": 33368
+    },
+    {
+      "speaker": "borrower",
+      "text": "നിങ്ങൾക്ക് എന്നോട് ഇങ്ങനെ സംസാരിക്കാൻ പറ്റില്ല. ഞാൻ complaint കൊടുക്കും.",
+      "ref": "നിങ്ങൾക്ക് എന്നോട് ഇങ്ങനെ സംസാരിക്കാൻ പറ്റില്ല. ഞാൻ complaint കൊടുക്കും.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 33793,
+      "end_ms": 37473
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Chetana"
+  }
+}

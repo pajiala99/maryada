@@ -1,0 +1,73 @@
+{
+  "call_id": "C15",
+  "scenario": "no_disclosure",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello, पूजा जी बोल रही हैं? मैं मनोज बोल रहा हूँ Navjeevan Housing Finance से, आपके loan account के बारे में बात करनी थी।",
+      "ref": "Hello, पूजा जी बोल रही हैं? मैं मनोज बोल रहा हूँ Navjeevan Housing Finance से, आपके loan account के बारे में बात करनी थी।",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1205,
+      "end_ms": 8165
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रही हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रही हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 8828,
+      "end_ms": 11548
+    },
+    {
+      "speaker": "agent",
+      "text": "Madam, आपकी ₹4,750 की EMI इस महीने bounce हुई है और अभी total outstanding ₹10,150 है।",
+      "ref": "Madam, आपकी ₹4,750 की EMI इस महीने bounce हुई है और अभी total outstanding ₹10,150 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11990,
+      "end_ms": 20710
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक है, मैं इस Friday तक payment कर दूँगी।",
+      "ref": "ठीक है, मैं इस Friday तक payment कर दूँगी।",
+      "slot": "B_WILL_PAY",
+      "start_ms": 21011,
+      "end_ms": 23811
+    },
+    {
+      "speaker": "agent",
+      "text": "कोई बात नहीं, मैं समझता हूँ। क्या आप अभी एक EMI यानी ₹4,750 भर सकते हैं? बाकी के लिए हम date तय कर लेते हैं।",
+      "ref": "कोई बात नहीं, मैं समझता हूँ। क्या आप अभी एक EMI यानी ₹4,750 भर सकते हैं? बाकी के लिए हम date तय कर लेते हैं।",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 24360,
+      "end_ms": 33160
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी ठीक है।",
+      "ref": "जी ठीक है।",
+      "slot": "B_CLOSE",
+      "start_ms": 33508,
+      "end_ms": 34708
+    },
+    {
+      "speaker": "agent",
+      "text": "धन्यवाद पूजा जी, आपका दिन शुभ हो।",
+      "ref": "धन्यवाद पूजा जी, आपका दिन शुभ हो।",
+      "slot": "A_CLOSE",
+      "start_ms": 35326,
+      "end_ms": 37486
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Kalpana"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "call_id": "C17",
+  "call_time": "2026-11-12T16:00:00+05:30",
+  "borrower_id": "B1017",
+  "borrower_name": "कविता",
+  "agent_name": "रोहित",
+  "lender": "Navjeevan Housing Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN62768558",
+    "product": "two-wheeler loan",
+    "emi": 12400,
+    "overdue_emis": 3,
+    "late_fee": 800,
+    "total_due": 38000,
+    "days_past_due": 88
+  },
+  "preferred_window": null
+}

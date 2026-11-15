@@ -1,0 +1,19 @@
+{
+  "call_id": "C23",
+  "call_time": "2026-11-13T18:10:00+05:30",
+  "borrower_id": "B1023",
+  "borrower_name": "विकास",
+  "agent_name": "मनोज",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN28256308",
+    "product": "home loan",
+    "emi": 9900,
+    "overdue_emis": 1,
+    "late_fee": 800,
+    "total_due": 10700,
+    "days_past_due": 22
+  },
+  "preferred_window": null
+}

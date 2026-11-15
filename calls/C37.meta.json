@@ -1,0 +1,19 @@
+{
+  "call_id": "C37",
+  "call_time": "2026-11-12T11:20:00+05:30",
+  "borrower_id": "B1037",
+  "borrower_name": "முருகன்",
+  "agent_name": "விக்னேஷ்",
+  "lender": "Suvidha Finance",
+  "language": "ta-IN",
+  "loan": {
+    "account": "LN99909243",
+    "product": "two-wheeler loan",
+    "emi": 3200,
+    "overdue_emis": 3,
+    "late_fee": 800,
+    "total_due": 10400,
+    "days_past_due": 78
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,65 @@
+{
+  "call_id": "C27",
+  "scenario": "third_party",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार Sir, Navjeevan Housing Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप संदीप जी हैं? यह पूरी conversation record की जा रही है।",
+      "ref": "नमस्कार Sir, Navjeevan Housing Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप संदीप जी हैं? यह पूरी conversation record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1207,
+      "end_ms": 9847
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 10275,
+      "end_ms": 12515
+    },
+    {
+      "speaker": "agent",
+      "text": "संदीप जी, आपके two-wheeler loan की तीन EMI pending हैं। Late fee मिलाकर total बकाया ₹7,850 है।",
+      "ref": "संदीप जी, आपके two-wheeler loan की तीन EMI pending हैं। Late fee मिलाकर total बकाया ₹7,850 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12852,
+      "end_ms": 22052
+    },
+    {
+      "speaker": "borrower",
+      "text": "लेकिन मैंने तो पिछले हफ़्ते ही एक EMI भर दी थी। आपका record update नहीं है क्या?",
+      "ref": "लेकिन मैंने तो पिछले हफ़्ते ही एक EMI भर दी थी। आपका record update नहीं है क्या?",
+      "slot": "B_DISPUTE",
+      "start_ms": 22484,
+      "end_ms": 27044
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, फिर मैं आपके office में आपके manager को call करके बताता हूँ कि आप loan नहीं भर रहे।",
+      "ref": "ठीक है, फिर मैं आपके office में आपके manager को call करके बताता हूँ कि आप loan नहीं भर रहे।",
+      "slot": "A_THIRD_PARTY",
+      "start_ms": 27761,
+      "end_ms": 32561
+    },
+    {
+      "speaker": "borrower",
+      "text": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगा।",
+      "ref": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगा।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 33212,
+      "end_ms": 37052
+    }
+  ],
+  "violations": [
+    {
+      "type": "THIRD_PARTY",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Harshad"
+  }
+}

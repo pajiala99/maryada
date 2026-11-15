@@ -1,0 +1,69 @@
+{
+  "call_id": "C57",
+  "scenario": "no_disclosure_inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "নমস্কার রুমা, আমি Suvidha Finance থেকে দীপঙ্কর বলছি। আপনার loan account নিয়ে কথা বলার ছিল।",
+      "ref": "নমস্কার রুমা, আমি Suvidha Finance থেকে দীপঙ্কর বলছি। আপনার loan account নিয়ে কথা বলার ছিল।",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1201,
+      "end_ms": 7841
+    },
+    {
+      "speaker": "borrower",
+      "text": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "ref": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "slot": "B_ACK",
+      "start_ms": 8341,
+      "end_ms": 10901
+    },
+    {
+      "speaker": "agent",
+      "text": "রুমা, আপনার business loan-এ মোট বকেয়া ₹13,900। পুরো টাকাটা আজকেই জমা দিতে হবে।",
+      "ref": "রুমা, আপনার business loan-এ মোট বকেয়া ₹13,900। পুরো টাকাটা আজকেই জমা দিতে হবে।",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11576,
+      "end_ms": 18456
+    },
+    {
+      "speaker": "borrower",
+      "text": "কিন্তু আমি তো গত সপ্তাহেই একটা EMI দিয়ে দিয়েছি। আপনাদের record update হয়নি?",
+      "ref": "কিন্তু আমি তো গত সপ্তাহেই একটা EMI দিয়ে দিয়েছি। আপনাদের record update হয়নি?",
+      "slot": "B_DISPUTE",
+      "start_ms": 18896,
+      "end_ms": 23776
+    },
+    {
+      "speaker": "agent",
+      "text": "ঠিক আছে, এখনই statement পাঠিয়ে দিচ্ছি। Check করে নিন, তারপর কথা বলি।",
+      "ref": "ঠিক আছে, এখনই statement পাঠিয়ে দিচ্ছি। Check করে নিন, তারপর কথা বলি।",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 24241,
+      "end_ms": 28881
+    },
+    {
+      "speaker": "borrower",
+      "text": "ঠিক আছে, ধন্যবাদ।",
+      "ref": "ঠিক আছে, ধন্যবাদ।",
+      "slot": "B_CLOSE",
+      "start_ms": 29235,
+      "end_ms": 30915
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Riyaa"
+  }
+}

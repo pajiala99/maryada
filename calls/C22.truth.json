@@ -1,0 +1,65 @@
+{
+  "call_id": "C22",
+  "scenario": "threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello ਗੁਰਪ੍ਰੀਤ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Navjeevan Housing Finance ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "ref": "Hello ਗੁਰਪ੍ਰੀਤ ਜੀ, ਮੈਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ Navjeevan Housing Finance ਵੱਲੋਂ। ਇਹ call quality ਵਾਸਤੇ record ਹੋ ਰਹੀ ਹੈ ਜੀ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1052,
+      "end_ms": 8252
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "ref": "ਹਾਂਜੀ, ਬੋਲੋ ਕੀ ਗੱਲ ਹੈ?",
+      "slot": "B_ACK",
+      "start_ms": 8625,
+      "end_ms": 10465
+    },
+    {
+      "speaker": "agent",
+      "text": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹3,250 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਇੱਕ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "ref": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹3,250 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਇੱਕ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 10787,
+      "end_ms": 19427
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> ਦੇਖੋ ਜੀ, ਮੇਰੀ job ਚਲੀ ਗਈ ਹੈ ਪਿਛਲੇ ਮਹੀਨੇ। ਥੋੜ੍ਹਾ time ਚਾਹੀਦਾ ਹੈ ਮੈਨੂੰ।",
+      "ref": "ਦੇਖੋ ਜੀ, ਮੇਰੀ job ਚਲੀ ਗਈ ਹੈ ਪਿਛਲੇ ਮਹੀਨੇ। ਥੋੜ੍ਹਾ time ਚਾਹੀਦਾ ਹੈ ਮੈਨੂੰ।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 20014,
+      "end_ms": 25454
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> ਦੇਖ, ਜ਼ਿਆਦਾ ਚਲਾਕੀ ਨਾ ਦਿਖਾ! ਕੱਲ੍ਹ ਤੱਕ ਪੈਸੇ ਨਾ ਆਏ ਤਾਂ ਸਾਡੇ ਮੁੰਡੇ ਘਰ ਆ ਕੇ ਸਮਾਨ ਚੁੱਕ ਕੇ ਲੈ ਜਾਣਗੇ।",
+      "ref": "ਦੇਖ, ਜ਼ਿਆਦਾ ਚਲਾਕੀ ਨਾ ਦਿਖਾ! ਕੱਲ੍ਹ ਤੱਕ ਪੈਸੇ ਨਾ ਆਏ ਤਾਂ ਸਾਡੇ ਮੁੰਡੇ ਘਰ ਆ ਕੇ ਸਮਾਨ ਚੁੱਕ ਕੇ ਲੈ ਜਾਣਗੇ।",
+      "slot": "A_THREAT",
+      "start_ms": 25555,
+      "end_ms": 32675
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਤੁਸੀਂ ਮੇਰੇ ਨਾਲ ਇਸ ਤਰ੍ਹਾਂ ਗੱਲ ਨਹੀਂ ਕਰ ਸਕਦੇ। ਮੈਂ ਤੁਹਾਡੀ complaint ਕਰਾਂਗਾ।",
+      "ref": "ਤੁਸੀਂ ਮੇਰੇ ਨਾਲ ਇਸ ਤਰ੍ਹਾਂ ਗੱਲ ਨਹੀਂ ਕਰ ਸਕਦੇ। ਮੈਂ ਤੁਹਾਡੀ complaint ਕਰਾਂਗਾ।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 33419,
+      "end_ms": 37499
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Prakash"
+  }
+}

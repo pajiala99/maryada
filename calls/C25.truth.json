@@ -1,0 +1,65 @@
+{
+  "call_id": "C25",
+  "scenario": "inflated_dues_then_partial",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello अमित जी, मैं Udaan Capital से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "ref": "Hello अमित जी, मैं Udaan Capital से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 955,
+      "end_ms": 6715
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 6995,
+      "end_ms": 9235
+    },
+    {
+      "speaker": "agent",
+      "text": "देखिए, आपको ₹6,000 भरने हैं, इससे कम में account regular नहीं होगा।",
+      "ref": "देखिए, आपको ₹6,000 भरने हैं, इससे कम में account regular नहीं होगा।",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 9617,
+      "end_ms": 14977
+    },
+    {
+      "speaker": "borrower",
+      "text": "अभी पूरा नहीं हो पाएगा। मैं फ़िलहाल ₹1,500 दे सकता हूँ, बाकी अगले महीने।",
+      "ref": "अभी पूरा नहीं हो पाएगा। मैं फ़िलहाल ₹1,500 दे सकता हूँ, बाकी अगले महीने।",
+      "slot": "B_PARTIAL_OFFER",
+      "start_ms": 15430,
+      "end_ms": 21030
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, ₹1,500 का part payment आज कर दीजिए। बाकी amount के लिए मैं अगले महीने की date note कर लेता हूँ।",
+      "ref": "ठीक है, ₹1,500 का part payment आज कर दीजिए। बाकी amount के लिए मैं अगले महीने की date note कर लेता हूँ।",
+      "slot": "A_ACCEPT_PARTIAL",
+      "start_ms": 21311,
+      "end_ms": 28031
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक है, धन्यवाद।",
+      "ref": "ठीक है, धन्यवाद।",
+      "slot": "B_CLOSE",
+      "start_ms": 28401,
+      "end_ms": 29761
+    }
+  ],
+  "violations": [
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Harshad"
+  }
+}

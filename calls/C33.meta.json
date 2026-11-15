@@ -1,0 +1,19 @@
+{
+  "call_id": "C33",
+  "call_time": "2026-11-13T07:20:00+05:30",
+  "borrower_id": "B1033",
+  "borrower_name": "ਮਨਪ੍ਰੀਤ",
+  "agent_name": "ਰਮਨ",
+  "lender": "Udaan Capital",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN12674096",
+    "product": "home loan",
+    "emi": 2450,
+    "overdue_emis": 1,
+    "late_fee": 800,
+    "total_due": 3250,
+    "days_past_due": 18
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,68 @@
+{
+  "call_id": "C14",
+  "scenario": "lawful_consequences",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार Sir, Suvidha Finance की तरफ़ से रोहित बोल रहा हूँ। क्या आप राजेश जी हैं? यह पूरी conversation record की जा रही है।",
+      "ref": "नमस्कार Sir, Suvidha Finance की तरफ़ से रोहित बोल रहा हूँ। क्या आप राजेश जी हैं? यह पूरी conversation record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1270,
+      "end_ms": 8630
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 9080,
+      "end_ms": 11800
+    },
+    {
+      "speaker": "agent",
+      "text": "Sir, आपकी ₹5,600 की EMI इस महीने bounce हुई है और अभी total outstanding ₹11,850 है।",
+      "ref": "Sir, आपकी ₹5,600 की EMI इस महीने bounce हुई है और अभी total outstanding ₹11,850 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12410,
+      "end_ms": 20490
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> देखिए, मेरी job चली गई है पिछले महीने। थोड़ा time चाहिए मुझे।",
+      "ref": "देखिए, मेरी job चली गई है पिछले महीने। थोड़ा time चाहिए मुझे।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 21174,
+      "end_ms": 26854
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं बस inform कर रहा हूँ कि delay होने पर late charges बढ़ेंगे और आपके credit score पर असर पड़ सकता है।",
+      "ref": "मैं बस inform कर रहा हूँ कि delay होने पर late charges बढ़ेंगे और आपके credit score पर असर पड़ सकता है।",
+      "slot": "A_LEGAL_INFO",
+      "start_ms": 27436,
+      "end_ms": 33996
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक है, मैं इस Friday तक payment कर दूँगा।",
+      "ref": "ठीक है, मैं इस Friday तक payment कर दूँगा।",
+      "slot": "B_WILL_PAY",
+      "start_ms": 34533,
+      "end_ms": 36853
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "ref": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "slot": "A_CLOSE",
+      "start_ms": 37491,
+      "end_ms": 40451
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Yashraj"
+  }
+}

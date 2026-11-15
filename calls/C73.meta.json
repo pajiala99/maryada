@@ -1,0 +1,19 @@
+{
+  "call_id": "C73",
+  "call_time": "2026-11-13T11:20:00+05:30",
+  "borrower_id": "B1073",
+  "borrower_name": "ദിവ്യ",
+  "agent_name": "വിനീത്",
+  "lender": "Udaan Capital",
+  "language": "ml-IN",
+  "loan": {
+    "account": "LN26227985",
+    "product": "personal loan",
+    "emi": 6850,
+    "overdue_emis": 3,
+    "late_fee": 500,
+    "total_due": 21050,
+    "days_past_due": 89
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,68 @@
+{
+  "call_id": "C67",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "નમસ્તે ભાવેશ, હું Navjeevan Housing Finance તરફથી ધવલ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "ref": "નમસ્તે ભાવેશ, હું Navjeevan Housing Finance તરફથી ધવલ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1074,
+      "end_ms": 7554
+    },
+    {
+      "speaker": "borrower",
+      "text": "હા, હું જ બોલું છું. બોલો.",
+      "ref": "હા, હું જ બોલું છું. બોલો.",
+      "slot": "B_ACK",
+      "start_ms": 7894,
+      "end_ms": 10214
+    },
+    {
+      "speaker": "agent",
+      "text": "ભાવેશ, તમારા personal loan ના બે EMI pending છે. Late fee સાથે કુલ બાકી ₹17,100 છે.",
+      "ref": "ભાવેશ, તમારા personal loan ના બે EMI pending છે. Late fee સાથે કુલ બાકી ₹17,100 છે.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 10735,
+      "end_ms": 18815
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> જુઓ, ગયા મહિને મારી નોકરી જતી રહી. થોડો time જોઈએ છે.",
+      "ref": "જુઓ, ગયા મહિને મારી નોકરી જતી રહી. થોડો time જોઈએ છે.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 19235,
+      "end_ms": 24275
+    },
+    {
+      "speaker": "agent",
+      "text": "કંઈ વાંધો નહીં, હું સમજું છું. અત્યારે એક EMI એટલે ₹8,300 ભરી શકો? બાકી માટે આપણે date નક્કી કરી લઈએ.",
+      "ref": "કંઈ વાંધો નહીં, હું સમજું છું. અત્યારે એક EMI એટલે ₹8,300 ભરી શકો? બાકી માટે આપણે date નક્કી કરી લઈએ.",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 24836,
+      "end_ms": 34036
+    },
+    {
+      "speaker": "borrower",
+      "text": "સારું, આભાર.",
+      "ref": "સારું, આભાર.",
+      "slot": "B_CLOSE",
+      "start_ms": 34519,
+      "end_ms": 35959
+    },
+    {
+      "speaker": "agent",
+      "text": "આભાર ભાવેશ, તમારો દિવસ સારો જાય.",
+      "ref": "આભાર ભાવેશ, તમારો દિવસ સારો જાય.",
+      "slot": "A_CLOSE",
+      "start_ms": 36383,
+      "end_ms": 39503
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Devansh"
+  }
+}

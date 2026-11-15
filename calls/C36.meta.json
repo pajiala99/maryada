@@ -1,0 +1,19 @@
+{
+  "call_id": "C36",
+  "call_time": "2026-11-11T17:00:00+05:30",
+  "borrower_id": "B1036",
+  "borrower_name": "कविता",
+  "agent_name": "अंकित",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN87418652",
+    "product": "personal loan",
+    "emi": 12400,
+    "overdue_emis": 3,
+    "late_fee": 500,
+    "total_due": 37700,
+    "days_past_due": 85
+  },
+  "preferred_window": null
+}

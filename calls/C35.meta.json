@@ -1,0 +1,19 @@
+{
+  "call_id": "C35",
+  "call_time": "2026-11-10T10:10:00+05:30",
+  "borrower_id": "B1035",
+  "borrower_name": "ਜਸਵਿੰਦਰ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Udaan Capital",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN46414432",
+    "product": "home loan",
+    "emi": 9900,
+    "overdue_emis": 1,
+    "late_fee": 650,
+    "total_due": 10550,
+    "days_past_due": 27
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,19 @@
+{
+  "call_id": "C13",
+  "call_time": "2026-11-13T16:40:00+05:30",
+  "borrower_id": "B1013",
+  "borrower_name": "ਗੁਰਪ੍ਰੀਤ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Suvidha Finance",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN13996895",
+    "product": "two-wheeler loan",
+    "emi": 3200,
+    "overdue_emis": 2,
+    "late_fee": 350,
+    "total_due": 6750,
+    "days_past_due": 50
+  },
+  "preferred_window": null
+}

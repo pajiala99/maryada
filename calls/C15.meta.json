@@ -1,0 +1,19 @@
+{
+  "call_id": "C15",
+  "call_time": "2026-11-10T11:45:00+05:30",
+  "borrower_id": "B1015",
+  "borrower_name": "पूजा",
+  "agent_name": "मनोज",
+  "lender": "Navjeevan Housing Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN89434261",
+    "product": "personal loan",
+    "emi": 4750,
+    "overdue_emis": 2,
+    "late_fee": 650,
+    "total_due": 10150,
+    "days_past_due": 59
+  },
+  "preferred_window": null
+}

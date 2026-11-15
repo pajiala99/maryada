@@ -1,0 +1,19 @@
+{
+  "call_id": "C52",
+  "call_time": "2026-11-12T16:30:00+05:30",
+  "borrower_id": "B1052",
+  "borrower_name": "ರೇಖಾ",
+  "agent_name": "ಅರವಿಂದ್",
+  "lender": "Udaan Capital",
+  "language": "kn-IN",
+  "loan": {
+    "account": "LN23370136",
+    "product": "two-wheeler loan",
+    "emi": 4750,
+    "overdue_emis": 2,
+    "late_fee": 800,
+    "total_due": 10300,
+    "days_past_due": 56
+  },
+  "preferred_window": null
+}

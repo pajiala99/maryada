@@ -1,0 +1,19 @@
+{
+  "call_id": "C58",
+  "call_time": "2026-11-13T16:30:00+05:30",
+  "borrower_id": "B1058",
+  "borrower_name": "সুব্রত",
+  "agent_name": "সৌরভ",
+  "lender": "Navjeevan Housing Finance",
+  "language": "bn-IN",
+  "loan": {
+    "account": "LN61157719",
+    "product": "personal loan",
+    "emi": 4750,
+    "overdue_emis": 2,
+    "late_fee": 800,
+    "total_due": 10300,
+    "days_past_due": 59
+  },
+  "preferred_window": null
+}

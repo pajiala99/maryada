@@ -1,0 +1,2665 @@
+{
+  "generated": "2026-11-15T11:52:48+05:30",
+  "calls": 36,
+  "clean_calls": 14,
+  "positives": {
+    "OUTSIDE_HOURS": 4,
+    "NO_RECORDING_DISCLOSURE": 6,
+    "THREAT_OR_ABUSE": 6,
+    "WRONG_DUES": 5,
+    "THIRD_PARTY": 5,
+    "IGNORED_SENSITIVE_SITUATION": 5
+  },
+  "runs": [
+    {
+      "stt": "prisma-v2.5",
+      "judge": "lexicon",
+      "variant": "clean",
+      "snr_db": null,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.5318336162988115,
+        "borrower": 0.3627546071774976,
+        "all": 0.48036610569825805
+      },
+      "cer": {
+        "agent": 0.5793118856121537,
+        "borrower": 0.39518611810803245,
+        "all": 0.5267864271457086
+      },
+      "missed": {
+        "agent": 0.5093378607809848,
+        "borrower": 0.3569350145489816
+      },
+      "extra": {
+        "agent": 0.022495755517826826,
+        "borrower": 0.005819592628516004
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8
+        },
+        "WRONG_DUES": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8000000000000002
+        },
+        "THIRD_PARTY": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8000000000000002
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285715
+        }
+      },
+      "micro": {
+        "tp": 23,
+        "fp": 5,
+        "fn": 8,
+        "precision": 0.8214285714285714,
+        "recall": 0.7419354838709677,
+        "f1": 0.7796610169491526
+      },
+      "verdict_accuracy": 0.7777777777777778,
+      "localised": 0.38095238095238093,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 194,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C15:NO_RECORDING_DISCLOSURE",
+        "C16:WRONG_DUES",
+        "C17:THREAT_OR_ABUSE",
+        "C19:IGNORED_SENSITIVE_SITUATION",
+        "C22:THREAT_OR_ABUSE",
+        "C23:IGNORED_SENSITIVE_SITUATION",
+        "C31:THIRD_PARTY",
+        "C33:IGNORED_SENSITIVE_SITUATION"
+      ],
+      "false_alarms": [
+        "C13:WRONG_DUES",
+        "C14:NO_RECORDING_DISCLOSURE",
+        "C26:THIRD_PARTY",
+        "C28:NO_RECORDING_DISCLOSURE",
+        "C33:NO_RECORDING_DISCLOSURE"
+      ]
+    },
+    {
+      "stt": "prisma-v2.5",
+      "judge": "lexicon",
+      "variant": "snr20",
+      "snr_db": 20.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.6243633276740238,
+        "borrower": 0.5499515033947624,
+        "all": 0.6017124298789489
+      },
+      "cer": {
+        "agent": 0.6572832886505808,
+        "borrower": 0.5675902602854744,
+        "all": 0.6316966067864271
+      },
+      "missed": {
+        "agent": 0.5997453310696095,
+        "borrower": 0.530552861299709
+      },
+      "extra": {
+        "agent": 0.02461799660441426,
+        "borrower": 0.019398642095053348
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 4,
+          "fp": 7,
+          "fn": 2,
+          "precision": 0.36363636363636365,
+          "recall": 0.6666666666666666,
+          "f1": 0.4705882352941177
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8
+        },
+        "WRONG_DUES": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.7499999999999999
+        },
+        "THIRD_PARTY": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.7499999999999999
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.7499999999999999
+        }
+      },
+      "micro": {
+        "tp": 21,
+        "fp": 7,
+        "fn": 10,
+        "precision": 0.75,
+        "recall": 0.6774193548387096,
+        "f1": 0.7118644067796611
+      },
+      "verdict_accuracy": 0.6666666666666666,
+      "localised": 0.5238095238095238,
+      "preferred_time": {
+        "n": 2,
+        "correct": 1
+      },
+      "stt_latency_ms": 284,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C16:WRONG_DUES",
+        "C17:THREAT_OR_ABUSE",
+        "C18:THIRD_PARTY",
+        "C19:IGNORED_SENSITIVE_SITUATION",
+        "C21:NO_RECORDING_DISCLOSURE",
+        "C22:THREAT_OR_ABUSE",
+        "C23:IGNORED_SENSITIVE_SITUATION",
+        "C25:WRONG_DUES",
+        "C26:NO_RECORDING_DISCLOSURE",
+        "C27:THIRD_PARTY"
+      ],
+      "false_alarms": [
+        "C04:NO_RECORDING_DISCLOSURE",
+        "C07:NO_RECORDING_DISCLOSURE",
+        "C11:NO_RECORDING_DISCLOSURE",
+        "C23:NO_RECORDING_DISCLOSURE",
+        "C28:NO_RECORDING_DISCLOSURE",
+        "C29:NO_RECORDING_DISCLOSURE",
+        "C33:NO_RECORDING_DISCLOSURE"
+      ]
+    },
+    {
+      "stt": "prisma-v2.5",
+      "judge": "lexicon",
+      "variant": "snr10",
+      "snr_db": 10.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.4864176570458404,
+        "borrower": 0.45489815712900095,
+        "all": 0.4768231473280189
+      },
+      "cer": {
+        "agent": 0.5355227882037533,
+        "borrower": 0.45591939546599497,
+        "all": 0.5128143712574851
+      },
+      "missed": {
+        "agent": 0.46816638370118846,
+        "borrower": 0.4422890397672163
+      },
+      "extra": {
+        "agent": 0.01825127334465195,
+        "borrower": 0.012609117361784675
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.5454545454545454,
+          "recall": 1.0,
+          "f1": 0.7058823529411764
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "WRONG_DUES": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.6666666666666666,
+          "recall": 0.4,
+          "f1": 0.5
+        },
+        "THIRD_PARTY": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.6666666666666666,
+          "recall": 0.4,
+          "f1": 0.5
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 3,
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285715
+        }
+      },
+      "micro": {
+        "tp": 21,
+        "fp": 7,
+        "fn": 10,
+        "precision": 0.75,
+        "recall": 0.6774193548387096,
+        "f1": 0.7118644067796611
+      },
+      "verdict_accuracy": 0.9166666666666666,
+      "localised": 0.23809523809523808,
+      "preferred_time": {
+        "n": 2,
+        "correct": 1
+      },
+      "stt_latency_ms": 920,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C16:WRONG_DUES",
+        "C18:THIRD_PARTY",
+        "C27:THIRD_PARTY",
+        "C29:IGNORED_SENSITIVE_SITUATION",
+        "C30:THREAT_OR_ABUSE",
+        "C30:WRONG_DUES",
+        "C31:IGNORED_SENSITIVE_SITUATION",
+        "C31:THIRD_PARTY",
+        "C32:WRONG_DUES",
+        "C33:IGNORED_SENSITIVE_SITUATION"
+      ],
+      "false_alarms": [
+        "C16:NO_RECORDING_DISCLOSURE",
+        "C16:THIRD_PARTY",
+        "C19:NO_RECORDING_DISCLOSURE",
+        "C28:NO_RECORDING_DISCLOSURE",
+        "C29:WRONG_DUES",
+        "C32:NO_RECORDING_DISCLOSURE",
+        "C33:NO_RECORDING_DISCLOSURE"
+      ]
+    },
+    {
+      "stt": "prisma-v2.5",
+      "judge": "lexicon",
+      "variant": "snr5",
+      "snr_db": 5.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.42487266553480474,
+        "borrower": 0.2812803103782735,
+        "all": 0.38116327133156186
+      },
+      "cer": {
+        "agent": 0.463248436103664,
+        "borrower": 0.29303106633081444,
+        "all": 0.41469061876247504
+      },
+      "missed": {
+        "agent": 0.4032258064516129,
+        "borrower": 0.26576139670223087
+      },
+      "extra": {
+        "agent": 0.02164685908319185,
+        "borrower": 0.015518913676042677
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "WRONG_DUES": {
+          "tp": 4,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "f1": 0.7272727272727272
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7142857142857143,
+          "recall": 1.0,
+          "f1": 0.8333333333333333
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.888888888888889
+        }
+      },
+      "micro": {
+        "tp": 29,
+        "fp": 7,
+        "fn": 2,
+        "precision": 0.8055555555555556,
+        "recall": 0.9354838709677419,
+        "f1": 0.8656716417910448
+      },
+      "verdict_accuracy": 0.9166666666666666,
+      "localised": 0.9047619047619048,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 427,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C19:IGNORED_SENSITIVE_SITUATION",
+        "C30:WRONG_DUES"
+      ],
+      "false_alarms": [
+        "C02:WRONG_DUES",
+        "C10:WRONG_DUES",
+        "C16:THIRD_PARTY",
+        "C17:NO_RECORDING_DISCLOSURE",
+        "C26:THIRD_PARTY",
+        "C28:NO_RECORDING_DISCLOSURE",
+        "C33:NO_RECORDING_DISCLOSURE"
+      ]
+    },
+    {
+      "stt": "prisma-v2.5",
+      "judge": "lexicon",
+      "variant": "snr0",
+      "snr_db": 0.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.74830220713073,
+        "borrower": 0.5916585838991271,
+        "all": 0.7006200177147919
+      },
+      "cer": {
+        "agent": 0.7434092940125112,
+        "borrower": 0.5664707528687377,
+        "all": 0.692934131736527
+      },
+      "missed": {
+        "agent": 0.7453310696095077,
+        "borrower": 0.585838991270611
+      },
+      "extra": {
+        "agent": 0.0029711375212224107,
+        "borrower": 0.005819592628516004
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 4,
+          "fp": 11,
+          "fn": 2,
+          "precision": 0.26666666666666666,
+          "recall": 0.6666666666666666,
+          "f1": 0.3809523809523809
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "WRONG_DUES": {
+          "tp": 2,
+          "fp": 4,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.4,
+          "f1": 0.3636363636363636
+        },
+        "THIRD_PARTY": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8000000000000002
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.33333333333333337
+        }
+      },
+      "micro": {
+        "tp": 20,
+        "fp": 16,
+        "fn": 11,
+        "precision": 0.5555555555555556,
+        "recall": 0.6451612903225806,
+        "f1": 0.5970149253731343
+      },
+      "verdict_accuracy": 0.75,
+      "localised": 0.5714285714285714,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 388,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C15:NO_RECORDING_DISCLOSURE",
+        "C19:IGNORED_SENSITIVE_SITUATION",
+        "C25:WRONG_DUES",
+        "C28:THREAT_OR_ABUSE",
+        "C29:IGNORED_SENSITIVE_SITUATION",
+        "C30:WRONG_DUES",
+        "C31:IGNORED_SENSITIVE_SITUATION",
+        "C33:IGNORED_SENSITIVE_SITUATION",
+        "C35:NO_RECORDING_DISCLOSURE",
+        "C35:WRONG_DUES",
+        "C36:THIRD_PARTY"
+      ],
+      "false_alarms": [
+        "C02:WRONG_DUES",
+        "C04:NO_RECORDING_DISCLOSURE",
+        "C09:WRONG_DUES",
+        "C10:NO_RECORDING_DISCLOSURE",
+        "C10:WRONG_DUES",
+        "C12:NO_RECORDING_DISCLOSURE",
+        "C16:THIRD_PARTY",
+        "C17:NO_RECORDING_DISCLOSURE",
+        "C20:NO_RECORDING_DISCLOSURE",
+        "C21:WRONG_DUES",
+        "C22:NO_RECORDING_DISCLOSURE",
+        "C25:NO_RECORDING_DISCLOSURE",
+        "C28:NO_RECORDING_DISCLOSURE",
+        "C31:NO_RECORDING_DISCLOSURE",
+        "C33:NO_RECORDING_DISCLOSURE",
+        "C36:NO_RECORDING_DISCLOSURE"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "lexicon",
+      "variant": "clean",
+      "snr_db": null,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.028438030560271648,
+        "borrower": 0.014548981571290009,
+        "all": 0.02421021552996752
+      },
+      "cer": {
+        "agent": 0.023011617515638964,
+        "borrower": 0.007276798208788134,
+        "all": 0.018522954091816368
+      },
+      "missed": {
+        "agent": 0.027589134125636672,
+        "borrower": 0.013579049466537343
+      },
+      "extra": {
+        "agent": 0.0008488964346349745,
+        "borrower": 0.0009699321047526673
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "WRONG_DUES": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7142857142857143,
+          "recall": 1.0,
+          "f1": 0.8333333333333333
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "micro": {
+        "tp": 31,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.9117647058823529,
+        "recall": 1.0,
+        "f1": 0.9538461538461539
+      },
+      "verdict_accuracy": 0.9722222222222222,
+      "localised": 0.9523809523809523,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 160,
+      "llm_fallbacks": 0,
+      "misses": [],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C16:THIRD_PARTY",
+        "C26:THIRD_PARTY"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "lexicon",
+      "variant": "snr20",
+      "snr_db": 20.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.03777589134125637,
+        "borrower": 0.03685741998060136,
+        "all": 0.037496309418364335
+      },
+      "cer": {
+        "agent": 0.026921358355674708,
+        "borrower": 0.019591379792891127,
+        "all": 0.024830339321357284
+      },
+      "missed": {
+        "agent": 0.03310696095076401,
+        "borrower": 0.03491755577109602
+      },
+      "extra": {
+        "agent": 0.00466893039049236,
+        "borrower": 0.0019398642095053346
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "WRONG_DUES": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7142857142857143,
+          "recall": 1.0,
+          "f1": 0.8333333333333333
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "micro": {
+        "tp": 31,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.9117647058823529,
+        "recall": 1.0,
+        "f1": 0.9538461538461539
+      },
+      "verdict_accuracy": 0.9722222222222222,
+      "localised": 0.9523809523809523,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 145,
+      "llm_fallbacks": 0,
+      "misses": [],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C16:THIRD_PARTY",
+        "C26:THIRD_PARTY"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "lexicon",
+      "variant": "snr10",
+      "snr_db": 10.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.06748726655348047,
+        "borrower": 0.0921435499515034,
+        "all": 0.07499261883672867
+      },
+      "cer": {
+        "agent": 0.04937444146559428,
+        "borrower": 0.07780576546319619,
+        "all": 0.05748502994011976
+      },
+      "missed": {
+        "agent": 0.06578947368421052,
+        "borrower": 0.09117361784675072
+      },
+      "extra": {
+        "agent": 0.001697792869269949,
+        "borrower": 0.0009699321047526673
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "WRONG_DUES": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7142857142857143,
+          "recall": 1.0,
+          "f1": 0.8333333333333333
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "micro": {
+        "tp": 30,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.9090909090909091,
+        "recall": 0.967741935483871,
+        "f1": 0.9374999999999999
+      },
+      "verdict_accuracy": 0.9444444444444444,
+      "localised": 0.9523809523809523,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 135,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C28:THREAT_OR_ABUSE"
+      ],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C16:THIRD_PARTY",
+        "C26:THIRD_PARTY"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "lexicon",
+      "variant": "snr5",
+      "snr_db": 5.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.1799660441426146,
+        "borrower": 0.23957322987390883,
+        "all": 0.19811042220253913
+      },
+      "cer": {
+        "agent": 0.1477882037533512,
+        "borrower": 0.20570948782535683,
+        "all": 0.16431137724550898
+      },
+      "missed": {
+        "agent": 0.1769949066213922,
+        "borrower": 0.2289039767216295
+      },
+      "extra": {
+        "agent": 0.0029711375212224107,
+        "borrower": 0.01066925315227934
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "WRONG_DUES": {
+          "tp": 4,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "f1": 0.7272727272727272
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.7142857142857143,
+          "recall": 1.0,
+          "f1": 0.8333333333333333
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.888888888888889
+        }
+      },
+      "micro": {
+        "tp": 28,
+        "fp": 4,
+        "fn": 3,
+        "precision": 0.875,
+        "recall": 0.9032258064516129,
+        "f1": 0.8888888888888888
+      },
+      "verdict_accuracy": 0.9166666666666666,
+      "localised": 0.8571428571428571,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 125,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C19:IGNORED_SENSITIVE_SITUATION",
+        "C28:THREAT_OR_ABUSE",
+        "C30:WRONG_DUES"
+      ],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C16:THIRD_PARTY",
+        "C22:WRONG_DUES",
+        "C26:THIRD_PARTY"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "lexicon",
+      "variant": "snr0",
+      "snr_db": 0.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.6502546689303905,
+        "borrower": 0.5732298739088264,
+        "all": 0.6268083850014763
+      },
+      "cer": {
+        "agent": 0.6028820375335121,
+        "borrower": 0.5233697173243773,
+        "all": 0.5801996007984032
+      },
+      "missed": {
+        "agent": 0.6464346349745331,
+        "borrower": 0.5674102812803103
+      },
+      "extra": {
+        "agent": 0.0038200339558573855,
+        "borrower": 0.005819592628516004
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 5,
+          "fp": 9,
+          "fn": 1,
+          "precision": 0.35714285714285715,
+          "recall": 0.8333333333333334,
+          "f1": 0.5
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "WRONG_DUES": {
+          "tp": 3,
+          "fp": 4,
+          "fn": 2,
+          "precision": 0.42857142857142855,
+          "recall": 0.6,
+          "f1": 0.5
+        },
+        "THIRD_PARTY": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8000000000000002
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.33333333333333337
+        }
+      },
+      "micro": {
+        "tp": 22,
+        "fp": 14,
+        "fn": 9,
+        "precision": 0.6111111111111112,
+        "recall": 0.7096774193548387,
+        "f1": 0.6567164179104478
+      },
+      "verdict_accuracy": 0.7777777777777778,
+      "localised": 0.5714285714285714,
+      "preferred_time": {
+        "n": 2,
+        "correct": 1
+      },
+      "stt_latency_ms": 104,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C15:NO_RECORDING_DISCLOSURE",
+        "C19:IGNORED_SENSITIVE_SITUATION",
+        "C28:THREAT_OR_ABUSE",
+        "C29:IGNORED_SENSITIVE_SITUATION",
+        "C30:WRONG_DUES",
+        "C31:IGNORED_SENSITIVE_SITUATION",
+        "C33:IGNORED_SENSITIVE_SITUATION",
+        "C35:WRONG_DUES",
+        "C36:THIRD_PARTY"
+      ],
+      "false_alarms": [
+        "C02:NO_RECORDING_DISCLOSURE",
+        "C08:WRONG_DUES",
+        "C10:NO_RECORDING_DISCLOSURE",
+        "C10:WRONG_DUES",
+        "C12:NO_RECORDING_DISCLOSURE",
+        "C13:WRONG_DUES",
+        "C16:THIRD_PARTY",
+        "C17:NO_RECORDING_DISCLOSURE",
+        "C20:NO_RECORDING_DISCLOSURE",
+        "C21:WRONG_DUES",
+        "C22:NO_RECORDING_DISCLOSURE",
+        "C28:NO_RECORDING_DISCLOSURE",
+        "C31:NO_RECORDING_DISCLOSURE",
+        "C36:NO_RECORDING_DISCLOSURE"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "llm",
+      "variant": "clean",
+      "snr_db": null,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.028438030560271648,
+        "borrower": 0.014548981571290009,
+        "all": 0.02421021552996752
+      },
+      "cer": {
+        "agent": 0.023011617515638964,
+        "borrower": 0.007276798208788134,
+        "all": 0.018522954091816368
+      },
+      "missed": {
+        "agent": 0.027589134125636672,
+        "borrower": 0.013579049466537343
+      },
+      "extra": {
+        "agent": 0.0008488964346349745,
+        "borrower": 0.0009699321047526673
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 6,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        "WRONG_DUES": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.888888888888889
+        }
+      },
+      "micro": {
+        "tp": 30,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.9090909090909091,
+        "recall": 0.967741935483871,
+        "f1": 0.9374999999999999
+      },
+      "verdict_accuracy": 0.9444444444444444,
+      "localised": 0.9047619047619048,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 160,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C23:IGNORED_SENSITIVE_SITUATION"
+      ],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C18:THREAT_OR_ABUSE",
+        "C19:THREAT_OR_ABUSE"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "llm",
+      "variant": "snr20",
+      "snr_db": 20.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.03777589134125637,
+        "borrower": 0.03685741998060136,
+        "all": 0.037496309418364335
+      },
+      "cer": {
+        "agent": 0.026921358355674708,
+        "borrower": 0.019591379792891127,
+        "all": 0.024830339321357284
+      },
+      "missed": {
+        "agent": 0.03310696095076401,
+        "borrower": 0.03491755577109602
+      },
+      "extra": {
+        "agent": 0.00466893039049236,
+        "borrower": 0.0019398642095053346
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 6,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        "WRONG_DUES": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "micro": {
+        "tp": 31,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.9117647058823529,
+        "recall": 1.0,
+        "f1": 0.9538461538461539
+      },
+      "verdict_accuracy": 0.9722222222222222,
+      "localised": 0.8571428571428571,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 145,
+      "llm_fallbacks": 0,
+      "misses": [],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C18:THREAT_OR_ABUSE",
+        "C19:THREAT_OR_ABUSE"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "llm",
+      "variant": "snr10",
+      "snr_db": 10.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.06748726655348047,
+        "borrower": 0.0921435499515034,
+        "all": 0.07499261883672867
+      },
+      "cer": {
+        "agent": 0.04937444146559428,
+        "borrower": 0.07780576546319619,
+        "all": 0.05748502994011976
+      },
+      "missed": {
+        "agent": 0.06578947368421052,
+        "borrower": 0.09117361784675072
+      },
+      "extra": {
+        "agent": 0.001697792869269949,
+        "borrower": 0.0009699321047526673
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 6,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        "WRONG_DUES": {
+          "tp": 5,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "micro": {
+        "tp": 31,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.9117647058823529,
+        "recall": 1.0,
+        "f1": 0.9538461538461539
+      },
+      "verdict_accuracy": 0.9722222222222222,
+      "localised": 1.0,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 135,
+      "llm_fallbacks": 1,
+      "misses": [],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C18:THREAT_OR_ABUSE",
+        "C19:THREAT_OR_ABUSE"
+      ]
+    },
+    {
+      "stt": "prisma-v3.0",
+      "judge": "llm",
+      "variant": "snr5",
+      "snr_db": 5.0,
+      "n_calls": 36,
+      "wer": {
+        "agent": 0.1799660441426146,
+        "borrower": 0.23957322987390883,
+        "all": 0.19811042220253913
+      },
+      "cer": {
+        "agent": 0.1477882037533512,
+        "borrower": 0.20570948782535683,
+        "all": 0.16431137724550898
+      },
+      "missed": {
+        "agent": 0.1769949066213922,
+        "borrower": 0.2289039767216295
+      },
+      "extra": {
+        "agent": 0.0029711375212224107,
+        "borrower": 0.01066925315227934
+      },
+      "per_type": {
+        "OUTSIDE_HOURS": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RECORDING_DISCLOSURE": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "THREAT_OR_ABUSE": {
+          "tp": 6,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "WRONG_DUES": {
+          "tp": 4,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "f1": 0.7272727272727272
+        },
+        "THIRD_PARTY": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IGNORED_SENSITIVE_SITUATION": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.888888888888889
+        }
+      },
+      "micro": {
+        "tp": 29,
+        "fp": 5,
+        "fn": 2,
+        "precision": 0.8529411764705882,
+        "recall": 0.9354838709677419,
+        "f1": 0.8923076923076922
+      },
+      "verdict_accuracy": 0.9722222222222222,
+      "localised": 0.9047619047619048,
+      "preferred_time": {
+        "n": 2,
+        "correct": 2
+      },
+      "stt_latency_ms": 125,
+      "llm_fallbacks": 0,
+      "misses": [
+        "C19:IGNORED_SENSITIVE_SITUATION",
+        "C30:WRONG_DUES"
+      ],
+      "false_alarms": [
+        "C10:WRONG_DUES",
+        "C18:THREAT_OR_ABUSE",
+        "C19:THREAT_OR_ABUSE",
+        "C22:WRONG_DUES",
+        "C31:THREAT_OR_ABUSE"
+      ]
+    }
+  ],
+  "more_languages": {
+    "calls": 42,
+    "languages": [
+      "bn-IN",
+      "gu-IN",
+      "kn-IN",
+      "ml-IN",
+      "mr-IN",
+      "ta-IN",
+      "te-IN"
+    ],
+    "runs": [
+      {
+        "stt": "prisma-v3.0",
+        "judge": "lexicon",
+        "variant": "clean",
+        "snr_db": null,
+        "all": {
+          "n_calls": 42,
+          "micro": {
+            "tp": 34,
+            "fp": 1,
+            "fn": 8,
+            "precision": 0.9714285714285714,
+            "recall": 0.8095238095238095,
+            "f1": 0.8831168831168832
+          },
+          "verdict_accuracy": 0.8333333333333334,
+          "per_type": {
+            "OUTSIDE_HOURS": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "NO_RECORDING_DISCLOSURE": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "THREAT_OR_ABUSE": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1": 0.8333333333333333
+            },
+            "WRONG_DUES": {
+              "tp": 7,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1": 0.9333333333333333
+            },
+            "THIRD_PARTY": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1": 0.8333333333333333
+            },
+            "IGNORED_SENSITIVE_SITUATION": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.42857142857142855,
+              "f1": 0.6
+            }
+          },
+          "wer": {
+            "agent": 0.08157894736842106,
+            "borrower": 0.05025125628140704,
+            "all": 0.07507820646506778
+          },
+          "stt_latency_ms": 128
+        },
+        "by_language": {
+          "bn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.20253164556962025,
+              "borrower": 0.4166666666666667,
+              "all": 0.23076923076923078
+            }
+          },
+          "gu-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.8,
+              "recall": 0.6666666666666666,
+              "f1": 0.7272727272727272
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.07692307692307693,
+              "borrower": 0.16666666666666666,
+              "all": 0.08888888888888889
+            }
+          },
+          "kn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.025974025974025976,
+              "borrower": 0.0,
+              "all": 0.02247191011235955
+            }
+          },
+          "ml-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "verdict_accuracy": 0.6666666666666666,
+            "wer": {
+              "agent": 0.09090909090909091,
+              "borrower": 0.0,
+              "all": 0.07865168539325842
+            }
+          },
+          "mr-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.05154639175257732,
+              "borrower": 0.007874015748031496,
+              "all": 0.03827751196172249
+            }
+          },
+          "ta-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.02531645569620253,
+              "borrower": 0.0,
+              "all": 0.02197802197802198
+            }
+          },
+          "te-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.17721518987341772,
+              "borrower": 0.16666666666666666,
+              "all": 0.17582417582417584
+            }
+          }
+        }
+      },
+      {
+        "stt": "prisma-v3.0",
+        "judge": "lexicon",
+        "variant": "snr20",
+        "snr_db": 20.0,
+        "all": {
+          "n_calls": 42,
+          "micro": {
+            "tp": 36,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.972972972972973,
+            "recall": 0.8571428571428571,
+            "f1": 0.9113924050632912
+          },
+          "verdict_accuracy": 0.8809523809523809,
+          "per_type": {
+            "OUTSIDE_HOURS": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "NO_RECORDING_DISCLOSURE": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "THREAT_OR_ABUSE": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1": 0.8333333333333333
+            },
+            "WRONG_DUES": {
+              "tp": 7,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1": 0.9333333333333333
+            },
+            "THIRD_PARTY": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1": 0.8333333333333333
+            },
+            "IGNORED_SENSITIVE_SITUATION": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1": 0.8333333333333333
+            }
+          },
+          "wer": {
+            "agent": 0.07763157894736843,
+            "borrower": 0.12562814070351758,
+            "all": 0.08759124087591241
+          },
+          "stt_latency_ms": 119
+        },
+        "by_language": {
+          "bn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.11392405063291139,
+              "borrower": 0.5,
+              "all": 0.16483516483516483
+            }
+          },
+          "gu-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "verdict_accuracy": 0.6666666666666666,
+            "wer": {
+              "agent": 0.07692307692307693,
+              "borrower": 0.08333333333333333,
+              "all": 0.07777777777777778
+            }
+          },
+          "kn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.05194805194805195,
+              "borrower": 0.0,
+              "all": 0.0449438202247191
+            }
+          },
+          "ml-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.8,
+              "recall": 0.6666666666666666,
+              "f1": 0.7272727272727272
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.09090909090909091,
+              "borrower": 0.0,
+              "all": 0.07865168539325842
+            }
+          },
+          "mr-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.061855670103092786,
+              "borrower": 0.13385826771653545,
+              "all": 0.08373205741626795
+            }
+          },
+          "ta-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.0379746835443038,
+              "borrower": 0.08333333333333333,
+              "all": 0.04395604395604396
+            }
+          },
+          "te-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.1518987341772152,
+              "borrower": 0.0,
+              "all": 0.13186813186813187
+            }
+          }
+        }
+      },
+      {
+        "stt": "prisma-v3.0",
+        "judge": "lexicon",
+        "variant": "snr10",
+        "snr_db": 10.0,
+        "all": {
+          "n_calls": 42,
+          "micro": {
+            "tp": 34,
+            "fp": 2,
+            "fn": 8,
+            "precision": 0.9444444444444444,
+            "recall": 0.8095238095238095,
+            "f1": 0.8717948717948718
+          },
+          "verdict_accuracy": 0.8095238095238095,
+          "per_type": {
+            "OUTSIDE_HOURS": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "NO_RECORDING_DISCLOSURE": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "THREAT_OR_ABUSE": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1": 0.8333333333333333
+            },
+            "WRONG_DUES": {
+              "tp": 7,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.7777777777777778,
+              "recall": 1.0,
+              "f1": 0.8750000000000001
+            },
+            "THIRD_PARTY": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.7142857142857143,
+              "f1": 0.8333333333333333
+            },
+            "IGNORED_SENSITIVE_SITUATION": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.42857142857142855,
+              "f1": 0.6
+            }
+          },
+          "wer": {
+            "agent": 0.09605263157894736,
+            "borrower": 0.18090452261306533,
+            "all": 0.11366006256517205
+          },
+          "stt_latency_ms": 116
+        },
+        "by_language": {
+          "bn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.11392405063291139,
+              "borrower": 0.4166666666666667,
+              "all": 0.15384615384615385
+            }
+          },
+          "gu-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 3,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.75,
+              "recall": 0.5,
+              "f1": 0.6
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.11538461538461539,
+              "borrower": 0.25,
+              "all": 0.13333333333333333
+            }
+          },
+          "kn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.09090909090909091,
+              "borrower": 0.0,
+              "all": 0.07865168539325842
+            }
+          },
+          "ml-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.8,
+              "recall": 0.6666666666666666,
+              "f1": 0.7272727272727272
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.06493506493506493,
+              "borrower": 0.16666666666666666,
+              "all": 0.07865168539325842
+            }
+          },
+          "mr-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.09965635738831616,
+              "borrower": 0.1968503937007874,
+              "all": 0.1291866028708134
+            }
+          },
+          "ta-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.05063291139240506,
+              "borrower": 0.08333333333333333,
+              "all": 0.054945054945054944
+            }
+          },
+          "te-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.12658227848101267,
+              "borrower": 0.0,
+              "all": 0.10989010989010989
+            }
+          }
+        }
+      },
+      {
+        "stt": "prisma-v3.0",
+        "judge": "lexicon",
+        "variant": "snr5",
+        "snr_db": 5.0,
+        "all": {
+          "n_calls": 42,
+          "micro": {
+            "tp": 27,
+            "fp": 9,
+            "fn": 15,
+            "precision": 0.75,
+            "recall": 0.6428571428571429,
+            "f1": 0.6923076923076924
+          },
+          "verdict_accuracy": 0.7380952380952381,
+          "per_type": {
+            "OUTSIDE_HOURS": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "NO_RECORDING_DISCLOSURE": {
+              "tp": 7,
+              "fp": 5,
+              "fn": 0,
+              "precision": 0.5833333333333334,
+              "recall": 1.0,
+              "f1": 0.7368421052631579
+            },
+            "THREAT_OR_ABUSE": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.42857142857142855,
+              "f1": 0.6
+            },
+            "WRONG_DUES": {
+              "tp": 7,
+              "fp": 4,
+              "fn": 0,
+              "precision": 0.6363636363636364,
+              "recall": 1.0,
+              "f1": 0.7777777777777778
+            },
+            "THIRD_PARTY": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.42857142857142855,
+              "f1": 0.6
+            },
+            "IGNORED_SENSITIVE_SITUATION": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 7,
+              "precision": null,
+              "recall": 0.0,
+              "f1": null
+            }
+          },
+          "wer": {
+            "agent": 0.42236842105263156,
+            "borrower": 0.49246231155778897,
+            "all": 0.4369134515119917
+          },
+          "stt_latency_ms": 110
+        },
+        "by_language": {
+          "bn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.43037974683544306,
+              "borrower": 0.5,
+              "all": 0.43956043956043955
+            }
+          },
+          "gu-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.8,
+              "recall": 0.6666666666666666,
+              "f1": 0.7272727272727272
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.1282051282051282,
+              "borrower": 0.4166666666666667,
+              "all": 0.16666666666666666
+            }
+          },
+          "kn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 3,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.75,
+              "recall": 0.5,
+              "f1": 0.6
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.35064935064935066,
+              "borrower": 0.08333333333333333,
+              "all": 0.3146067415730337
+            }
+          },
+          "ml-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 3,
+              "fp": 2,
+              "fn": 3,
+              "precision": 0.6,
+              "recall": 0.5,
+              "f1": 0.5454545454545454
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.5844155844155844,
+              "borrower": 0.5,
+              "all": 0.5730337078651685
+            }
+          },
+          "mr-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 3,
+              "fn": 2,
+              "precision": 0.5714285714285714,
+              "recall": 0.6666666666666666,
+              "f1": 0.6153846153846153
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.584192439862543,
+              "borrower": 0.5748031496062992,
+              "all": 0.5813397129186603
+            }
+          },
+          "ta-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 5,
+              "fp": 2,
+              "fn": 1,
+              "precision": 0.7142857142857143,
+              "recall": 0.8333333333333334,
+              "f1": 0.7692307692307692
+            },
+            "verdict_accuracy": 0.6666666666666666,
+            "wer": {
+              "agent": 0.1518987341772152,
+              "borrower": 0.4166666666666667,
+              "all": 0.18681318681318682
+            }
+          },
+          "te-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.2911392405063291,
+              "borrower": 0.16666666666666666,
+              "all": 0.27472527472527475
+            }
+          }
+        }
+      },
+      {
+        "stt": "prisma-v3.0",
+        "judge": "lexicon",
+        "variant": "snr0",
+        "snr_db": 0.0,
+        "all": {
+          "n_calls": 42,
+          "micro": {
+            "tp": 21,
+            "fp": 24,
+            "fn": 21,
+            "precision": 0.4666666666666667,
+            "recall": 0.5,
+            "f1": 0.4827586206896552
+          },
+          "verdict_accuracy": 0.5476190476190477,
+          "per_type": {
+            "OUTSIDE_HOURS": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "NO_RECORDING_DISCLOSURE": {
+              "tp": 7,
+              "fp": 15,
+              "fn": 0,
+              "precision": 0.3181818181818182,
+              "recall": 1.0,
+              "f1": 0.4827586206896552
+            },
+            "THREAT_OR_ABUSE": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 5,
+              "precision": 1.0,
+              "recall": 0.2857142857142857,
+              "f1": 0.4444444444444445
+            },
+            "WRONG_DUES": {
+              "tp": 3,
+              "fp": 9,
+              "fn": 4,
+              "precision": 0.25,
+              "recall": 0.42857142857142855,
+              "f1": 0.3157894736842105
+            },
+            "THIRD_PARTY": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 5,
+              "precision": 1.0,
+              "recall": 0.2857142857142857,
+              "f1": 0.4444444444444445
+            },
+            "IGNORED_SENSITIVE_SITUATION": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 7,
+              "precision": null,
+              "recall": 0.0,
+              "f1": null
+            }
+          },
+          "wer": {
+            "agent": 0.7842105263157895,
+            "borrower": 0.5276381909547738,
+            "all": 0.7309697601668405
+          },
+          "stt_latency_ms": 96
+        },
+        "by_language": {
+          "bn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 2,
+              "fp": 3,
+              "fn": 4,
+              "precision": 0.4,
+              "recall": 0.3333333333333333,
+              "f1": 0.3636363636363636
+            },
+            "verdict_accuracy": 0.3333333333333333,
+            "wer": {
+              "agent": 0.810126582278481,
+              "borrower": 0.5833333333333334,
+              "all": 0.7802197802197802
+            }
+          },
+          "gu-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 2,
+              "fp": 5,
+              "fn": 4,
+              "precision": 0.2857142857142857,
+              "recall": 0.3333333333333333,
+              "f1": 0.30769230769230765
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.7692307692307693,
+              "borrower": 0.4166666666666667,
+              "all": 0.7222222222222222
+            }
+          },
+          "kn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 2,
+              "fp": 2,
+              "fn": 4,
+              "precision": 0.5,
+              "recall": 0.3333333333333333,
+              "f1": 0.4
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.7662337662337663,
+              "borrower": 0.4166666666666667,
+              "all": 0.7191011235955056
+            }
+          },
+          "ml-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 3,
+              "fp": 2,
+              "fn": 3,
+              "precision": 0.6,
+              "recall": 0.5,
+              "f1": 0.5454545454545454
+            },
+            "verdict_accuracy": 0.5,
+            "wer": {
+              "agent": 0.7402597402597403,
+              "borrower": 0.3333333333333333,
+              "all": 0.6853932584269663
+            }
+          },
+          "mr-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 2,
+              "fn": 2,
+              "precision": 0.6666666666666666,
+              "recall": 0.6666666666666666,
+              "f1": 0.6666666666666666
+            },
+            "verdict_accuracy": 0.6666666666666666,
+            "wer": {
+              "agent": 0.8006872852233677,
+              "borrower": 0.5275590551181102,
+              "all": 0.7177033492822966
+            }
+          },
+          "ta-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 6,
+              "fn": 2,
+              "precision": 0.4,
+              "recall": 0.6666666666666666,
+              "f1": 0.5
+            },
+            "verdict_accuracy": 0.6666666666666666,
+            "wer": {
+              "agent": 0.8607594936708861,
+              "borrower": 0.8333333333333334,
+              "all": 0.8571428571428571
+            }
+          },
+          "te-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 4,
+              "fp": 4,
+              "fn": 2,
+              "precision": 0.5,
+              "recall": 0.6666666666666666,
+              "f1": 0.5714285714285715
+            },
+            "verdict_accuracy": 0.6666666666666666,
+            "wer": {
+              "agent": 0.6962025316455697,
+              "borrower": 0.5833333333333334,
+              "all": 0.6813186813186813
+            }
+          }
+        }
+      },
+      {
+        "stt": "prisma-v3.0",
+        "judge": "llm",
+        "variant": "clean",
+        "snr_db": null,
+        "all": {
+          "n_calls": 42,
+          "micro": {
+            "tp": 42,
+            "fp": 3,
+            "fn": 0,
+            "precision": 0.9333333333333333,
+            "recall": 1.0,
+            "f1": 0.9655172413793104
+          },
+          "verdict_accuracy": 0.9761904761904762,
+          "per_type": {
+            "OUTSIDE_HOURS": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "NO_RECORDING_DISCLOSURE": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "THREAT_OR_ABUSE": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "WRONG_DUES": {
+              "tp": 7,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1": 0.9333333333333333
+            },
+            "THIRD_PARTY": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "IGNORED_SENSITIVE_SITUATION": {
+              "tp": 7,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.7777777777777778,
+              "recall": 1.0,
+              "f1": 0.8750000000000001
+            }
+          },
+          "wer": {
+            "agent": 0.08157894736842106,
+            "borrower": 0.05025125628140704,
+            "all": 0.07507820646506778
+          },
+          "stt_latency_ms": 128
+        },
+        "by_language": {
+          "bn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.20253164556962025,
+              "borrower": 0.4166666666666667,
+              "all": 0.23076923076923078
+            }
+          },
+          "gu-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.923076923076923
+            },
+            "verdict_accuracy": 0.8333333333333334,
+            "wer": {
+              "agent": 0.07692307692307693,
+              "borrower": 0.16666666666666666,
+              "all": 0.08888888888888889
+            }
+          },
+          "kn-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.025974025974025976,
+              "borrower": 0.0,
+              "all": 0.02247191011235955
+            }
+          },
+          "ml-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.09090909090909091,
+              "borrower": 0.0,
+              "all": 0.07865168539325842
+            }
+          },
+          "mr-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.923076923076923
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.05154639175257732,
+              "borrower": 0.007874015748031496,
+              "all": 0.03827751196172249
+            }
+          },
+          "ta-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.02531645569620253,
+              "borrower": 0.0,
+              "all": 0.02197802197802198
+            }
+          },
+          "te-IN": {
+            "n_calls": 6,
+            "micro": {
+              "tp": 6,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.923076923076923
+            },
+            "verdict_accuracy": 1.0,
+            "wer": {
+              "agent": 0.17721518987341772,
+              "borrower": 0.16666666666666666,
+              "all": 0.17582417582417584
+            }
+          }
+        }
+      }
+    ]
+  }
+}

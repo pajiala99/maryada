@@ -1,0 +1,19 @@
+{
+  "call_id": "C62",
+  "call_time": "2026-11-12T10:40:00+05:30",
+  "borrower_id": "B1062",
+  "borrower_name": "सचिन",
+  "agent_name": "अमोल",
+  "lender": "Udaan Capital",
+  "language": "mr-IN",
+  "loan": {
+    "account": "LN55500682",
+    "product": "business loan",
+    "emi": 3200,
+    "overdue_emis": 1,
+    "late_fee": 650,
+    "total_due": 3850,
+    "days_past_due": 28
+  },
+  "preferred_window": null
+}

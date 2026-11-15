@@ -1,0 +1,60 @@
+{
+  "call_id": "C10",
+  "scenario": "wedding_backoff",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਗੁਰਪ੍ਰੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Udaan Capital ਤੋਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "ref": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ, ਕੀ ਮੇਰੀ ਗੱਲ ਗੁਰਪ੍ਰੀਤ ਜੀ ਨਾਲ ਹੋ ਰਹੀ ਹੈ? ਮੈਂ Udaan Capital ਤੋਂ ਸੁਖਦੀਪ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਤੁਹਾਨੂੰ ਦੱਸ ਦੇਵਾਂ ਕਿ ਇਹ call record ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1329,
+      "end_ms": 10369
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "ref": "ਹਾਂ ਜੀ, ਮੈਂ ਹੀ ਬੋਲ ਰਿਹਾ ਹਾਂ। ਦੱਸੋ।",
+      "slot": "B_ACK",
+      "start_ms": 10746,
+      "end_ms": 13546
+    },
+    {
+      "speaker": "agent",
+      "text": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹25,150 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਦੋ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "ref": "ਜੀ, ਤੁਹਾਡੇ account ਵਿੱਚ ₹25,150 ਦਾ overdue amount ਹੈ, ਜਿਸ ਵਿੱਚ ਦੋ EMI ਤੇ late charges ਸ਼ਾਮਲ ਨੇ।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 14216,
+      "end_ms": 22376
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਦੇਖੋ ਜੀ, ਕੱਲ੍ਹ ਮੇਰੀ ਧੀ ਦਾ ਵਿਆਹ ਹੈ, ਘਰ ਵਿੱਚ ਮਹਿਮਾਨ ਨੇ। ਹੁਣ ਇਹ ਗੱਲ ਨਹੀਂ ਹੋ ਸਕਦੀ।",
+      "ref": "ਦੇਖੋ ਜੀ, ਕੱਲ੍ਹ ਮੇਰੀ ਧੀ ਦਾ ਵਿਆਹ ਹੈ, ਘਰ ਵਿੱਚ ਮਹਿਮਾਨ ਨੇ। ਹੁਣ ਇਹ ਗੱਲ ਨਹੀਂ ਹੋ ਸਕਦੀ।",
+      "slot": "B_WEDDING",
+      "start_ms": 22726,
+      "end_ms": 28486
+    },
+    {
+      "speaker": "agent",
+      "text": "ਜੀ, ਮੈਂ ਸਮਝਦਾ ਹਾਂ। ਹੁਣ ਤੁਸੀਂ ਪਰਿਵਾਰ ਨੂੰ time ਦਿਓ, ਮੈਂ ਅਗਲੇ ਹਫ਼ਤੇ call ਕਰਾਂਗਾ।",
+      "ref": "ਜੀ, ਮੈਂ ਸਮਝਦਾ ਹਾਂ। ਹੁਣ ਤੁਸੀਂ ਪਰਿਵਾਰ ਨੂੰ time ਦਿਓ, ਮੈਂ ਅਗਲੇ ਹਫ਼ਤੇ call ਕਰਾਂਗਾ।",
+      "slot": "A_BACKOFF",
+      "start_ms": 29007,
+      "end_ms": 34047
+    },
+    {
+      "speaker": "borrower",
+      "text": "ਚੰਗਾ ਜੀ, ਠੀਕ ਹੈ।",
+      "ref": "ਚੰਗਾ ਜੀ, ਠੀਕ ਹੈ।",
+      "slot": "B_CLOSE",
+      "start_ms": 34391,
+      "end_ms": 35991
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Shubham"
+  }
+}

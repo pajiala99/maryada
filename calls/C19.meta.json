@@ -1,0 +1,19 @@
+{
+  "call_id": "C19",
+  "call_time": "2026-11-14T10:50:00+05:30",
+  "borrower_id": "B1019",
+  "borrower_name": "सुनीता",
+  "agent_name": "अंकित",
+  "lender": "Suvidha Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN70125368",
+    "product": "business loan",
+    "emi": 8300,
+    "overdue_emis": 1,
+    "late_fee": 500,
+    "total_due": 8800,
+    "days_past_due": 25
+  },
+  "preferred_window": null
+}

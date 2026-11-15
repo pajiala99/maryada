@@ -1,0 +1,65 @@
+{
+  "call_id": "C53",
+  "scenario": "pressed_in_bereavement",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ನಮಸ್ಕಾರ ಸುರೇಶ್ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "ref": "ನಮಸ್ಕಾರ ಸುರೇಶ್ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 885,
+      "end_ms": 7365
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "ref": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "slot": "B_ACK",
+      "start_ms": 7983,
+      "end_ms": 10783
+    },
+    {
+      "speaker": "agent",
+      "text": "ಸುರೇಶ್ ಅವರೇ, ನಿಮ್ಮ business loan ನಲ್ಲಿ ಮೂರು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹37,700.",
+      "ref": "ಸುರೇಶ್ ಅವರೇ, ನಿಮ್ಮ business loan ನಲ್ಲಿ ಮೂರು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹37,700.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11218,
+      "end_ms": 20578
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sniffles> ಮೊನ್ನೆ ನಮ್ಮ ಅಪ್ಪ ತೀರಿಕೊಂಡರು. ಈಗ ಮನೆಯಲ್ಲಿ ಕಾರ್ಯ ನಡೀತಿದೆ.",
+      "ref": "ಮೊನ್ನೆ ನಮ್ಮ ಅಪ್ಪ ತೀರಿಕೊಂಡರು. ಈಗ ಮನೆಯಲ್ಲಿ ಕಾರ್ಯ ನಡೀತಿದೆ.",
+      "slot": "B_BEREAVEMENT",
+      "start_ms": 21297,
+      "end_ms": 26257
+    },
+    {
+      "speaker": "agent",
+      "text": "ಅದು ನಿಮ್ಮ personal ವಿಷಯ, company ಗೆ ಅದರ ಸಂಬಂಧ ಇಲ್ಲ. Payment ಇವತ್ತೇ ಬೇಕು.",
+      "ref": "ಅದು ನಿಮ್ಮ personal ವಿಷಯ, company ಗೆ ಅದರ ಸಂಬಂಧ ಇಲ್ಲ. Payment ಇವತ್ತೇ ಬೇಕು.",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 26586,
+      "end_ms": 31866
+    },
+    {
+      "speaker": "borrower",
+      "text": "ನೀವು ನನ್ನ ಜೊತೆ ಹೀಗೆ ಮಾತಾಡಬಾರದು. ನಾನು complaint ಕೊಡ್ತೀನಿ.",
+      "ref": "ನೀವು ನನ್ನ ಜೊತೆ ಹೀಗೆ ಮಾತಾಡಬಾರದು. ನಾನು complaint ಕೊಡ್ತೀನಿ.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 32459,
+      "end_ms": 35739
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Devansh"
+  }
+}

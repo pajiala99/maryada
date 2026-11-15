@@ -1,0 +1,69 @@
+{
+  "call_id": "C63",
+  "scenario": "no_disclosure_inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार सचिन, मी Udaan Capital मधून अमोल बोलतोय. तुमच्या loan account बद्दल बोलायचं होतं.",
+      "ref": "नमस्कार सचिन, मी Udaan Capital मधून अमोल बोलतोय. तुमच्या loan account बद्दल बोलायचं होतं.",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1143,
+      "end_ms": 7783
+    },
+    {
+      "speaker": "borrower",
+      "text": "हो, मीच बोलतोय. सांगा.",
+      "ref": "हो, मीच बोलतोय. सांगा.",
+      "slot": "B_ACK",
+      "start_ms": 8529,
+      "end_ms": 10929
+    },
+    {
+      "speaker": "agent",
+      "text": "सचिन, तुमच्या personal loan वर एकूण थकबाकी ₹12,900 आहे. ही पूर्ण रक्कम आजच भरावी लागेल.",
+      "ref": "सचिन, तुमच्या personal loan वर एकूण थकबाकी ₹12,900 आहे. ही पूर्ण रक्कम आजच भरावी लागेल.",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11301,
+      "end_ms": 18981
+    },
+    {
+      "speaker": "borrower",
+      "text": "पण मी तर मागच्या आठवड्यातच एक EMI भरला. तुमचं record update झालं नाही का?",
+      "ref": "पण मी तर मागच्या आठवड्यातच एक EMI भरला. तुमचं record update झालं नाही का?",
+      "slot": "B_DISPUTE",
+      "start_ms": 19499,
+      "end_ms": 25099
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक आहे, मी लगेच statement पाठवतो. Check करा, मग बोलू.",
+      "ref": "ठीक आहे, मी लगेच statement पाठवतो. Check करा, मग बोलू.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 25473,
+      "end_ms": 29873
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक आहे, धन्यवाद.",
+      "ref": "ठीक आहे, धन्यवाद.",
+      "slot": "B_CLOSE",
+      "start_ms": 30234,
+      "end_ms": 31594
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Prakash"
+  }
+}

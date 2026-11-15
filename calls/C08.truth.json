@@ -1,0 +1,52 @@
+{
+  "call_id": "C08",
+  "scenario": "late_call_with_consent",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते, क्या मेरी बात विकास जी से हो रही है? मैं मनोज बोल रहा हूँ Navjeevan Housing Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "ref": "नमस्ते, क्या मेरी बात विकास जी से हो रही है? मैं मनोज बोल रहा हूँ Navjeevan Housing Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1033,
+      "end_ms": 11673
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 12417,
+      "end_ms": 14657
+    },
+    {
+      "speaker": "agent",
+      "text": "Sir, आपकी ₹6,850 की EMI इस महीने bounce हुई है और अभी total outstanding ₹14,500 है।",
+      "ref": "Sir, आपकी ₹6,850 की EMI इस महीने bounce हुई है और अभी total outstanding ₹14,500 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 15087,
+      "end_ms": 24447
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ मुझे पता है। Salary आते ही दो-तीन दिन में भर दूँगा।",
+      "ref": "हाँ मुझे पता है। Salary आते ही दो-तीन दिन में भर दूँगा।",
+      "slot": "B_WILL_PAY",
+      "start_ms": 25097,
+      "end_ms": 28937
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "ref": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "slot": "A_CLOSE",
+      "start_ms": 29626,
+      "end_ms": 33146
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Harshad"
+  }
+}

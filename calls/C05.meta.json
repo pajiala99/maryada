@@ -1,0 +1,19 @@
+{
+  "call_id": "C05",
+  "call_time": "2026-11-10T16:20:00+05:30",
+  "borrower_id": "B1005",
+  "borrower_name": "संदीप",
+  "agent_name": "मनोज",
+  "lender": "Suvidha Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN95251694",
+    "product": "personal loan",
+    "emi": 6850,
+    "overdue_emis": 1,
+    "late_fee": 350,
+    "total_due": 7200,
+    "days_past_due": 26
+  },
+  "preferred_window": null
+}

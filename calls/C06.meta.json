@@ -1,0 +1,19 @@
+{
+  "call_id": "C06",
+  "call_time": "2026-11-11T13:15:00+05:30",
+  "borrower_id": "B1006",
+  "borrower_name": "नेहा",
+  "agent_name": "रोहित",
+  "lender": "Navjeevan Housing Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN77637728",
+    "product": "business loan",
+    "emi": 9900,
+    "overdue_emis": 1,
+    "late_fee": 500,
+    "total_due": 10400,
+    "days_past_due": 27
+  },
+  "preferred_window": null
+}

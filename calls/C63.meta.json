@@ -1,0 +1,19 @@
+{
+  "call_id": "C63",
+  "call_time": "2026-11-13T15:10:00+05:30",
+  "borrower_id": "B1063",
+  "borrower_name": "सचिन",
+  "agent_name": "अमोल",
+  "lender": "Udaan Capital",
+  "language": "mr-IN",
+  "loan": {
+    "account": "LN21137366",
+    "product": "personal loan",
+    "emi": 2450,
+    "overdue_emis": 3,
+    "late_fee": 500,
+    "total_due": 7850,
+    "days_past_due": 87
+  },
+  "preferred_window": null
+}

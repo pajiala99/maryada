@@ -1,0 +1,69 @@
+{
+  "call_id": "C51",
+  "scenario": "no_disclosure_inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ನಮಸ್ಕಾರ ಸುರೇಶ್ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ನಿಮ್ಮ loan account ಬಗ್ಗೆ ಮಾತಾಡಬೇಕಿತ್ತು.",
+      "ref": "ನಮಸ್ಕಾರ ಸುರೇಶ್ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ನಿಮ್ಮ loan account ಬಗ್ಗೆ ಮಾತಾಡಬೇಕಿತ್ತು.",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1322,
+      "end_ms": 7722
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "ref": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "slot": "B_ACK",
+      "start_ms": 8147,
+      "end_ms": 11347
+    },
+    {
+      "speaker": "agent",
+      "text": "ಸುರೇಶ್ ಅವರೇ, ನಿಮ್ಮ personal loan ಮೇಲೆ ಒಟ್ಟು ಬಾಕಿ ₹10,400. ಈ ಪೂರ್ತಿ ಹಣ ಇವತ್ತೇ ಕಟ್ಟಬೇಕು.",
+      "ref": "ಸುರೇಶ್ ಅವರೇ, ನಿಮ್ಮ personal loan ಮೇಲೆ ಒಟ್ಟು ಬಾಕಿ ₹10,400. ಈ ಪೂರ್ತಿ ಹಣ ಇವತ್ತೇ ಕಟ್ಟಬೇಕು.",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11746,
+      "end_ms": 18866
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಆದರೆ ನಾನು ಹೋದ ವಾರನೇ ಒಂದು EMI ಕಟ್ಟಿದ್ದೀನಿ. ನಿಮ್ಮ record update ಆಗಿಲ್ವಾ?",
+      "ref": "ಆದರೆ ನಾನು ಹೋದ ವಾರನೇ ಒಂದು EMI ಕಟ್ಟಿದ್ದೀನಿ. ನಿಮ್ಮ record update ಆಗಿಲ್ವಾ?",
+      "slot": "B_DISPUTE",
+      "start_ms": 19251,
+      "end_ms": 25171
+    },
+    {
+      "speaker": "agent",
+      "text": "ಸರಿ, ಈಗಲೇ statement ಕಳಿಸ್ತೀನಿ. Check ಮಾಡಿ ಮಾತಾಡೋಣ.",
+      "ref": "ಸರಿ, ಈಗಲೇ statement ಕಳಿಸ್ತೀನಿ. Check ಮಾಡಿ ಮಾತಾಡೋಣ.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 25821,
+      "end_ms": 28861
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಸರಿ, ಧನ್ಯವಾದ.",
+      "ref": "ಸರಿ, ಧನ್ಯವಾದ.",
+      "slot": "B_CLOSE",
+      "start_ms": 29242,
+      "end_ms": 30522
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Yashraj"
+  }
+}

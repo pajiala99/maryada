@@ -1,0 +1,68 @@
+{
+  "call_id": "C43",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "నమస్కారం రమేష్ గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "ref": "నమస్కారం రమేష్ గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1186,
+      "end_ms": 9426
+    },
+    {
+      "speaker": "borrower",
+      "text": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "ref": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "slot": "B_ACK",
+      "start_ms": 9727,
+      "end_ms": 12287
+    },
+    {
+      "speaker": "agent",
+      "text": "రమేష్ గారు, మీ home loan లో మూడు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹17,450.",
+      "ref": "రమేష్ గారు, మీ home loan లో మూడు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹17,450.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12576,
+      "end_ms": 20976
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> చూడండి, గత నెల నా ఉద్యోగం పోయింది. కొంచెం time కావాలి.",
+      "ref": "చూడండి, గత నెల నా ఉద్యోగం పోయింది. కొంచెం time కావాలి.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 21650,
+      "end_ms": 26850
+    },
+    {
+      "speaker": "agent",
+      "text": "పర్వాలేదు, అర్థమైంది. ఇప్పుడు ఒక EMI అంటే ₹5,600 కట్టగలరా? మిగతాదానికి ఒక date fix చేద్దాం.",
+      "ref": "పర్వాలేదు, అర్థమైంది. ఇప్పుడు ఒక EMI అంటే ₹5,600 కట్టగలరా? మిగతాదానికి ఒక date fix చేద్దాం.",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 27406,
+      "end_ms": 34766
+    },
+    {
+      "speaker": "borrower",
+      "text": "సరే, ధన్యవాదాలు.",
+      "ref": "సరే, ధన్యవాదాలు.",
+      "slot": "B_CLOSE",
+      "start_ms": 35152,
+      "end_ms": 36912
+    },
+    {
+      "speaker": "agent",
+      "text": "ధన్యవాదాలు రమేష్ గారు, మంచి రోజు.",
+      "ref": "ధన్యవాదాలు రమేష్ గారు, మంచి రోజు.",
+      "slot": "A_CLOSE",
+      "start_ms": 37545,
+      "end_ms": 40185
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Harshad"
+  }
+}

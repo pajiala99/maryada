@@ -1,0 +1,77 @@
+{
+  "call_id": "C31",
+  "scenario": "hospital_pressed_then_shamed",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते, क्या मेरी बात नेहा जी से हो रही है? मैं रोहित बोल रहा हूँ Navjeevan Housing Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "ref": "नमस्ते, क्या मेरी बात नेहा जी से हो रही है? मैं रोहित बोल रहा हूँ Navjeevan Housing Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1304,
+      "end_ms": 11864
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रही हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रही हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 12176,
+      "end_ms": 14576
+    },
+    {
+      "speaker": "agent",
+      "text": "Madam, आपकी ₹3,200 की EMI इस महीने bounce हुई है और अभी total outstanding ₹4,000 है।",
+      "ref": "Madam, आपकी ₹3,200 की EMI इस महीने bounce हुई है और अभी total outstanding ₹4,000 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 15172,
+      "end_ms": 22692
+    },
+    {
+      "speaker": "borrower",
+      "text": "देखिए अभी बात नहीं कर सकती, मेरे husband का operation चल रहा है।",
+      "ref": "देखिए अभी बात नहीं कर सकती, मेरे husband का operation चल रहा है।",
+      "slot": "B_HOSPITAL",
+      "start_ms": 23194,
+      "end_ms": 27594
+    },
+    {
+      "speaker": "agent",
+      "text": "यह सब बहाने हम रोज़ सुनते हैं। कुछ भी हो, EMI आज शाम तक जमा होनी चाहिए।",
+      "ref": "यह सब बहाने हम रोज़ सुनते हैं। कुछ भी हो, EMI आज शाम तक जमा होनी चाहिए।",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 28192,
+      "end_ms": 33872
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> please ऐसा मत कीजिए, मैं कोशिश कर रही हूँ।",
+      "ref": "please ऐसा मत कीजिए, मैं कोशिश कर रही हूँ।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 34171,
+      "end_ms": 38571
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, फिर मैं आपके office में आपके manager को call करके बताता हूँ कि आप loan नहीं भर रहे।",
+      "ref": "ठीक है, फिर मैं आपके office में आपके manager को call करके बताता हूँ कि आप loan नहीं भर रहे।",
+      "slot": "A_THIRD_PARTY",
+      "start_ms": 38875,
+      "end_ms": 44475
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    },
+    {
+      "type": "THIRD_PARTY",
+      "turn_index": 6
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Lakshmi"
+  }
+}

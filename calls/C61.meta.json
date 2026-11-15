@@ -1,0 +1,19 @@
+{
+  "call_id": "C61",
+  "call_time": "2026-11-11T11:20:00+05:30",
+  "borrower_id": "B1061",
+  "borrower_name": "प्रशांत",
+  "agent_name": "अमोल",
+  "lender": "Suvidha Finance",
+  "language": "mr-IN",
+  "loan": {
+    "account": "LN93754636",
+    "product": "personal loan",
+    "emi": 5600,
+    "overdue_emis": 2,
+    "late_fee": 800,
+    "total_due": 12000,
+    "days_past_due": 52
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,68 @@
+{
+  "call_id": "C01",
+  "scenario": "plain_promise",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं मनोज बोल रहा हूँ Udaan Capital से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "ref": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं मनोज बोल रहा हूँ Udaan Capital से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1120,
+      "end_ms": 10640
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ, सुनीता ही हूँ। कहिए।",
+      "ref": "हाँ, सुनीता ही हूँ। कहिए।",
+      "slot": "B_ACK",
+      "start_ms": 11367,
+      "end_ms": 13607
+    },
+    {
+      "speaker": "agent",
+      "text": "सुनीता जी, आपके home loan की दो EMI pending हैं। Late fee मिलाकर total बकाया ₹17,100 है।",
+      "ref": "सुनीता जी, आपके home loan की दो EMI pending हैं। Late fee मिलाकर total बकाया ₹17,100 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 13954,
+      "end_ms": 21874
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ मुझे पता है। Salary आते ही दो-तीन दिन में भर दूँगी।",
+      "ref": "हाँ मुझे पता है। Salary आते ही दो-तीन दिन में भर दूँगी।",
+      "slot": "B_WILL_PAY",
+      "start_ms": 22600,
+      "end_ms": 26280
+    },
+    {
+      "speaker": "agent",
+      "text": "कोई बात नहीं, मैं समझता हूँ। क्या आप अभी एक EMI यानी ₹8,300 भर सकते हैं? बाकी के लिए हम date तय कर लेते हैं।",
+      "ref": "कोई बात नहीं, मैं समझता हूँ। क्या आप अभी एक EMI यानी ₹8,300 भर सकते हैं? बाकी के लिए हम date तय कर लेते हैं।",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 26707,
+      "end_ms": 35667
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी ठीक है।",
+      "ref": "जी ठीक है।",
+      "slot": "B_CLOSE",
+      "start_ms": 36146,
+      "end_ms": 37426
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "ref": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "slot": "A_CLOSE",
+      "start_ms": 38095,
+      "end_ms": 40895
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Lakshmi"
+  }
+}

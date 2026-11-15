@@ -1,0 +1,69 @@
+{
+  "call_id": "C39",
+  "scenario": "no_disclosure_inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "வணக்கம் முருகன் அவர்களே, நான் Navjeevan Housing Finance லிருந்து அருண் பேசுகிறேன். உங்கள் loan account பற்றி பேச வேண்டும்.",
+      "ref": "வணக்கம் முருகன் அவர்களே, நான் Navjeevan Housing Finance லிருந்து அருண் பேசுகிறேன். உங்கள் loan account பற்றி பேச வேண்டும்.",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1115,
+      "end_ms": 8155
+    },
+    {
+      "speaker": "borrower",
+      "text": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "ref": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "slot": "B_ACK",
+      "start_ms": 8689,
+      "end_ms": 11329
+    },
+    {
+      "speaker": "agent",
+      "text": "முருகன் அவர்களே, உங்கள் personal loan இல் மொத்த நிலுவை ₹11,900. இந்த முழு தொகையையும் இன்றே கட்ட வேண்டும்.",
+      "ref": "முருகன் அவர்களே, உங்கள் personal loan இல் மொத்த நிலுவை ₹11,900. இந்த முழு தொகையையும் இன்றே கட்ட வேண்டும்.",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11672,
+      "end_ms": 20472
+    },
+    {
+      "speaker": "borrower",
+      "text": "ஆனால் நான் போன வாரமே ஒரு EMI கட்டிவிட்டேன். உங்கள் record update ஆகவில்லையா?",
+      "ref": "ஆனால் நான் போன வாரமே ஒரு EMI கட்டிவிட்டேன். உங்கள் record update ஆகவில்லையா?",
+      "slot": "B_DISPUTE",
+      "start_ms": 20896,
+      "end_ms": 26176
+    },
+    {
+      "speaker": "agent",
+      "text": "சரி, இப்போதே statement அனுப்புகிறேன். Check செய்துவிட்டு பேசலாம்.",
+      "ref": "சரி, இப்போதே statement அனுப்புகிறேன். Check செய்துவிட்டு பேசலாம்.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 26729,
+      "end_ms": 30009
+    },
+    {
+      "speaker": "borrower",
+      "text": "சரி, நன்றி.",
+      "ref": "சரி, நன்றி.",
+      "slot": "B_CLOSE",
+      "start_ms": 30660,
+      "end_ms": 31940
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Devansh"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "call_id": "C41",
+  "scenario": "pressed_in_bereavement",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "வணக்கம் செல்வி அவர்களே, நான் Navjeevan Housing Finance லிருந்து அருண் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "ref": "வணக்கம் செல்வி அவர்களே, நான் Navjeevan Housing Finance லிருந்து அருண் பேசுகிறேன். இந்த call record செய்யப்படுகிறது என்பதை தெரிவித்துக்கொள்கிறேன்.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1328,
+      "end_ms": 9888
+    },
+    {
+      "speaker": "borrower",
+      "text": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "ref": "ஆமாம், நான் தான் பேசுகிறேன். சொல்லுங்கள்.",
+      "slot": "B_ACK",
+      "start_ms": 10529,
+      "end_ms": 13009
+    },
+    {
+      "speaker": "agent",
+      "text": "செல்வி அவர்களே, உங்கள் business loan இல் இரண்டு EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹6,750.",
+      "ref": "செல்வி அவர்களே, உங்கள் business loan இல் இரண்டு EMI pending ஆக உள்ளது. Late fee சேர்த்து மொத்த நிலுவை ₹6,750.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 13348,
+      "end_ms": 22708
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sniffles> நேற்று முன்தினம் என் அப்பா இறந்துவிட்டார். இப்போது வீட்டில் காரியம் நடக்கிறது.",
+      "ref": "நேற்று முன்தினம் என் அப்பா இறந்துவிட்டார். இப்போது வீட்டில் காரியம் நடக்கிறது.",
+      "slot": "B_BEREAVEMENT",
+      "start_ms": 23377,
+      "end_ms": 29377
+    },
+    {
+      "speaker": "agent",
+      "text": "அது உங்கள் personal விஷயம், company க்கு அதில் சம்பந்தம் இல்லை. Payment இன்றே வேண்டும்.",
+      "ref": "அது உங்கள் personal விஷயம், company க்கு அதில் சம்பந்தம் இல்லை. Payment இன்றே வேண்டும்.",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 30056,
+      "end_ms": 35336
+    },
+    {
+      "speaker": "borrower",
+      "text": "நீங்கள் என்னிடம் இப்படி பேசக்கூடாது. நான் complaint கொடுப்பேன்.",
+      "ref": "நீங்கள் என்னிடம் இப்படி பேசக்கூடாது. நான் complaint கொடுப்பேன்.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 35780,
+      "end_ms": 39300
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Riyaa"
+  }
+}

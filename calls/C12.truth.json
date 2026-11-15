@@ -1,0 +1,55 @@
+{
+  "call_id": "C12",
+  "scenario": "preferred_time_captured",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello कविता जी, मैं Udaan Capital से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "ref": "Hello कविता जी, मैं Udaan Capital से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 997,
+      "end_ms": 6997
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी हाँ, बोलिए क्या बात है?",
+      "ref": "जी हाँ, बोलिए क्या बात है?",
+      "slot": "B_ACK",
+      "start_ms": 7722,
+      "end_ms": 9722
+    },
+    {
+      "speaker": "borrower",
+      "text": "अभी मैं duty पर हूँ, बात नहीं कर सकती। आप please शाम छह बजे के बाद call कीजिए।",
+      "ref": "अभी मैं duty पर हूँ, बात नहीं कर सकती। आप please शाम छह बजे के बाद call कीजिए।",
+      "slot": "B_PREF_TIME",
+      "start_ms": 10091,
+      "end_ms": 15531
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है Madam, मैं note कर लेता हूँ। आगे से आपको शाम छह बजे के बाद ही call किया जाएगा। धन्यवाद।",
+      "ref": "ठीक है Madam, मैं note कर लेता हूँ। आगे से आपको शाम छह बजे के बाद ही call किया जाएगा। धन्यवाद।",
+      "slot": "A_ACK_PREF",
+      "start_ms": 15895,
+      "end_ms": 21415
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी ठीक है।",
+      "ref": "जी ठीक है।",
+      "slot": "B_CLOSE",
+      "start_ms": 21860,
+      "end_ms": 22980
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": [
+    "18:00",
+    "21:00"
+  ],
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Shivani"
+  }
+}

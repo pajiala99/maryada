@@ -1,0 +1,19 @@
+{
+  "call_id": "C53",
+  "call_time": "2026-11-13T12:10:00+05:30",
+  "borrower_id": "B1053",
+  "borrower_name": "ಸುರೇಶ್",
+  "agent_name": "ಅರವಿಂದ್",
+  "lender": "Udaan Capital",
+  "language": "kn-IN",
+  "loan": {
+    "account": "LN26153015",
+    "product": "business loan",
+    "emi": 12400,
+    "overdue_emis": 3,
+    "late_fee": 500,
+    "total_due": 37700,
+    "days_past_due": 79
+  },
+  "preferred_window": null
+}

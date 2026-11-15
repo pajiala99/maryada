@@ -1,0 +1,19 @@
+{
+  "call_id": "C01",
+  "call_time": "2026-11-11T11:10:00+05:30",
+  "borrower_id": "B1001",
+  "borrower_name": "सुनीता",
+  "agent_name": "मनोज",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN98877618",
+    "product": "home loan",
+    "emi": 8300,
+    "overdue_emis": 2,
+    "late_fee": 500,
+    "total_due": 17100,
+    "days_past_due": 49
+  },
+  "preferred_window": null
+}

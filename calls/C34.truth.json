@@ -1,0 +1,69 @@
+{
+  "call_id": "C34",
+  "scenario": "no_disclosure_and_threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते संदीप जी, Suvidha Finance से अंकित बात कर रहा हूँ। आपके two-wheeler loan की payment के बारे में call किया है।",
+      "ref": "नमस्ते संदीप जी, Suvidha Finance से अंकित बात कर रहा हूँ। आपके two-wheeler loan की payment के बारे में call किया है।",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 881,
+      "end_ms": 7601
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी हाँ, बोलिए क्या बात है?",
+      "ref": "जी हाँ, बोलिए क्या बात है?",
+      "slot": "B_ACK",
+      "start_ms": 8291,
+      "end_ms": 10211
+    },
+    {
+      "speaker": "agent",
+      "text": "Sir, आपकी ₹3,200 की EMI इस महीने bounce हुई है और अभी total outstanding ₹9,950 है।",
+      "ref": "Sir, आपकी ₹3,200 की EMI इस महीने bounce हुई है और अभी total outstanding ₹9,950 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 10605,
+      "end_ms": 18685
+    },
+    {
+      "speaker": "borrower",
+      "text": "<shouting> रोज़-रोज़ phone करके परेशान कर रखा है तुम लोगों ने! दिमाग खराब कर दिया है, चोर company है तुम्हारी!",
+      "ref": "रोज़-रोज़ phone करके परेशान कर रखा है तुम लोगों ने! दिमाग खराब कर दिया है, चोर company है तुम्हारी!",
+      "slot": "B_ANGRY",
+      "start_ms": 18804,
+      "end_ms": 25204
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> देखो, ज़्यादा होशियारी मत दिखाओ! कल तक पैसा नहीं आया तो हमारे लड़के घर आकर सामान उठा ले जाएँगे।",
+      "ref": "देखो, ज़्यादा होशियारी मत दिखाओ! कल तक पैसा नहीं आया तो हमारे लड़के घर आकर सामान उठा ले जाएँगे।",
+      "slot": "A_THREAT",
+      "start_ms": 25307,
+      "end_ms": 32027
+    },
+    {
+      "speaker": "borrower",
+      "text": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगा।",
+      "ref": "आप ऐसे बात नहीं कर सकते मुझसे। मैं आपकी complaint करूँगा।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 32678,
+      "end_ms": 36198
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Yashraj"
+  }
+}

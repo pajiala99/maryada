@@ -1,0 +1,19 @@
+{
+  "call_id": "C57",
+  "call_time": "2026-11-12T15:10:00+05:30",
+  "borrower_id": "B1057",
+  "borrower_name": "রুমা",
+  "agent_name": "দীপঙ্কর",
+  "lender": "Suvidha Finance",
+  "language": "bn-IN",
+  "loan": {
+    "account": "LN48832778",
+    "product": "business loan",
+    "emi": 9900,
+    "overdue_emis": 1,
+    "late_fee": 500,
+    "total_due": 10400,
+    "days_past_due": 29
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,19 @@
+{
+  "call_id": "C45",
+  "call_time": "2026-11-10T15:10:00+05:30",
+  "borrower_id": "B1045",
+  "borrower_name": "రమేష్",
+  "agent_name": "ప్రసాద్",
+  "lender": "Suvidha Finance",
+  "language": "te-IN",
+  "loan": {
+    "account": "LN48299851",
+    "product": "personal loan",
+    "emi": 8300,
+    "overdue_emis": 1,
+    "late_fee": 500,
+    "total_due": 8800,
+    "days_past_due": 21
+  },
+  "preferred_window": null
+}

@@ -1,0 +1,65 @@
+{
+  "call_id": "C71",
+  "scenario": "pressed_in_bereavement",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "નમસ્તે પ્રિયંકા, હું Suvidha Finance તરફથી ધવલ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "ref": "નમસ્તે પ્રિયંકા, હું Suvidha Finance તરફથી ધવલ બોલું છું. તમને જણાવી દઉં કે આ call record થઈ રહ્યો છે.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 999,
+      "end_ms": 8039
+    },
+    {
+      "speaker": "borrower",
+      "text": "હા, હું જ બોલું છું. બોલો.",
+      "ref": "હા, હું જ બોલું છું. બોલો.",
+      "slot": "B_ACK",
+      "start_ms": 8566,
+      "end_ms": 11526
+    },
+    {
+      "speaker": "agent",
+      "text": "પ્રિયંકા, તમારા personal loan ના બે EMI pending છે. Late fee સાથે કુલ બાકી ₹16,950 છે.",
+      "ref": "પ્રિયંકા, તમારા personal loan ના બે EMI pending છે. Late fee સાથે કુલ બાકી ₹16,950 છે.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12164,
+      "end_ms": 20324
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sniffles> પરમ દિવસે મારા પપ્પા ગુજરી ગયા. અત્યારે ઘરે બેસણું ચાલે છે.",
+      "ref": "પરમ દિવસે મારા પપ્પા ગુજરી ગયા. અત્યારે ઘરે બેસણું ચાલે છે.",
+      "slot": "B_BEREAVEMENT",
+      "start_ms": 20902,
+      "end_ms": 26182
+    },
+    {
+      "speaker": "agent",
+      "text": "એ તમારી personal વાત છે, company ને એનાથી કંઈ લેવાદેવા નથી. Payment આજે જ જોઈએ.",
+      "ref": "એ તમારી personal વાત છે, company ને એનાથી કંઈ લેવાદેવા નથી. Payment આજે જ જોઈએ.",
+      "slot": "A_PRESS_SENSITIVE",
+      "start_ms": 26558,
+      "end_ms": 32158
+    },
+    {
+      "speaker": "borrower",
+      "text": "તમે મારી સાથે આવી રીતે વાત ના કરી શકો. હું complaint કરીશ.",
+      "ref": "તમે મારી સાથે આવી રીતે વાત ના કરી શકો. હું complaint કરીશ.",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 32460,
+      "end_ms": 36620
+    }
+  ],
+  "violations": [
+    {
+      "type": "IGNORED_SENSITIVE_SITUATION",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Chetana"
+  }
+}

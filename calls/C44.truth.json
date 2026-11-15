@@ -1,0 +1,60 @@
+{
+  "call_id": "C44",
+  "scenario": "dispute_handled",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "నమస్కారం శ్రీనివాస్ గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "ref": "నమస్కారం శ్రీనివాస్ గారు, నేను Suvidha Finance నుండి కిరణ్ మాట్లాడుతున్నాను. ఈ call record చేయబడుతోంది అని మీకు తెలియజేస్తున్నాను.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 937,
+      "end_ms": 8777
+    },
+    {
+      "speaker": "borrower",
+      "text": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "ref": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "slot": "B_ACK",
+      "start_ms": 9178,
+      "end_ms": 12058
+    },
+    {
+      "speaker": "agent",
+      "text": "శ్రీనివాస్ గారు, మీ personal loan లో మూడు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹30,350.",
+      "ref": "శ్రీనివాస్ గారు, మీ personal loan లో మూడు EMI లు pending ఉన్నాయి. Late fee తో కలిపి మొత్తం బాకీ ₹30,350.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12529,
+      "end_ms": 21889
+    },
+    {
+      "speaker": "borrower",
+      "text": "కానీ నేను గత వారమే ఒక EMI కట్టాను. మీ record update కాలేదా?",
+      "ref": "కానీ నేను గత వారమే ఒక EMI కట్టాను. మీ record update కాలేదా?",
+      "slot": "B_DISPUTE",
+      "start_ms": 22624,
+      "end_ms": 27024
+    },
+    {
+      "speaker": "agent",
+      "text": "సరే, ఇప్పుడే statement పంపిస్తాను. Check చేసి మాట్లాడదాం.",
+      "ref": "సరే, ఇప్పుడే statement పంపిస్తాను. Check చేసి మాట్లాడదాం.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 27381,
+      "end_ms": 31141
+    },
+    {
+      "speaker": "borrower",
+      "text": "సరే, ధన్యవాదాలు.",
+      "ref": "సరే, ధన్యవాదాలు.",
+      "slot": "B_CLOSE",
+      "start_ms": 31824,
+      "end_ms": 33584
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Avinash",
+    "borrower": "Shubham"
+  }
+}

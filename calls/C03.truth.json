@@ -1,0 +1,68 @@
+{
+  "call_id": "C03",
+  "scenario": "dispute_handled",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं मनोज बोल रहा हूँ Navjeevan Housing Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "ref": "नमस्ते, क्या मेरी बात सुनीता जी से हो रही है? मैं मनोज बोल रहा हूँ Navjeevan Housing Finance से। आपको बता दूँ कि यह call quality और training के लिए record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 920,
+      "end_ms": 11400
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी हाँ, बोलिए क्या बात है?",
+      "ref": "जी हाँ, बोलिए क्या बात है?",
+      "slot": "B_ACK",
+      "start_ms": 11791,
+      "end_ms": 13631
+    },
+    {
+      "speaker": "agent",
+      "text": "आपके account में ₹13,050 का overdue amount दिख रहा है, जिसमें एक EMI और late charges शामिल हैं।",
+      "ref": "आपके account में ₹13,050 का overdue amount दिख रहा है, जिसमें एक EMI और late charges शामिल हैं।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 14288,
+      "end_ms": 21728
+    },
+    {
+      "speaker": "borrower",
+      "text": "लेकिन मैंने तो पिछले हफ़्ते ही एक EMI भर दी थी। आपका record update नहीं है क्या?",
+      "ref": "लेकिन मैंने तो पिछले हफ़्ते ही एक EMI भर दी थी। आपका record update नहीं है क्या?",
+      "slot": "B_DISPUTE",
+      "start_ms": 22281,
+      "end_ms": 27241
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, मैं payment record verify करवा लेता हूँ और updated statement share कर देता हूँ।",
+      "ref": "ठीक है, मैं payment record verify करवा लेता हूँ और updated statement share कर देता हूँ।",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 27565,
+      "end_ms": 32445
+    },
+    {
+      "speaker": "borrower",
+      "text": "हम्म, ठीक है। Thank you।",
+      "ref": "हम्म, ठीक है। Thank you।",
+      "slot": "B_CLOSE",
+      "start_ms": 32929,
+      "end_ms": 34849
+    },
+    {
+      "speaker": "agent",
+      "text": "धन्यवाद सुनीता जी, आपका दिन शुभ हो।",
+      "ref": "धन्यवाद सुनीता जी, आपका दिन शुभ हो।",
+      "slot": "A_CLOSE",
+      "start_ms": 35354,
+      "end_ms": 37674
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Chetana"
+  }
+}

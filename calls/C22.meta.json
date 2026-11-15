@@ -1,0 +1,19 @@
+{
+  "call_id": "C22",
+  "call_time": "2026-11-12T17:10:00+05:30",
+  "borrower_id": "B1022",
+  "borrower_name": "ਗੁਰਪ੍ਰੀਤ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Navjeevan Housing Finance",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN13704147",
+    "product": "two-wheeler loan",
+    "emi": 2450,
+    "overdue_emis": 1,
+    "late_fee": 800,
+    "total_due": 3250,
+    "days_past_due": 30
+  },
+  "preferred_window": null
+}

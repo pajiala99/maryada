@@ -1,0 +1,69 @@
+{
+  "call_id": "C45",
+  "scenario": "no_disclosure_inflated_dues",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "నమస్కారం రమేష్ గారు, నేను Suvidha Finance నుండి ప్రసాద్ మాట్లాడుతున్నాను. మీ loan account గురించి మాట్లాడాలి.",
+      "ref": "నమస్కారం రమేష్ గారు, నేను Suvidha Finance నుండి ప్రసాద్ మాట్లాడుతున్నాను. మీ loan account గురించి మాట్లాడాలి.",
+      "slot": "A_OPEN_UNDISCLOSED",
+      "start_ms": 1149,
+      "end_ms": 7789
+    },
+    {
+      "speaker": "borrower",
+      "text": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "ref": "అవును, నేనే మాట్లాడుతున్నాను. చెప్పండి.",
+      "slot": "B_ACK",
+      "start_ms": 8317,
+      "end_ms": 11197
+    },
+    {
+      "speaker": "agent",
+      "text": "రమేష్ గారు, మీ personal loan మీద మొత్తం బాకీ ₹13,200. ఈ మొత్తం ఈ రోజే కట్టాలి.",
+      "ref": "రమేష్ గారు, మీ personal loan మీద మొత్తం బాకీ ₹13,200. ఈ మొత్తం ఈ రోజే కట్టాలి.",
+      "slot": "A_DUES_WRONG",
+      "start_ms": 11836,
+      "end_ms": 19036
+    },
+    {
+      "speaker": "borrower",
+      "text": "కానీ నేను గత వారమే ఒక EMI కట్టాను. మీ record update కాలేదా?",
+      "ref": "కానీ నేను గత వారమే ఒక EMI కట్టాను. మీ record update కాలేదా?",
+      "slot": "B_DISPUTE",
+      "start_ms": 19697,
+      "end_ms": 24897
+    },
+    {
+      "speaker": "agent",
+      "text": "సరే, ఇప్పుడే statement పంపిస్తాను. Check చేసి మాట్లాడదాం.",
+      "ref": "సరే, ఇప్పుడే statement పంపిస్తాను. Check చేసి మాట్లాడదాం.",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 25417,
+      "end_ms": 29177
+    },
+    {
+      "speaker": "borrower",
+      "text": "సరే, ధన్యవాదాలు.",
+      "ref": "సరే, ధన్యవాదాలు.",
+      "slot": "B_CLOSE",
+      "start_ms": 29823,
+      "end_ms": 31343
+    }
+  ],
+  "violations": [
+    {
+      "type": "NO_RECORDING_DISCLOSURE",
+      "turn_index": 0
+    },
+    {
+      "type": "WRONG_DUES",
+      "turn_index": 2
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Yashraj"
+  }
+}

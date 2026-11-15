@@ -1,0 +1,19 @@
+{
+  "call_id": "C09",
+  "call_time": "2026-11-14T11:30:00+05:30",
+  "borrower_id": "B1009",
+  "borrower_name": "ਹਰਜੀਤ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Udaan Capital",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN64541572",
+    "product": "business loan",
+    "emi": 9900,
+    "overdue_emis": 2,
+    "late_fee": 350,
+    "total_due": 20150,
+    "days_past_due": 50
+  },
+  "preferred_window": null
+}

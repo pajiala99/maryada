@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maryada · when a borrower complains, you already have the proof</title>
+<meta name="description" content="Maryada listens to every loan-recovery call, checks it against the RBI's conduct rules while it happens, and keeps the evidence ready for the day someone asks.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316181D'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='19' font-weight='600' fill='%23fff'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF8F5; --surface:#FFFFFF; --line:#E7E2DA; --ink:#1B1A17; --ink2:#5B5750; --ink3:#736E66; --btn:#16181D; --teal:#0E5A6B; --teal-tint:#E6EFF0;
+  --bad:#B42318; --bad-tint:#FBECEA; --ok:#1E7B4F; --ok-tint:#E8F3EC; --review:#3E5370; --review-tint:#E9EEF5; --watch:#5B5750; --watch-tint:#F0EDE8;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Inter","Noto Sans Devanagari",-apple-system,"Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{background:var(--paper);scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--teal)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.mono{font-family:var(--mono)}
+h1,h2,h3{margin:0;font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:8px;font-weight:500;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--surface);transition:background .15s ease-out}
+.btn:hover{background:#F4F1EC}
+.btn.primary{background:var(--btn);border-color:var(--btn);color:#fff}
+.btn.primary:hover{background:#2A2D33}
+.photo{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);filter:saturate(.92) contrast(1.02);object-fit:cover}
+.kicker{font-size:14px;font-weight:500;color:var(--ink2);letter-spacing:.02em;margin-bottom:10px}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:10;background:rgba(250,248,245,.96);border-bottom:1px solid transparent;transition:border-color .15s ease-out}
+nav.top.scrolled{border-bottom-color:var(--line)}
+nav.top .wrap{display:flex;align-items:center;gap:32px;height:68px}
+.wordmark{display:flex;align-items:baseline;gap:8px;color:var(--ink);text-decoration:none}
+.wordmark .dev{font:600 20px/1 "Noto Sans Devanagari",var(--sans)}
+.wordmark .lat{font:600 19px/1 var(--serif)}
+nav.top .links{display:flex;gap:26px;margin-left:auto}
+nav.top .links a{color:var(--ink2);text-decoration:none;font-size:15px;font-weight:500}
+nav.top .links a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:48px 0 40px}
+.hero .wrap > div:first-child{padding-top:36px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.hero h1{font:600 60px/1.06 var(--serif);letter-spacing:-.025em;max-width:13ch}
+.hero p.sub{font-size:19px;line-height:1.6;color:var(--ink2);margin:22px 0 32px;max-width:46ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .note{margin-top:28px;font-size:14px;color:var(--ink3)}
+.figure{display:grid;gap:16px}
+.figure .photo{aspect-ratio:16/10;width:100%;object-position:50% 40%}
+.frags{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:16px;align-items:start}
+.frag{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.frag.transcript{padding:14px 16px}
+.frag.rules{padding:10px 0}
+.frag h4{margin:0 0 8px;font:500 13px var(--sans);color:var(--ink3);letter-spacing:.03em;text-transform:uppercase}
+.frag.rules h4{padding:0 14px}
+.tline{padding:8px 10px;border:1px solid var(--line);border-radius:8px;margin-top:8px;font-size:14px;line-height:1.75}
+.tline small{display:block;font-size:13px;color:var(--ink3)}
+.tline.broken{border-left:3px solid var(--bad);padding-left:9px}
+.tline .tag{display:block;margin-top:4px;font-size:13px;color:var(--bad);font-weight:500}
+.tline.enter{animation:rise .2s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(4px)}}
+.rl{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 14px;font-size:14px;border-top:1px solid #F2EEE8}
+.rl:first-of-type{border-top:0}
+.st{font-size:13px;font-weight:500;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.st.bad{color:var(--bad);background:var(--bad-tint)}.st.ok{color:var(--ok);background:var(--ok-tint)}.st.watch{color:var(--watch);background:var(--watch-tint)}
+
+/* sections */
+section.block{padding:88px 0}
+section.block.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.block h2{font:600 40px/1.15 var(--serif);letter-spacing:-.02em;max-width:22ch}
+.block p.lede{font-size:18px;color:var(--ink2);max-width:62ch;margin:16px 0 0}
+.problem .band{margin-top:40px}
+.problem .band .photo{aspect-ratio:16/7}
+.problem .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:36px}
+.problem .cols p{margin:0;color:var(--ink2)}
+.problem .cols b{display:block;color:var(--ink);font-weight:600;margin-bottom:4px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.compare .col{border:1px solid var(--line);border-radius:10px;padding:28px;background:var(--paper)}
+.compare .col.with{background:var(--surface);border-color:#BFD3D6}
+.compare h3{font:600 22px var(--serif);margin-bottom:14px}
+.compare ol{margin:0;padding-left:20px;color:var(--ink2)}
+.compare li{margin:10px 0}
+.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.role .photo{aspect-ratio:3/2}
+.role h3{font:600 22px var(--serif);margin:18px 0 6px}
+.role p{margin:0 0 12px;color:var(--ink2)}
+.role a{font-weight:500;text-decoration:none}
+.role a:hover{text-decoration:underline}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.step .n{font:500 14px var(--mono);color:var(--teal)}
+.step h3{font:600 24px var(--serif);margin:6px 0 8px}
+.step p{margin:0 0 16px;color:var(--ink2)}
+.mini{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14px;min-height:140px}
+.mini .whisper{border-left:3px solid var(--teal);padding:6px 10px;margin-top:8px;line-height:1.75}
+.mini .seal{font:13px var(--mono);color:var(--ink2);margin-top:10px;overflow-wrap:anywhere}
+.story{margin-top:56px;display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.frame{padding:20px 18px;border-right:1px solid var(--line)}
+.frame:last-child{border-right:0}
+.frame .n{font:500 13px var(--mono);color:var(--ink3)}
+.frame h4{margin:6px 0 6px;font:600 18px var(--serif)}
+.frame p{margin:0;font-size:14px;color:var(--ink2)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.num b{display:block;font:600 52px/1 var(--serif);letter-spacing:-.02em}
+.num span{display:block;margin-top:10px;color:var(--ink2)}
+.wrong{margin-top:28px;color:var(--ink2);max-width:76ch}
+.rulelist{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;margin-top:36px}
+.rule{padding:18px 0;border-top:1px solid var(--line)}
+.rule b{display:block;font-weight:600}
+.rule span{display:block;color:var(--ink2);margin-top:2px}
+.rule small{display:block;font:13px var(--mono);color:var(--ink3);margin-top:6px}
+.devsec{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:start}
+pre.code{margin:0;font:13.5px/1.7 var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;overflow:auto;white-space:pre}
+.limits{columns:2;column-gap:48px;margin:28px 0 0;padding-left:20px;color:var(--ink2)}
+.limits li{margin:0 0 12px;break-inside:avoid}
+footer{padding:48px 0 64px;border-top:1px solid var(--line);color:var(--ink2);font-size:14px}
+footer .row{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer p{margin:0 0 8px}
+.meaning{font-size:15px;color:var(--ink2);margin-top:18px}
+.reveal{transition:opacity .45s ease-out,transform .45s ease-out}
+.reveal.pre{opacity:0;transform:translateY(8px)}
+@media (max-width:1080px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero h1{font-size:46px}
+  .figure .photo{width:100%}
+  .roles,.steps,.nums,.problem .cols{grid-template-columns:1fr}
+  .story{grid-template-columns:1fr}.frame{border-right:0;border-bottom:1px solid var(--line)}
+  .compare,.devsec,.rulelist{grid-template-columns:1fr}
+  .limits{columns:1}
+  nav.top .links{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav class="top" id="nav"><div class="wrap">
+  <a class="wordmark" href="#top" aria-label="Maryada, top of the page"><span class="dev">मर्यादा</span><span class="lat">Maryada</span></a>
+  <div class="links"><a href="#how">How it works</a><a href="#who">Who it's for</a><a href="#results">How well it works</a><a href="#developers">For developers</a></div>
+  <a class="btn primary" href="app/" style="height:40px">Open the demo</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <h1>When a borrower complains, you already have the proof.</h1>
+    <p class="sub">Maryada listens to every loan-recovery call, checks it against the RBI's conduct rules while it happens, and keeps the evidence ready for the day someone asks.</p>
+    <div class="ctas"><a class="btn primary" href="app/">Open the demo</a><a class="btn" href="#flow">See the flow</a></div>
+    <p class="note">Built for the RBI recovery-conduct directions in force from 1 January 2027.</p>
+  </div>
+  <div class="figure" aria-hidden="true">
+    <img class="photo" src="images/hero-agent.webp" width="1280" height="800" alt="">
+    <div class="frags">
+      <div class="frag transcript">
+        <h4>Call C30 · 21:10 IST · Hinglish</h4>
+        <div id="h-lines">
+          <div class="tline"><small>Ankit, agent · 0:04</small>आपके personal loan की payment के बारे में call किया है।</div>
+          <div class="tline broken"><small>Ankit, agent · 0:10</small>आपके account में 4400 रुपये का outstanding है, मैडम।<span class="tag">Wrong dues: the record says 2,950</span></div>
+        </div>
+      </div>
+      <div class="frag rules">
+        <h4>Rules on this call</h4>
+        <div class="rl"><span>Outside permitted hours</span><span class="st bad">Broken</span></div>
+        <div class="rl"><span>Recording notice</span><span class="st watch" id="h-rec">Watching</span></div>
+        <div class="rl"><span>Threat or abuse</span><span class="st watch" id="h-threat">Watching</span></div>
+        <div class="rl"><span>Wrong dues</span><span class="st bad">Broken</span></div>
+        <div class="rl"><span>Third party</span><span class="st watch">Watching</span></div>
+        <div class="rl"><span>Sensitive occasion</span><span class="st watch">Watching</span></div>
+      </div>
+    </div>
+  </div>
+</div></header>
+
+<section class="block problem" id="problem"><div class="wrap">
+  <div class="kicker reveal">The problem</div>
+  <h2 class="reveal">Most recovery calls are never heard by anyone but the two people on them.</h2>
+  <p class="lede reveal">Lenders make recovery calls at a volume no team can listen to, through outsourced agents, in many languages, on noisy phone lines. Quality teams sample a few. When a borrower complains, someone has to find the call, listen to all of it, and prove what was said.</p>
+  <div class="band reveal"><img class="photo" src="images/floor.webp" width="1600" height="700" loading="lazy" alt="A row of empty desks, each with a laptop and a headset waiting for the next call"></div>
+  <div class="cols">
+    <p class="reveal"><b>Volume</b>Every agent makes many calls a day. Listening to each one end to end is not possible.</p>
+    <p class="reveal"><b>Languages and lines</b>Calls mix Hindi and English, or are in Punjabi, Tamil, Bengali and more, on 8 kHz lines with a busy floor behind the agent.</p>
+    <p class="reveal"><b>The day someone asks</b>A complaint, an internal audit or a regulator's query needs the exact words, the time, and the rule they broke.</p>
+  </div>
+</div></section>
+
+<section class="block alt" id="flow"><div class="wrap">
+  <div class="kicker reveal">Without and with Maryada</div>
+  <h2 class="reveal">The same complaint, two ways.</h2>
+  <div class="compare">
+    <div class="col reveal"><h3>Without</h3><ol>
+      <li>Search the dialer's recordings by hand for the borrower's calls.</li>
+      <li>Listen to each one from start to end.</li>
+      <li>Write up what was said and which rule it broke.</li>
+      <li>Assemble the recording, the notes and the loan record into evidence.</li>
+    </ol></div>
+    <div class="col with reveal"><h3>With Maryada</h3><ol>
+      <li>The complaint is matched to the borrower's calls automatically.</li>
+      <li>The breach is already marked: the moment, the clause and the exact words.</li>
+      <li>The reviewer confirms it, and the evidence pack builds from that review.</li>
+      <li>An action on the agent is recorded against the finding.</li>
+    </ol></div>
+  </div>
+</div></section>
+
+<section class="block" id="who"><div class="wrap">
+  <div class="kicker reveal">Who it's for</div>
+  <h2 class="reveal">For the people who answer for every call.</h2>
+  <div class="roles">
+    <div class="role reveal"><img class="photo" src="images/role-compliance.webp" width="900" height="600" loading="lazy" alt="A woman at her office desk reviewing printed documents beside her laptop"><h3>Head of collections compliance</h3><p>Accountable for how every agent behaves on calls. Opens Maryada when a complaint lands or an audit needs evidence.</p><a href="app/#/complaints">See the complaints desk</a></div>
+    <div class="role reveal"><img class="photo" src="images/role-qa.webp" width="900" height="600" loading="lazy" alt="A woman in a headset typing at her laptop in a quiet office"><h3>QA reviewer</h3><p>Works the queue of flagged calls: hears the exact moment, confirms or dismisses each finding.</p><a href="app/#/calls">See the calls to review</a></div>
+    <div class="role reveal"><img class="photo" src="images/role-teamlead.webp" width="900" height="600" loading="lazy" alt="Three colleagues standing in an office, one explaining a document to the others"><h3>Collections team lead</h3><p>Coaches the agents: sees each agent's confirmed findings and records what was done about them.</p><a href="app/#/agents">See the agents</a></div>
+  </div>
+</div></section>
+
+<section class="block alt" id="how"><div class="wrap">
+  <div class="kicker reveal">How it works</div>
+  <h2 class="reveal">Catch it on the call. Correct it. Prove it later.</h2>
+  <div class="steps">
+    <div class="step reveal"><div class="n">01</div><h3>Catch</h3><p>Gnani's Prisma v3.0 hears the agent and the borrower as two separate live streams. Exact rules and an LLM judge check every turn.</p>
+      <div class="mini"><div class="tline broken" style="margin-top:0"><small>Ankit, agent · 0:23</small>पैसा निकालो, वरना हाथ-पैर सलामत नहीं रहेंगे।<span class="tag">Threat or abuse · LLM judge</span></div></div></div>
+    <div class="step reveal"><div class="n">02</div><h3>Correct</h3><p>When a rule breaks, Gnani's Timbre v3.0 whispers a correction into the agent's headset while the call is still going.</p>
+      <div class="mini"><small style="color:var(--ink3);font-size:13px">Whispered to Ankit · 0:16</small><div class="whisper">बताया गया amount record से match नहीं करता। सही बकाया ₹2,950 है।</div></div></div>
+    <div class="step reveal"><div class="n">03</div><h3>Prove</h3><p>Every line and finding goes into a SHA-256 hash-chained log. Edit one line and the check fails at that record.</p>
+      <div class="mini"><span class="st ok">Evidence log verified</span><div class="seal">16 records, chain intact</div></div></div>
+  </div>
+  <div class="story reveal" aria-label="From a complaint to an action on the agent, in five steps">
+    <div class="frame"><div class="n">1</div><h4>Complaint arrives</h4><p>A borrower says an agent called late at night and threatened her.</p></div>
+    <div class="frame"><div class="n">2</div><h4>Call matched</h4><p>Same borrower and lender, a call at 21:10 inside the complaint's dates.</p></div>
+    <div class="frame"><div class="n">3</div><h4>Moment confirmed</h4><p>The reviewer hears 0:23, reads the exact words and confirms the threat.</p></div>
+    <div class="frame"><div class="n">4</div><h4>Pack built</h4><p>Call details, findings, transcript and the log's seal, in one document.</p></div>
+    <div class="frame"><div class="n">5</div><h4>Action recorded</h4><p>A retraining flag on the agent, linked to the finding and the complaint.</p></div>
+  </div>
+  <p style="margin-top:28px"><a class="btn primary" href="app/">Try this flow in the demo</a></p>
+</div></section>
+
+<section class="block" id="results"><div class="wrap">
+  <div class="kicker reveal">How well it works</div>
+  <h2 class="reveal">Measured on noisy phone audio, not on a clean demo.</h2>
+  <p class="lede reveal" id="r-intro">We wrote labelled recovery calls, voiced both sides with Timbre v3.0, added call-centre chatter and street noise at five levels, and streamed every recording through Prisma v3.0 in real time.</p>
+  <div class="nums" id="r-nums"><div class="num"><span>Loading the benchmark.</span></div></div>
+  <p class="wrong reveal" id="r-wrong"></p>
+  <p style="margin-top:20px"><a href="app/#/results">Every call at every noise level</a></p>
+</div></section>
+
+<section class="block alt" id="rules"><div class="wrap">
+  <div class="kicker reveal">What it checks</div>
+  <h2 class="reveal">Six things an agent may not do on a recovery call.</h2>
+  <div class="rulelist">
+    <div class="rule reveal"><b>Call outside 08:00 to 19:00</b><span>Unless the borrower asked for another time.</span><small>Contact hours (para 100W(4))</small></div>
+    <div class="rule reveal"><b>No recording notice</b><span>The borrower must be told the call is recorded.</span><small>Call recording (para 100N)</small></div>
+    <div class="rule reveal"><b>Threats or abuse</b><span>No intimidation, insults, or threats to person, family or property.</span><small>Harsh practices (para 100X(1),(5),(7))</small></div>
+    <div class="rule reveal"><b>The wrong amount</b><span>Any figure the agent states must match the loan record.</span><small>Harsh practices (para 100X(8))</small></div>
+    <div class="rule reveal"><b>Relatives, employer, public shaming</b><span>Dues are discussed with the borrower only.</span><small>Harsh practices (para 100X(2),(6)); para 100W(1)</small></div>
+    <div class="rule reveal"><b>Pressing at a sensitive time</b><span>Back off during a death, a calamity or a wedding.</span><small>Inappropriate occasions (para 100W(6))</small></div>
+  </div>
+  <p style="margin-top:24px;color:var(--ink3);font-size:14px">Clause numbers follow published summaries of the RBI directions of 6 August 2026 and should be checked against the RBI's own text.</p>
+</div></section>
+
+<section class="block" id="developers"><div class="wrap">
+  <div class="devsec">
+    <div><div class="kicker reveal">For developers</div><h2 class="reveal" style="font-size:34px">Plugs into the dialer you already run.</h2>
+      <p class="lede reveal">Send a stereo recording and the loan record; get back the findings with the RBI clause, the exact words and the evidence seal. Every alert is also posted to your server as a signed webhook. Names and account numbers are masked before any text reaches the LLM.</p></div>
+    <pre class="code reveal">curl -X POST https://your-maryada/v1/calls \
+  -H "Authorization: Bearer mk_test_..." \
+  -F audio=@call.wav \
+  -F 'metadata={"borrower_name": "...", "lender": "...",
+     "language": "hi-en", "call_time": "...",
+     "loan": {"emi": 2450, "overdue_emis": 1,
+              "late_fee": 500, "total_due": 2950}}'
+
+# 202 Accepted
+{"id": "call_...", "status": "queued", "mode": "test"}
+
+# then, on your webhook endpoint
+Maryada-Signature: t=...,v1=HMAC-SHA256(secret, "t.body")
+{"type": "alert.created", "data": {"alert": {"type": "WRONG_DUES",
+  "clause": "Harsh practices (para 100X(8))", ...}}}</pre>
+  </div>
+</div></section>
+
+<section class="block alt" id="limits"><div class="wrap">
+  <div class="kicker reveal">Honest limits</div>
+  <h2 class="reveal">What this is, and what it is not yet.</h2>
+  <ul class="limits">
+    <li class="reveal">Every call is synthetic. Timbre voices are cleaner than real people, so real calls will score lower.</li>
+    <li class="reveal">Noise is mixed in digitally; there is no real handset, network jitter or packet loss.</li>
+    <li class="reveal">Recordings are assumed to be stereo, one side per channel.</li>
+    <li class="reveal">The LLM judge is a stand-in model; Gnani's Evon v3.3 was not on the API yet and was not measured.</li>
+    <li class="reveal">The RBI text was read through published summaries. This is an automated check, not legal advice.</li>
+    <li class="reveal">Lines beyond Hinglish and Punjabi were written by us and not checked by native speakers.</li>
+  </ul>
+  <p class="meaning reveal">Maryada (मर्यादा) means dignity: staying within limits.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="row">
+    <div>
+      <p>Built by Hardik Pajiala and Khushi Dangi, Thapar Institute of Engineering and Technology, for Gnani.ai's Great Indian AI Internship challenge. Built on Gnani's Prisma v3.0 and Timbre v3.0.</p>
+      <p><a href="https://github.com/pajiala99/maryada">Code and results on GitHub</a> · <a href="https://github.com/pajiala99/maryada/blob/main/PITCH.pdf">One-page pitch</a> · <a href="app/#/about">About this demo</a></p>
+    </div>
+    <p style="max-width:44ch;color:var(--ink3)">Photos from Pexels by Julio Lopez, Pavel Danilyuk, MART PRODUCTION and RDNE Stock project. Synthetic data throughout: every call, lender and borrower in the demo is invented.</p>
+  </div>
+</div></footer>
+
+<script>
+const STATIC = !!window.MARYADA_STATIC;
+const nav = document.getElementById("nav");
+addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 8), { passive: true });
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+/* content is visible by default; only what starts below the fold fades in, and never stays hidden */
+if (!reduced && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.remove("pre"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -6% 0px" });
+  document.querySelectorAll(".reveal").forEach(n => { if (n.getBoundingClientRect().top > innerHeight) { n.classList.add("pre"); io.observe(n); } });
+  addEventListener("scroll", function late() { if (scrollY > 200) { removeEventListener("scroll", late); setTimeout(() => document.querySelectorAll(".reveal.pre").forEach(n => n.classList.remove("pre")), 2500); } }, { passive: true });
+}
+
+/* the hero transcript: one more line arrives and is flagged, then the rules settle */
+if (!reduced) setTimeout(() => {
+  const box = document.getElementById("h-lines"), d = document.createElement("div");
+  d.className = "tline broken enter"; d.innerHTML = '<small>Ankit, agent · 0:23</small>पैसा निकालो, वरना हाथ-पैर सलामत नहीं रहेंगे।<span class="tag">Threat or abuse</span>';
+  box.firstElementChild.remove(); box.append(d);
+  const t = document.getElementById("h-threat"); t.className = "st bad"; t.textContent = "Broken";
+  setTimeout(() => { const r = document.getElementById("h-rec"); r.className = "st bad"; r.textContent = "Broken"; }, 900);
+}, 2600);
+
+/* three numbers, read from the benchmark results */
+(async () => {
+  const pct = x => Math.round(100 * x) + "%";
+  try {
+    const R = await (await fetch(STATIC ? "app/data/results.json" : "/api/results")).json();
+    const runs = R.runs.filter(r => r.stt === "prisma-v3.0");
+    const b = runs.find(r => r.judge === "llm" && r.variant === "snr10"), w = runs.find(r => r.variant === "snr10" && r.wer);
+    if (!b) throw 0;
+    const wer = (w.wer.agent + w.wer.borrower) / 2;
+    document.getElementById("r-intro").textContent = `We wrote ${R.calls} labelled recovery calls, voiced both sides with Timbre v3.0, added call-centre chatter and street noise at five levels, and streamed all ${R.calls * 5} recordings through Prisma v3.0 in real time.` + (R.more_languages ? ` Another ${R.more_languages.calls} calls in ${R.more_languages.languages.length} more languages are scored separately.` : "");
+    const box = document.getElementById("r-nums"); box.innerHTML = "";
+    [[`${b.micro.tp}/${b.micro.tp + b.micro.fn}`, "planted breaches caught at 10 dB of line noise, by the LLM judge."],
+     [`${Math.round(b.verdict_accuracy * b.n_calls)}/${b.n_calls}`, "calls given the right overall verdict at 10 dB."],
+     [pct(wer), "of words Prisma got wrong at 10 dB, across both sides of the call."]]
+      .forEach(([n, s]) => { const d = document.createElement("div"); d.className = "num"; d.innerHTML = `<b>${n}</b><span>${s}</span>`; box.append(d); });
+    document.getElementById("r-wrong").textContent = "Where it got it wrong: the same few calls account for every mistake on clean to 10 dB lines. One dropped leading digit on a rupee amount (25,150 heard as 5,150) is flagged for a person to check, and one wedding mention was missed on the clean line.";
+  } catch (e) {
+    document.getElementById("r-nums").innerHTML = '<div class="num"><span>The benchmark numbers could not be loaded here. They are in the README on GitHub.</span></div>';
+  }
+})();
+</script>
+</body>
+</html>

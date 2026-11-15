@@ -1,0 +1,19 @@
+{
+  "call_id": "C27",
+  "call_time": "2026-11-12T12:50:00+05:30",
+  "borrower_id": "B1027",
+  "borrower_name": "संदीप",
+  "agent_name": "मनोज",
+  "lender": "Navjeevan Housing Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN28860985",
+    "product": "two-wheeler loan",
+    "emi": 2450,
+    "overdue_emis": 3,
+    "late_fee": 500,
+    "total_due": 7850,
+    "days_past_due": 89
+  },
+  "preferred_window": null
+}

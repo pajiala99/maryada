@@ -1,0 +1,60 @@
+{
+  "call_id": "C04",
+  "scenario": "bereavement_backoff",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार Sir, Navjeevan Housing Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप अमित जी हैं? यह पूरी conversation record की जा रही है।",
+      "ref": "नमस्कार Sir, Navjeevan Housing Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप अमित जी हैं? यह पूरी conversation record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1323,
+      "end_ms": 9563
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 10083,
+      "end_ms": 12243
+    },
+    {
+      "speaker": "agent",
+      "text": "आपके account में ₹6,900 का overdue amount दिख रहा है, जिसमें दो EMI और late charges शामिल हैं।",
+      "ref": "आपके account में ₹6,900 का overdue amount दिख रहा है, जिसमें दो EMI और late charges शामिल हैं।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12982,
+      "end_ms": 20502
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> देखिए, मेरी माँ गुज़र गई हैं पिछले हफ़्ते। अभी मैं कुछ सोचने की हालत में नहीं हूँ।",
+      "ref": "देखिए, मेरी माँ गुज़र गई हैं पिछले हफ़्ते। अभी मैं कुछ सोचने की हालत में नहीं हूँ।",
+      "slot": "B_BEREAVEMENT",
+      "start_ms": 20820,
+      "end_ms": 28420
+    },
+    {
+      "speaker": "agent",
+      "text": "जी, मैं समझता हूँ। अभी आप परिवार को time दीजिए, मैं अगले हफ़्ते call करूँगा।",
+      "ref": "जी, मैं समझता हूँ। अभी आप परिवार को time दीजिए, मैं अगले हफ़्ते call करूँगा।",
+      "slot": "A_BACKOFF",
+      "start_ms": 28985,
+      "end_ms": 34265
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक है, धन्यवाद।",
+      "ref": "ठीक है, धन्यवाद।",
+      "slot": "B_CLOSE",
+      "start_ms": 34722,
+      "end_ms": 36242
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Shubham"
+  }
+}

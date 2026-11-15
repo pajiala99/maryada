@@ -1,0 +1,19 @@
+{
+  "call_id": "C44",
+  "call_time": "2026-11-14T10:40:00+05:30",
+  "borrower_id": "B1044",
+  "borrower_name": "శ్రీనివాస్",
+  "agent_name": "కిరణ్",
+  "lender": "Suvidha Finance",
+  "language": "te-IN",
+  "loan": {
+    "account": "LN57352143",
+    "product": "personal loan",
+    "emi": 9900,
+    "overdue_emis": 3,
+    "late_fee": 650,
+    "total_due": 30350,
+    "days_past_due": 88
+  },
+  "preferred_window": null
+}

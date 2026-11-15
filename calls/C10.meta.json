@@ -1,0 +1,19 @@
+{
+  "call_id": "C10",
+  "call_time": "2026-11-10T14:00:00+05:30",
+  "borrower_id": "B1010",
+  "borrower_name": "ਗੁਰਪ੍ਰੀਤ",
+  "agent_name": "ਸੁਖਦੀਪ",
+  "lender": "Udaan Capital",
+  "language": "pa-IN",
+  "loan": {
+    "account": "LN82981293",
+    "product": "personal loan",
+    "emi": 12400,
+    "overdue_emis": 2,
+    "late_fee": 350,
+    "total_due": 25150,
+    "days_past_due": 48
+  },
+  "preferred_window": null
+}

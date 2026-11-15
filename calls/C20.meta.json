@@ -1,0 +1,19 @@
+{
+  "call_id": "C20",
+  "call_time": "2026-11-10T20:35:00+05:30",
+  "borrower_id": "B1020",
+  "borrower_name": "सुनीता",
+  "agent_name": "रोहित",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN66546641",
+    "product": "business loan",
+    "emi": 4750,
+    "overdue_emis": 3,
+    "late_fee": 350,
+    "total_due": 14600,
+    "days_past_due": 83
+  },
+  "preferred_window": null
+}

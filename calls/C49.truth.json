@@ -1,0 +1,68 @@
+{
+  "call_id": "C49",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "ref": "ನಮಸ್ಕಾರ ಕಾವ್ಯ ಅವರೇ, ನಾನು Udaan Capital ಇಂದ ಅರವಿಂದ್ ಮಾತಾಡ್ತಿದ್ದೀನಿ. ಈ call record ಆಗ್ತಿದೆ ಅಂತ ತಿಳಿಸ್ತೀನಿ.",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1050,
+      "end_ms": 7290
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "ref": "ಹೌದು, ನಾನೇ ಮಾತಾಡ್ತಿರೋದು. ಹೇಳಿ.",
+      "slot": "B_ACK",
+      "start_ms": 7849,
+      "end_ms": 10729
+    },
+    {
+      "speaker": "agent",
+      "text": "ಕಾವ್ಯ ಅವರೇ, ನಿಮ್ಮ home loan ನಲ್ಲಿ ಎರಡು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹17,250.",
+      "ref": "ಕಾವ್ಯ ಅವರೇ, ನಿಮ್ಮ home loan ನಲ್ಲಿ ಎರಡು EMI pending ಇದೆ. Late fee ಸೇರಿಸಿ ಒಟ್ಟು ಬಾಕಿ ₹17,250.",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11193,
+      "end_ms": 19513
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> ನೋಡಿ, ಹೋದ ತಿಂಗಳು ನನ್ನ ಕೆಲಸ ಹೋಯ್ತು. ಸ್ವಲ್ಪ time ಬೇಕು.",
+      "ref": "ನೋಡಿ, ಹೋದ ತಿಂಗಳು ನನ್ನ ಕೆಲಸ ಹೋಯ್ತು. ಸ್ವಲ್ಪ time ಬೇಕು.",
+      "slot": "B_HARDSHIP",
+      "start_ms": 20086,
+      "end_ms": 25686
+    },
+    {
+      "speaker": "agent",
+      "text": "ಪರವಾಗಿಲ್ಲ, ಅರ್ಥ ಆಯ್ತು. ಈಗ ಒಂದು EMI ಅಂದರೆ ₹8,300 ಕಟ್ಟಬಹುದಾ? ಉಳಿದಿದ್ದಕ್ಕೆ ಒಂದು date fix ಮಾಡೋಣ.",
+      "ref": "ಪರವಾಗಿಲ್ಲ, ಅರ್ಥ ಆಯ್ತು. ಈಗ ಒಂದು EMI ಅಂದರೆ ₹8,300 ಕಟ್ಟಬಹುದಾ? ಉಳಿದಿದ್ದಕ್ಕೆ ಒಂದು date fix ಮಾಡೋಣ.",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 26274,
+      "end_ms": 35314
+    },
+    {
+      "speaker": "borrower",
+      "text": "ಸರಿ, ಧನ್ಯವಾದ.",
+      "ref": "ಸರಿ, ಧನ್ಯವಾದ.",
+      "slot": "B_CLOSE",
+      "start_ms": 35601,
+      "end_ms": 37201
+    },
+    {
+      "speaker": "agent",
+      "text": "ಧನ್ಯವಾದ ಕಾವ್ಯ ಅವರೇ, ಒಳ್ಳೆಯ ದಿನ.",
+      "ref": "ಧನ್ಯವಾದ ಕಾವ್ಯ ಅವರೇ, ಒಳ್ಳೆಯ ದಿನ.",
+      "slot": "A_CLOSE",
+      "start_ms": 37845,
+      "end_ms": 41045
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Shivani"
+  }
+}

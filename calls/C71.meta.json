@@ -1,0 +1,19 @@
+{
+  "call_id": "C71",
+  "call_time": "2026-11-11T12:10:00+05:30",
+  "borrower_id": "B1071",
+  "borrower_name": "પ્રિયંકા",
+  "agent_name": "ધવલ",
+  "lender": "Suvidha Finance",
+  "language": "gu-IN",
+  "loan": {
+    "account": "LN42684002",
+    "product": "personal loan",
+    "emi": 8300,
+    "overdue_emis": 2,
+    "late_fee": 350,
+    "total_due": 16950,
+    "days_past_due": 59
+  },
+  "preferred_window": null
+}

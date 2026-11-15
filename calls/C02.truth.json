@@ -1,0 +1,68 @@
+{
+  "call_id": "C02",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello राजेश जी, मैं Udaan Capital से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "ref": "Hello राजेश जी, मैं Udaan Capital से रोहित बात कर रहा हूँ। यह call record हो रही है, please ध्यान दीजिए।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1002,
+      "end_ms": 7802
+    },
+    {
+      "speaker": "borrower",
+      "text": "जी हाँ, बोलिए क्या बात है?",
+      "ref": "जी हाँ, बोलिए क्या बात है?",
+      "slot": "B_ACK",
+      "start_ms": 8223,
+      "end_ms": 10623
+    },
+    {
+      "speaker": "agent",
+      "text": "Sir, आपकी ₹6,850 की EMI इस महीने bounce हुई है और अभी total outstanding ₹20,900 है।",
+      "ref": "Sir, आपकी ₹6,850 की EMI इस महीने bounce हुई है और अभी total outstanding ₹20,900 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11285,
+      "end_ms": 19285
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> अभी बहुत tight चल रहा है, दुकान का काम मंदा है। अगले महीने तक रुक जाइए।",
+      "ref": "अभी बहुत tight चल रहा है, दुकान का काम मंदा है। अगले महीने तक रुक जाइए।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 19608,
+      "end_ms": 25368
+    },
+    {
+      "speaker": "agent",
+      "text": "कोई बात नहीं, मैं समझता हूँ। क्या आप अभी एक EMI यानी ₹6,850 भर सकते हैं? बाकी के लिए हम date तय कर लेते हैं।",
+      "ref": "कोई बात नहीं, मैं समझता हूँ। क्या आप अभी एक EMI यानी ₹6,850 भर सकते हैं? बाकी के लिए हम date तय कर लेते हैं।",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 25930,
+      "end_ms": 35210
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक है, धन्यवाद।",
+      "ref": "ठीक है, धन्यवाद।",
+      "slot": "B_CLOSE",
+      "start_ms": 35833,
+      "end_ms": 37033
+    },
+    {
+      "speaker": "agent",
+      "text": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "ref": "ठीक है, समय देने के लिए धन्यवाद। नमस्ते।",
+      "slot": "A_CLOSE",
+      "start_ms": 37401,
+      "end_ms": 40361
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Devansh"
+  }
+}

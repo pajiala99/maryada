@@ -1,0 +1,19 @@
+{
+  "call_id": "C16",
+  "call_time": "2026-11-11T15:00:00+05:30",
+  "borrower_id": "B1016",
+  "borrower_name": "सुनीता",
+  "agent_name": "रोहित",
+  "lender": "Navjeevan Housing Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN52050752",
+    "product": "personal loan",
+    "emi": 4750,
+    "overdue_emis": 3,
+    "late_fee": 800,
+    "total_due": 15050,
+    "days_past_due": 86
+  },
+  "preferred_window": null
+}

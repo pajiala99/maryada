@@ -1,0 +1,19 @@
+{
+  "call_id": "C66",
+  "call_time": "2026-11-11T20:15:00+05:30",
+  "borrower_id": "B1066",
+  "borrower_name": "प्रशांत",
+  "agent_name": "निलेश",
+  "lender": "Navjeevan Housing Finance",
+  "language": "mr-IN",
+  "loan": {
+    "account": "LN31841004",
+    "product": "business loan",
+    "emi": 6850,
+    "overdue_emis": 3,
+    "late_fee": 800,
+    "total_due": 21350,
+    "days_past_due": 85
+  },
+  "preferred_window": null
+}

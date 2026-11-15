@@ -1,0 +1,60 @@
+{
+  "call_id": "C56",
+  "scenario": "dispute_handled",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "নমস্কার মৌমিতা, আমি Navjeevan Housing Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "ref": "নমস্কার মৌমিতা, আমি Navjeevan Housing Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1221,
+      "end_ms": 8581
+    },
+    {
+      "speaker": "borrower",
+      "text": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "ref": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "slot": "B_ACK",
+      "start_ms": 8869,
+      "end_ms": 11429
+    },
+    {
+      "speaker": "agent",
+      "text": "মৌমিতা, আপনার business loan-এর একটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹4,000।",
+      "ref": "মৌমিতা, আপনার business loan-এর একটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹4,000।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12170,
+      "end_ms": 19450
+    },
+    {
+      "speaker": "borrower",
+      "text": "কিন্তু আমি তো গত সপ্তাহেই একটা EMI দিয়ে দিয়েছি। আপনাদের record update হয়নি?",
+      "ref": "কিন্তু আমি তো গত সপ্তাহেই একটা EMI দিয়ে দিয়েছি। আপনাদের record update হয়নি?",
+      "slot": "B_DISPUTE",
+      "start_ms": 20070,
+      "end_ms": 24950
+    },
+    {
+      "speaker": "agent",
+      "text": "ঠিক আছে, এখনই statement পাঠিয়ে দিচ্ছি। Check করে নিন, তারপর কথা বলি।",
+      "ref": "ঠিক আছে, এখনই statement পাঠিয়ে দিচ্ছি। Check করে নিন, তারপর কথা বলি।",
+      "slot": "A_DISPUTE_OK",
+      "start_ms": 25486,
+      "end_ms": 30126
+    },
+    {
+      "speaker": "borrower",
+      "text": "ঠিক আছে, ধন্যবাদ।",
+      "ref": "ঠিক আছে, ধন্যবাদ।",
+      "slot": "B_CLOSE",
+      "start_ms": 30516,
+      "end_ms": 32196
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Riyaa"
+  }
+}

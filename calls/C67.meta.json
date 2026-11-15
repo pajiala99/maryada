@@ -1,0 +1,19 @@
+{
+  "call_id": "C67",
+  "call_time": "2026-11-12T11:20:00+05:30",
+  "borrower_id": "B1067",
+  "borrower_name": "ભાવેશ",
+  "agent_name": "ધવલ",
+  "lender": "Navjeevan Housing Finance",
+  "language": "gu-IN",
+  "loan": {
+    "account": "LN12003630",
+    "product": "personal loan",
+    "emi": 8300,
+    "overdue_emis": 2,
+    "late_fee": 500,
+    "total_due": 17100,
+    "days_past_due": 48
+  },
+  "preferred_window": null
+}

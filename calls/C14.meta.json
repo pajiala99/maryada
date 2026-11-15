@@ -1,0 +1,19 @@
+{
+  "call_id": "C14",
+  "call_time": "2026-11-14T09:50:00+05:30",
+  "borrower_id": "B1014",
+  "borrower_name": "राजेश",
+  "agent_name": "रोहित",
+  "lender": "Suvidha Finance",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN83029991",
+    "product": "personal loan",
+    "emi": 5600,
+    "overdue_emis": 2,
+    "late_fee": 650,
+    "total_due": 11850,
+    "days_past_due": 60
+  },
+  "preferred_window": null
+}

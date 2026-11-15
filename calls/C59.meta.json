@@ -1,0 +1,19 @@
+{
+  "call_id": "C59",
+  "call_time": "2026-11-14T12:10:00+05:30",
+  "borrower_id": "B1059",
+  "borrower_name": "রুমা",
+  "agent_name": "সৌরভ",
+  "lender": "Suvidha Finance",
+  "language": "bn-IN",
+  "loan": {
+    "account": "LN82997231",
+    "product": "two-wheeler loan",
+    "emi": 6850,
+    "overdue_emis": 1,
+    "late_fee": 500,
+    "total_due": 7350,
+    "days_past_due": 30
+  },
+  "preferred_window": null
+}

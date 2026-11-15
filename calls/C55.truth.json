@@ -1,0 +1,68 @@
+{
+  "call_id": "C55",
+  "scenario": "hardship_plan",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "নমস্কার মৌমিতা, আমি Suvidha Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "ref": "নমস্কার মৌমিতা, আমি Suvidha Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1271,
+      "end_ms": 7911
+    },
+    {
+      "speaker": "borrower",
+      "text": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "ref": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "slot": "B_ACK",
+      "start_ms": 8600,
+      "end_ms": 10840
+    },
+    {
+      "speaker": "agent",
+      "text": "মৌমিতা, আপনার two-wheeler loan-এর দুটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹17,400।",
+      "ref": "মৌমিতা, আপনার two-wheeler loan-এর দুটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹17,400।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 11222,
+      "end_ms": 18422
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> দেখুন, গত মাসে আমার চাকরি চলে গেছে। একটু time দরকার।",
+      "ref": "দেখুন, গত মাসে আমার চাকরি চলে গেছে। একটু time দরকার।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 18811,
+      "end_ms": 23851
+    },
+    {
+      "speaker": "agent",
+      "text": "কোনো ব্যাপার না, বুঝতে পারছি। এখন একটা EMI মানে ₹8,300 দিতে পারবেন? বাকিটার জন্য একটা date ঠিক করে নিই।",
+      "ref": "কোনো ব্যাপার না, বুঝতে পারছি। এখন একটা EMI মানে ₹8,300 দিতে পারবেন? বাকিটার জন্য একটা date ঠিক করে নিই।",
+      "slot": "A_POLITE_PLAN",
+      "start_ms": 24362,
+      "end_ms": 32522
+    },
+    {
+      "speaker": "borrower",
+      "text": "ঠিক আছে, ধন্যবাদ।",
+      "ref": "ঠিক আছে, ধন্যবাদ।",
+      "slot": "B_CLOSE",
+      "start_ms": 33156,
+      "end_ms": 34996
+    },
+    {
+      "speaker": "agent",
+      "text": "ধন্যবাদ মৌমিতা, আপনার দিন ভালো কাটুক।",
+      "ref": "ধন্যবাদ মৌমিতা, আপনার দিন ভালো কাটুক।",
+      "slot": "A_CLOSE",
+      "start_ms": 35607,
+      "end_ms": 38247
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Harshad",
+    "borrower": "Lakshmi"
+  }
+}

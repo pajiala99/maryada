@@ -1,0 +1,65 @@
+{
+  "call_id": "C58",
+  "scenario": "threat",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "নমস্কার সুব্রত, আমি Navjeevan Housing Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "ref": "নমস্কার সুব্রত, আমি Navjeevan Housing Finance থেকে সৌরভ বলছি। জানিয়ে রাখি, এই call record করা হচ্ছে।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1025,
+      "end_ms": 8625
+    },
+    {
+      "speaker": "borrower",
+      "text": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "ref": "হ্যাঁ, আমিই বলছি। বলুন।",
+      "slot": "B_ACK",
+      "start_ms": 9318,
+      "end_ms": 12198
+    },
+    {
+      "speaker": "agent",
+      "text": "সুব্রত, আপনার personal loan-এর দুটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹10,300।",
+      "ref": "সুব্রত, আপনার personal loan-এর দুটি EMI pending আছে। Late fee মিলিয়ে মোট বকেয়া ₹10,300।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12592,
+      "end_ms": 20192
+    },
+    {
+      "speaker": "borrower",
+      "text": "<sigh> দেখুন, গত মাসে আমার চাকরি চলে গেছে। একটু time দরকার।",
+      "ref": "দেখুন, গত মাসে আমার চাকরি চলে গেছে। একটু time দরকার।",
+      "slot": "B_HARDSHIP",
+      "start_ms": 20570,
+      "end_ms": 25530
+    },
+    {
+      "speaker": "agent",
+      "text": "<shouting> বেশি চালাকি দেখাবেন না! কালকের মধ্যে টাকা না এলে আমাদের ছেলেরা বাড়িতে গিয়ে জিনিসপত্র তুলে নিয়ে আসবে।",
+      "ref": "বেশি চালাকি দেখাবেন না! কালকের মধ্যে টাকা না এলে আমাদের ছেলেরা বাড়িতে গিয়ে জিনিসপত্র তুলে নিয়ে আসবে।",
+      "slot": "A_THREAT",
+      "start_ms": 25666,
+      "end_ms": 31986
+    },
+    {
+      "speaker": "borrower",
+      "text": "আপনি আমার সাথে এভাবে কথা বলতে পারেন না। আমি complaint করব।",
+      "ref": "আপনি আমার সাথে এভাবে কথা বলতে পারেন না। আমি complaint করব।",
+      "slot": "B_UPSET_CLOSE",
+      "start_ms": 32332,
+      "end_ms": 36492
+    }
+  ],
+  "violations": [
+    {
+      "type": "THREAT_OR_ABUSE",
+      "turn_index": 4
+    }
+  ],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Prakash",
+    "borrower": "Shubham"
+  }
+}

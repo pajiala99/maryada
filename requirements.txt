@@ -1,0 +1,11 @@
+websockets>=13
+httpx>=0.27
+numpy>=1.26
+scipy>=1.11
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9   # file uploads on POST /v1/calls
+python-dotenv>=1.0
+rapidfuzz>=3.0
+pytest>=8.0
+lameenc>=1.7   # only for maryada.ui.export_static (the GitHub Pages demo)

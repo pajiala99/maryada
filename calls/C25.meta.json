@@ -1,0 +1,19 @@
+{
+  "call_id": "C25",
+  "call_time": "2026-11-10T11:00:00+05:30",
+  "borrower_id": "B1025",
+  "borrower_name": "अमित",
+  "agent_name": "रोहित",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN21637498",
+    "product": "two-wheeler loan",
+    "emi": 3200,
+    "overdue_emis": 1,
+    "late_fee": 650,
+    "total_due": 3850,
+    "days_past_due": 27
+  },
+  "preferred_window": null
+}

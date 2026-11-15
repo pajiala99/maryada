@@ -1,0 +1,76 @@
+{
+  "call_id": "C05",
+  "scenario": "angry_borrower_calm_agent",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "नमस्कार Sir, Suvidha Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप संदीप जी हैं? यह पूरी conversation record की जा रही है।",
+      "ref": "नमस्कार Sir, Suvidha Finance की तरफ़ से मनोज बोल रहा हूँ। क्या आप संदीप जी हैं? यह पूरी conversation record की जा रही है।",
+      "slot": "A_OPEN_DISCLOSED",
+      "start_ms": 1258,
+      "end_ms": 9178
+    },
+    {
+      "speaker": "borrower",
+      "text": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "ref": "हाँ जी, मैं ही बोल रहा हूँ। बताइए।",
+      "slot": "B_ACK",
+      "start_ms": 9837,
+      "end_ms": 12397
+    },
+    {
+      "speaker": "agent",
+      "text": "संदीप जी, आपके personal loan की एक EMI pending हैं। Late fee मिलाकर total बकाया ₹7,200 है।",
+      "ref": "संदीप जी, आपके personal loan की एक EMI pending हैं। Late fee मिलाकर total बकाया ₹7,200 है।",
+      "slot": "A_DUES_CORRECT",
+      "start_ms": 12920,
+      "end_ms": 21160
+    },
+    {
+      "speaker": "borrower",
+      "text": "<shouting> तुम लोगों को शर्म नहीं आती? मैं consumer court में complaint कर दूँगा तुम्हारी!",
+      "ref": "तुम लोगों को शर्म नहीं आती? मैं consumer court में complaint कर दूँगा तुम्हारी!",
+      "slot": "B_ANGRY",
+      "start_ms": 21245,
+      "end_ms": 25645
+    },
+    {
+      "speaker": "agent",
+      "text": "Sir, मैं आपकी परेशानी समझता हूँ और असुविधा के लिए माफ़ी चाहता हूँ। मैं सिर्फ़ आपकी help करना चाहता हूँ ताकि extra charges न लगें।",
+      "ref": "Sir, मैं आपकी परेशानी समझता हूँ और असुविधा के लिए माफ़ी चाहता हूँ। मैं सिर्फ़ आपकी help करना चाहता हूँ ताकि extra charges न लगें।",
+      "slot": "A_CALM",
+      "start_ms": 25950,
+      "end_ms": 34110
+    },
+    {
+      "speaker": "agent",
+      "text": "मैं बस inform कर रहा हूँ कि delay होने पर late charges बढ़ेंगे और आपके credit score पर असर पड़ सकता है।",
+      "ref": "मैं बस inform कर रहा हूँ कि delay होने पर late charges बढ़ेंगे और आपके credit score पर असर पड़ सकता है।",
+      "slot": "A_LEGAL_INFO",
+      "start_ms": 34571,
+      "end_ms": 40731
+    },
+    {
+      "speaker": "borrower",
+      "text": "ठीक है, धन्यवाद।",
+      "ref": "ठीक है, धन्यवाद।",
+      "slot": "B_CLOSE",
+      "start_ms": 41202,
+      "end_ms": 42402
+    },
+    {
+      "speaker": "agent",
+      "text": "धन्यवाद संदीप जी, आपका दिन शुभ हो।",
+      "ref": "धन्यवाद संदीप जी, आपका दिन शुभ हो।",
+      "slot": "A_CLOSE",
+      "start_ms": 42704,
+      "end_ms": 45104
+    }
+  ],
+  "violations": [],
+  "stated_preferred_window": null,
+  "voices": {
+    "agent": "Yashraj",
+    "borrower": "Devansh"
+  }
+}

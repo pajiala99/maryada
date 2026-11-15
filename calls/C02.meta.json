@@ -1,0 +1,19 @@
+{
+  "call_id": "C02",
+  "call_time": "2026-11-12T15:30:00+05:30",
+  "borrower_id": "B1002",
+  "borrower_name": "राजेश",
+  "agent_name": "रोहित",
+  "lender": "Udaan Capital",
+  "language": "hi-en",
+  "loan": {
+    "account": "LN11945329",
+    "product": "home loan",
+    "emi": 6850,
+    "overdue_emis": 3,
+    "late_fee": 350,
+    "total_due": 20900,
+    "days_past_due": 90
+  },
+  "preferred_window": null
+}
