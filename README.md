@@ -6,7 +6,7 @@
 
 Built on Gnani's Prisma v3.0 (speech-to-text) and Timbre v3.0 (text-to-speech).
 
-**Solution brief (two-page PDF): [PITCH.pdf](PITCH.pdf)** · Team: Hardik Pajiala and Khushi Dangi, Thapar Institute of Engineering and Technology
+**One-page solution brief: [PITCH.pdf](PITCH.pdf)** · Team: Hardik Pajiala and Khushi Dangi, Thapar Institute of Engineering and Technology
 
 **[Try it in your browser](https://pajiala99.github.io/maryada/)**: no install, no keys. It replays the real Prisma v3.0 runs from the benchmark, with the audio, so you can pick any of the 78 calls, in nine languages, at any noise level, press Play, switch between the agent's and the borrower's channel, and jump to every breach. (Streaming a call live needs this repo and API keys; see [Run it](#run-it).)
 
