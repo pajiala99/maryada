@@ -2,29 +2,17 @@
 
 [![ci](https://github.com/pajiala99/maryada/actions/workflows/ci.yml/badge.svg)](https://github.com/pajiala99/maryada/actions/workflows/ci.yml)
 
-**Audits every loan-recovery call against the RBI's conduct rules, live, on noisy phone audio — and measures how well it holds up.**
+**When a borrower complains, you already have the proof.** Maryada checks every loan-recovery call against the RBI's conduct rules while the call is happening, on noisy phone audio, using Gnani's Prisma v3.0 (speech-to-text) and Timbre v3.0 (text-to-speech).
 
-Built on Gnani's Prisma v3.0 (speech-to-text) and Timbre v3.0 (text-to-speech).
-
-**One-page solution brief: [PITCH.pdf](PITCH.pdf)** · Team: Hardik Pajiala and Khushi Dangi, Thapar Institute of Engineering and Technology
-
-**[Try it in your browser](https://pajiala99.github.io/maryada/)**: no install, no keys. It replays the real Prisma v3.0 runs from the benchmark, with the audio, so you can pick any of the 78 calls, in nine languages, at any noise level, press Play, switch between the agent's and the borrower's channel, and jump to every breach. (Streaming a call live needs this repo and API keys; see [Run it](#run-it).)
-
-> **In two minutes**
-> - **What it does:** two Prisma v3.0 streams per call, one per side of the line; every agent turn is checked against the RBI's six conduct rules and flagged seconds after it is spoken, with the clause and the exact words.
-> - **The evidence:** 36 labelled calls at five noise levels, 180 recordings streamed in real time. At 10 dB of noise the LLM judge caught 31 of 31 planted breaches and gave 35 of 36 calls the right verdict. In 42 more calls across seven other Indian languages it caught 42 of 42 on a clean line.
-> - **See it yourself:** open the [demo](https://pajiala99.github.io/maryada/#monitor), pick C30, choose 10 dB and press Play.
-> - **What it is not:** real calls. The calls are synthetic, and the [limits](#honest-limits) section says what that means.
+**[Try the demo](https://pajiala99.github.io/maryada/)** in your browser, with no install and no keys: it replays the saved Prisma v3.0 runs with their audio, for any of the 78 calls at any noise level. **[One-page brief (PDF)](PITCH.pdf)**.
 
 ![Complaint CMP-0001: Pooja says an agent called after nine at night, quoted the wrong amount and threatened her. Her call C30 is matched by borrower, lender and date, the threat is confirmed with its RBI clause and the exact words, and the Next step panel offers to build the evidence pack.](docs/img/complaint.png)
 
-*The one workflow: a complaint arrives, Maryada has already checked the call, the reviewer confirms the moment, and the evidence pack and the action on the agent follow. Everything shown is synthetic.*
-
-![The landing page: the headline "When a borrower complains, you already have the proof." beside a photo of a reviewer at her laptop, with a transcript card of two flagged lines and the six-rule status list underneath it.](docs/img/landing.png)
+*Everything shown is synthetic: the calls, the borrowers, the agents and the lenders.*
 
 ## The problem
 
-On 6 August 2026 the RBI issued amendment directions on how lenders and their recovery agents may pursue overdue loans. They take effect on **1 January 2027** and cover banks, small finance banks, NBFCs, housing finance companies and co-operative banks. In short, on a recovery call a lender must:
+On 6 August 2026 the RBI issued amendment directions on how lenders and their recovery agents may pursue overdue loans. They take effect on **1 January 2027** and cover banks, small finance banks, NBFCs, housing finance companies and co-operative banks. On a recovery call a lender must follow these rules:
 
 | Rule | What it says |
 |---|---|
@@ -33,11 +21,15 @@ On 6 August 2026 the RBI issued amendment directions on how lenders and their re
 | No harsh practices | No threats or abuse, no contacting relatives, employers or friends, no public shaming, no misstating the amount owed |
 | Inappropriate occasions | Back off during a bereavement, another calamity, or a family wedding |
 
-Quality teams today listen to a small sample of calls by hand. The calls are code-mixed, recorded on 8 kHz phone lines, and made by thousands of outsourced agents. Maryada audits **every** call, while it is happening.
+The calls are code-mixed, recorded on 8 kHz phone lines, and made by thousands of outsourced agents. Quality teams listen to a small sample by hand. When a borrower complains, someone has to find the call, listen to all of it and prove what was said.
 
-> Clause numbers in the code follow the NBFC paragraph numbering reported for the directions (100N, 100W, 100X). We could read the rules only through secondary sources; check them against the RBI text before relying on them.
+## Who it is for
 
-## What it does
+The head of collections compliance at a lender, and the QA reviewers and team leads who work for her. Because Maryada has already checked every call, a complaint becomes a short, recorded flow: the complaint is matched to the borrower's calls, the reviewer hears the exact moment and confirms the finding, an evidence pack is built from that review, and an action is recorded against the agent.
+
+![The landing page: the headline "When a borrower complains, you already have the proof." beside a photo of a reviewer at her laptop, with a transcript card of two flagged lines and the six-rule status list underneath it.](docs/img/landing.png)
+
+## How it works
 
 ```
  dual-channel call recording (8 kHz)
@@ -58,23 +50,22 @@ Quality teams today listen to a small sample of calls by hand. The calls are cod
           →  hash-chained evidence log
 ```
 
-1. **Two channels instead of diarization.** Prisma's realtime API is mono and does not label speakers. Dialers already record the agent and the borrower on separate channels, so we stream each channel as its own Prisma session. Speaker attribution is exact and costs nothing.
+1. **Two channels instead of diarization.** Prisma's realtime API is mono and does not label speakers. Dialers already record the agent and the borrower on separate channels, so each channel is its own Prisma session, and speaker attribution is exact.
 2. **Timeline without word timestamps.** Prisma returns one transcript per utterance with its duration. We place it on the call clock using the position of our own audio stream when the server reports the utterance closed.
-3. **Rules first, model second.** Whatever can be decided exactly is decided in code: the calling window, whether the recording notice was given, and whether a rupee figure the agent states is on the loan record (Prisma's `transcribe` format returns amounts as digits). The LLM handles the three judgement calls and never overrides an exact check.
+3. **Rules first, model second.** Whatever can be decided exactly is decided in code: the calling window, whether the recording notice was given, and whether a rupee figure the agent states is on the loan record. The LLM handles the three judgement calls and never overrides an exact check.
 4. **Live nudge.** When a rule is broken mid-call, Timbre v3.0 whispers the correction to the agent in their language (`<whispers>` tag).
 5. **Evidence log.** Every utterance and alert is appended to a SHA-256 hash chain, so an edited or deleted record is detectable.
 
-**Who it is for, and the one workflow.** The head of collections compliance at a lender, and the QA reviewers and team leads who work for her. The promise: *when a borrower complains, you already have the proof.* A complaint is matched to the borrower's calls, the reviewer hears the exact moment and confirms the finding, an evidence pack builds from that review, and an action is recorded against the agent.
+## The product
 
-**The site** (`uvicorn maryada.ui.server:app --port 8770`): a landing page at `/` that tells that story, and the product at `/app/`, one HTML file with no build step:
+A landing page at `/` and the product at `/app/`, one HTML file with no build step:
 
 - **Today**: complaints waiting, flagged calls nobody has reviewed, and agents with confirmed findings but no action yet.
-- **Complaints**: each one matched to the borrower's calls (same borrower and lender, inside the complaint's dates, with the reason shown), then confirm the moment, build the evidence pack, record a coaching note, retraining flag or escalation on the agent, and close. Six synthetic complaints are seeded against real calls, including one whose call is clean and one with no call on record.
-- **Calls** and **Call review**: every call with its verdict; the full transcript with each finding beside its line, the RBI clause, the exact words and how it was found. A dues mismatch that looks like a dropped digit is marked "Needs human review".
-- **Agents**: each agent's calls, findings by rule, and the actions recorded about them. **Evidence packs**: one printable document per complaint with the evidence-log seal.
-- **Run a simulated call**: replay any call in step with its audio, stream it live, or speak as the agent; six rule rows go from Watching to Clear or Broken as the call happens, and Timbre's whispered corrections can be played back.
-- **Rules**, **Connect** (API keys, webhooks, events) and **Settings** (per-lender policy), and **How well it works** (the benchmark).
-- Everywhere: names in Latin script in lists, transcripts in the words Prisma heard; **listen to one side** through Web Audio; keyboard shortcuts (`?` lists them). **Speak as the agent** sends 16 kHz microphone audio over a WebSocket; the server re-frames it into Prisma's 1,024-byte frames and the same monitor judges it.
+- **Complaints**: each one matched by borrower, lender and date, with the reason shown; confirm the moment, build the evidence pack, record a coaching note, retraining flag or escalation, and close. Six complaints are seeded, including one whose call is clean and one with no call on record.
+- **Calls** and **Call review**: the full transcript with each finding beside its line, the RBI clause, the exact words and how it was found. A dues mismatch that looks like a recognition error is marked "Needs human review".
+- **Agents**: each agent's calls, findings by rule and the actions recorded. **Evidence packs**: one printable document per complaint, sealed with the log's hash.
+- **Run a simulated call**: replay any call in step with its audio, stream it live, or speak as the agent through the microphone (16 kHz audio re-framed into Prisma's 1,024-byte frames). Six rule rows go from Watching to Clear or Broken as the call happens, and the whispered corrections can be played back.
+- **Rules**, **Connect** (API keys, webhooks, events), **Settings** (per-lender policy) and **How well it works** (the benchmark). Names are shown in Latin script in lists; `?` lists the keyboard shortcuts.
 
 ![Today: complaints waiting with their age and the rules alleged, flagged calls nobody has reviewed, and a guided demo that follows one complaint from start to finish.](docs/img/today.png)
 
@@ -94,16 +85,16 @@ Quality teams today listen to a small sample of calls by hand. The calls are cod
 
 Maryada is also a service a dialer can call (`maryada/gateway.py`). Everything runs in **test mode** on synthetic calls; there is no real login or multi-tenancy, and the dashboard says so.
 
-- **API** (`/v1`, OpenAPI docs at `/docs`): `POST /v1/calls` takes a stereo WAV plus metadata (streamed to Prisma v3.0), or a test-bench call to replay (no API cost, same result every time); `GET /v1/calls/{id}` returns the findings, the verdict and the evidence seal (verified, record count, head hash); `POST /v1/streams` opens a live session; `GET /v1/rules`, `/v1/cases`, `/v1/events`, `/v1/policies/{lender}`. Keys are shown once and stored only as SHA-256 hashes; every response carries a `Request-Id`, and errors come back as `{"error": {"type", "message"}, "request_id"}`.
+- **API** (`/v1`, OpenAPI docs at `/docs`): `POST /v1/calls` takes a stereo WAV plus metadata, or a test-bench call to replay; `GET /v1/calls/{id}` returns the findings, the verdict and the evidence seal; `POST /v1/streams` opens a live session; `GET /v1/rules`, `/v1/cases`, `/v1/events`, `/v1/policies/{lender}`. Keys are shown once and stored only as SHA-256 hashes; every response carries a `Request-Id`, and errors come back as `{"error": {"type", "message"}, "request_id"}`.
 - **Webhooks**: `alert.created`, `call.completed` and `case.updated`, signed `Maryada-Signature: t=<unix>,v1=HMAC-SHA256(secret, "<t>.<body>")`, retried after 2 and 6 seconds, each attempt logged, with Resend. A receiver inside the server checks signatures the way a lender's server would.
-- **Cases**: each flagged call becomes a case (open, in review, confirmed, dismissed) with an assignee, notes and an activity timeline; reviewer decisions on the Call review page are saved to it; a dismissed alert is kept as a regression case; CSV export.
-- **Per-lender policy**: a lender can narrow the calling window or shorten the recording-notice grace period, never beyond the RBI's 08:00-19:00; every change is versioned. The engine applies the policy to streamed calls and records it in the evidence log.
-- **Masking before the LLM**: names, account and borrower IDs, phone numbers and long numbers are masked before any line reaches the LLM endpoint; rupee amounts are kept. The masked counts are written to the call's evidence log. The published benchmark was judged before masking was added and is left as it was.
+- **Cases**: each flagged call becomes a case (open, in review, confirmed, dismissed) with an assignee, notes and an activity timeline; a dismissed alert is kept as a regression case; CSV export.
+- **Per-lender policy**: a lender can narrow the calling window or shorten the recording-notice grace period, never beyond 08:00-19:00; every change is versioned and recorded in the evidence log.
+- **Masking before the LLM**: names, account and borrower IDs, phone numbers and long numbers are masked before any line reaches the LLM endpoint; rupee amounts are kept. The published benchmark was judged before masking was added and is left as it was.
 
 ![The Developers page: the event log after the mock dialer submitted C30. Each alert.created and call.completed event shows Delivered 200; one is expanded to show its delivery attempt to the demo receiver and its JSON payload with the RBI clause and the exact words.](docs/img/developers.png)
 
 ```bash
-export MARYADA_API_KEY=mk_test_...            # Developers page -> Create key
+export MARYADA_API_KEY=mk_test_...            # Connect page -> Create key
 python scripts/mock_dialer.py --receiver        # submits C30, waits for the verdict, lists the signed webhooks
 ```
 
@@ -111,13 +102,11 @@ python scripts/mock_dialer.py --receiver        # submits C30, waits for the ver
 
 | Model | Use |
 |---|---|
-| Prisma v3.0 realtime | Two 8 kHz streaming sessions per call, 1,024-byte PCM frames at real-time pace, VAD tuned for noisy lines (`x-vad-threshold 0.85`, `x-max-speech-s 10`) |
-| | `language_code` set to the borrower's language from the CRM (`hi-IN` or `pa-IN`) as a hint; `detected_language_code` shown per utterance. The docs describe a list of up to four languages, but the live streaming endpoint accepted only one locale or `indic-auto` when we tested on 14 Nov 2026 |
+| Prisma v3.0 realtime | Two 8 kHz streaming sessions per call, 1,024-byte PCM frames at real-time pace, voice-activity detection tuned for noisy lines (lesson 2 below) |
+| | `language_code` set to the borrower's language from the CRM (`hi-IN` or `pa-IN`); `detected_language_code` shown per utterance. The docs describe a list of up to four languages, but the live streaming endpoint accepted only one locale or `indic-auto` when we tested on 14 Nov 2026 |
 | | `format=transcribe` so amounts and clock times arrive as digits |
 | | `keyterms` (EMI, late fee, NACH, बकाया…), `topic` and `speaker_names` as context |
-| Timbre v3.0 | Voices both sides of every test call: 13-voice catalogue, audio tags (`<shouting>`, `<sigh>`, `<sniffles>`), rupee amounts read out from digits |
-| | `container=mulaw` so the audio comes back already G.711-encoded at 8 kHz |
-| | The whisper nudge to the agent |
+| Timbre v3.0 | Voices both sides of every test call: 13-voice catalogue, audio tags (`<shouting>`, `<sigh>`, `<sniffles>`), rupee amounts read out from digits, `container=mulaw` so the audio arrives G.711-encoded at 8 kHz; also speaks the nudge |
 | Evon v3.3 | Not on the API yet. The judge talks to any OpenAI-compatible endpoint, so serving Evon with vLLM is a change of `LLM_BASE_URL` |
 
 ## The test bench
@@ -176,9 +165,9 @@ The contest allows synthetic data only, which turns out to be an advantage: when
 
 **Reading the numbers**
 
-- **Down to 10 dB the monitor barely notices the noise.** With the LLM judge it catches 31 of 31 planted breaches at 20 dB and at 10 dB, and gets the overall verdict right on 35 of 36 calls. Prisma's word error rate goes from 3% on a clean line to 7–9% at 10 dB, and it almost never invents words (under 1% at every level).
+- **Down to 10 dB the monitor barely notices the noise.** With the LLM judge it catches 31 of 31 planted breaches at 20 dB and at 10 dB, and gets the overall verdict right on 35 of 36 calls. Prisma almost never invents words (under 1% at every level).
 - **5 dB is where it starts to slip, 0 dB is where it breaks.** At 5 dB recall is still 94%. At 0 dB (noise as loud as the speaker) Prisma loses about 60% of the words and the keyword judge catches 71% of breaches with many false alarms. The LLM judge was not run at 0 dB: the free Groq tier allows 200,000 tokens a day and the other four conditions used them.
-- **The same three false alarms repeat at every noise level, so they are not noise effects.** Two are judgement calls we would defend: posting a borrower's photo as a "defaulter" with "फिर देखना" (C18), and "I won't hang up until you pay" (C19) are both flagged as threats as well as their planted rule. The third (C10) is a recognition error: in a Punjabi call the agent says ₹25,150 and Prisma writes "5,150", so the dues check rightly says the stated figure does not match the record. A dropped leading digit on a rupee amount is exactly the kind of error a compliance tool has to surface rather than hide.
+- **The same three false alarms repeat at every noise level, so they are not noise effects.** Two are judgement calls we would defend: posting a borrower's photo as a "defaulter" with "फिर देखना" (C18), and "I won't hang up until you pay" (C19) are both flagged as threats as well as their planted rule. The third (C10) is a recognition error: in a Punjabi call the agent says ₹25,150 and Prisma writes "5,150", so the dues check rightly says the stated figure does not match the record. A compliance tool has to surface that kind of error rather than hide it.
 - **The one clean-line miss (C23)** is the LLM letting "देखिए, वो आपका personal मामला है… payment आज ही चाहिए" through after the borrower says the sister's wedding is under way. The keyword baseline caught it. Each judge misses things the other catches; running both and showing either alert is a cheap improvement we have not made yet.
 
 ## Nine languages
@@ -236,26 +225,16 @@ What holds regardless: on clean to moderately noisy lines v3.0 catches more and 
 | LLM (openai/gpt-oss-120b) | 15 / 16 | 9 | 1 |
 <!-- /PROBE -->
 
-## Team
-
-Built by **Hardik Pajiala** and **Khushi Dangi** (Thapar Institute of Engineering and Technology) for Gnani.ai's Great Indian AI Internship challenge. We designed it together and split the build in two:
-
-| | Hardik Pajiala: the live engine | Khushi Dangi: the test bench and the product |
-|---|---|---|
-| **Built** | Two-channel Prisma v3.0 streaming client (`engine/stt_stream.py`), the call timeline, RBI rule checks (`engine/rules.py`), the LLM judge (`engine/classifier.py`), the monitor (`engine/monitor.py`), Timbre whisper nudges (`extras/nudge.py`), the hash-chained evidence log (`extras/audit_log.py`), live and mic modes | 78 labelled call scripts in nine languages (`bench/lines.py`, `bench/lines_more.py`, `bench/script_gen.py`), Timbre voicing (`bench/voice.py`), telephone and noise simulation (`bench/mixer.py`), scoring, the benchmark and the v2.5 vs v3.0 comparison (`bench/evaluate.py`, `bench/run.py`, `bench/probe.py`), the dashboard (`ui/`), the public demo and the audit report |
-| **Can explain in depth** | Why two Prisma sessions instead of diarization, frame pacing and reconnects, VAD tuning for noisy floors, rules first and LLM second | How the ground truth is built, SNR measured in the phone band, the cross-talk finding, why WER was dropped from the v2.5 comparison |
-
 ## Honest limits
 
 - **Synthetic speech is cleaner than real speech.** Timbre voices do not mumble, overlap or trail off the way people do. Real calls will score lower than these numbers.
 - **The scripts come from a line bank.** Each violation type has a handful of phrasings. The LLM judge never sees the line bank, but the keyword baseline was written by the same people who wrote the lines, so its clean-audio score is an upper bound.
-- **Small counts.** Each violation type is planted in 4 to 6 calls, so one miss moves recall by about 20 points. Read the per-type table as counts, not percentages.
+- **Small counts.** Each violation type is planted in 4 to 6 calls, so one miss moves recall by about 20 points. Read the per-rule table as counts, not percentages.
 - **Noise is simulated.** Babble and street noise are mixed in digitally; there is no real handset, network jitter or packet loss.
-- **Stereo recordings are assumed.** A mono recording would need diarization, which Prisma's realtime API does not provide.
+- **Stereo recordings are assumed.** A mono recording would need diarization.
 - **The paraphrase probe is small and ours.** 16 utterances written by us to be hard for keywords. It shows the gap in kind, not a measured rate.
-- **The LLM judge is a stand-in.** `openai/gpt-oss-120b` on Groq's free tier, chosen because Evon v3.3 is not on Gnani's API yet. The judge talks to any OpenAI-compatible endpoint, so Evon served with vLLM is a one-line change, but we have not measured Evon.
-- **The RBI text was read second-hand.** The RBI's own PDF was behind a CAPTCHA when we built this; clause numbers come from published summaries of the 6 Aug 2026 directions.
-- **Not legal advice.** The rule definitions are our reading of secondary reports of the directions.
+- **The LLM judge is a stand-in.** `openai/gpt-oss-120b` on Groq's free tier, chosen because Evon v3.3 is not on Gnani's API yet; we have not measured Evon.
+- **The RBI text was read second-hand, and this is not legal advice.** The RBI's own PDF was behind a CAPTCHA when we built this. The rules and the clause numbers in the code (the NBFC paragraphs 100N, 100W, 100X) come from published summaries of the directions; check them against the RBI text before relying on them.
 
 ## Run it
 
@@ -267,19 +246,19 @@ cp .env.example .env            # add GNANI_API_KEY and an LLM endpoint
 .venv/bin/python -m maryada.bench.voice          # Timbre v3.0 voices every turn (cached)
 .venv/bin/python -m maryada.bench.mixer          # stereo calls at 5 noise levels
 .venv/bin/python -m maryada.bench.run            # stream every call to Prisma v3.0, judge it
-.venv/bin/python -m maryada.bench.evaluate       # results/RESULTS.md
+.venv/bin/python -m maryada.bench.evaluate       # score the runs into results/
 
 .venv/bin/python -m maryada.engine.monitor C30 --variant snr10    # one call in the terminal
-.venv/bin/uvicorn maryada.ui.server:app --port 8770               # dashboard
+.venv/bin/uvicorn maryada.ui.server:app --port 8770               # the site
 .venv/bin/python -m pytest tests -q                               # offline tests
-.venv/bin/python -m maryada.ui.export_static                    # rebuild the static demo in site/ (published on the gh-pages branch)
+.venv/bin/python -m maryada.ui.export_static                      # rebuild the static demo in site/
 ```
 
 `MARYADA_MOCK=1` runs the whole pipeline with no API calls, for development. Mock output is labelled as such and is never a result.
 
 ### What is and is not in this repo
 
-This repo holds the code, the dashboard, the 78 labelled call scripts and the scored results. The voiced audio, the raw Prisma transcripts and the monitor runs are not here (they are large and regenerate from the scripts with your own Gnani key). Every replay can be played in the live demo at https://pajiala99.github.io/maryada without installing anything.
+This repo holds the code, the dashboard, the 78 labelled call scripts and the scored results. The voiced audio, the raw Prisma transcripts and the monitor runs are not here (they are large and regenerate from the scripts with your own Gnani key). Every replay can be played in the demo linked at the top.
 
 ## Layout
 
@@ -290,13 +269,15 @@ maryada/
   engine/   stt_stream.py, rules.py, classifier.py, redact.py, monitor.py, mock.py
   gateway.py  the /v1 API, signed webhooks, cases and per-lender policy
   extras/   nudge.py, audit_log.py
-  ui/       server.py, static/index.html
+  ui/       server.py, static/index.html, landing/index.html
 scripts/    mock_dialer.py (a stand-in for a lender's dialer), publish and sync helpers
 tests/      offline unit tests
 ```
 
----
+## Team
 
-Built by **Hardik Pajiala** and **Khushi Dangi**.
+**Hardik Pajiala** and **Khushi Dangi**, Thapar Institute of Engineering and Technology, for Gnani.ai's Great Indian AI Internship challenge. We designed it together and split the build in two:
 
-**Hardik Pajiala** · [LinkedIn](https://linkedin.com/in/hardik-pajiala) · [Portfolio](https://pajiala99.github.io) · [GitHub](https://github.com/pajiala99)
+| Hardik Pajiala: the live engine | Khushi Dangi: the test bench and the product |
+|---|---|
+| Two-channel Prisma v3.0 streaming client (`engine/stt_stream.py`), the call timeline, RBI rule checks (`engine/rules.py`), the LLM judge (`engine/classifier.py`), the monitor (`engine/monitor.py`), Timbre whisper nudges (`extras/nudge.py`), the hash-chained evidence log (`extras/audit_log.py`), live and mic modes | 78 labelled call scripts in nine languages (`bench/lines.py`, `bench/lines_more.py`, `bench/script_gen.py`), Timbre voicing (`bench/voice.py`), telephone and noise simulation (`bench/mixer.py`), scoring, the benchmark and the v2.5 vs v3.0 comparison (`bench/evaluate.py`, `bench/run.py`, `bench/probe.py`), the dashboard (`ui/`), the public demo and the audit report |
